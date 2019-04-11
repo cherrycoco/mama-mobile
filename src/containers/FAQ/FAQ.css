@@ -1,0 +1,35 @@
+#FAQ {
+  padding: 20px 20% 100px 20%;
+  background-color: rgb(250, 227, 253, 0.2);
+}
+
+.FAQ-card-questions {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.FAQ-card-questions h4 {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.FAQ-card-questions i {
+  margin-top: -8px;
+  color: #cea6dd;
+}
+
+
+.FAQ-card-answers {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.FAQ-card-answers p {
+  line-height: 1.5em;
+}
+
+.FAQ-card-answers b {
+  font-weight: 600;
+}

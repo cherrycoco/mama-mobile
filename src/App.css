@@ -1,32 +1,107 @@
-.App {
-  text-align: center;
+a, p, h1, h2, h4, h5 {
+  color: rgb(69, 69, 69);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.divider {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p, li, a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .05em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cea6dd;
+}
+
+.clearFloat {
+  clear: both;
+}
+
+/* border box animation  */
+
+.box {
+  border: none;
+  position: relative;
+  background-color: transparent;
+  font-size: 0.8em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.box::before,
+::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.box::before {
+  top: 0;
+  left: 0;
+}
+
+.box::after {
+  bottom: 0;
+  right: 0;
+}
+
+.box:hover {
+  color: rgba(228, 193, 235, 0.84);
+  border: none;
+  transition: all 1s;
+}
+
+.box:hover::before {
+  width: 100%;
+  height: 100%;
+  border-top-color: rgba(228, 193, 235, 0.84);
+  border-right-color: rgba(228, 193, 235, 0.84);
+  transition:
+    width 0.25s ease-out,
+    height 0.25s ease-out 0.25s;
+}
+
+.box:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom-color: rgba(228, 193, 235, 0.84);
+  border-left-color: rgba(228, 193, 235, 0.84);
+  transition:
+    border-color 0s ease-out 0.5s,
+    width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+/* button border */
+
+.button-border:hover {
+  background-color: #c68bbd !important;
+  color: white !important;
+}
+
+.button-border h3 {
+  font-size: 1em;
+  letter-spacing: 0.15em;
+}
+
+/* .button-border h3: hover {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */

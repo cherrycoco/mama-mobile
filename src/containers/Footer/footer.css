@@ -1,0 +1,48 @@
+#footer {
+  margin-top: 100px;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  margin: 150px auto 100px auto;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+}
+
+#footer-content-contact {
+  width: 260px;
+}
+
+#footer-content-company {
+  width: 130px;
+}
+
+#footer-content-logo {
+  margin-top: -100px;
+}
+
+#footer-content-logo-icons {
+  margin: -50px auto 0 auto;
+  width: 100px;
+}
+
+#footer a {
+  line-height: 2em;
+}
+
+#footer-content-company a {
+  display: block;
+}
+
+#footer h2 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(100, 100, 100, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+
+/* finale */
+

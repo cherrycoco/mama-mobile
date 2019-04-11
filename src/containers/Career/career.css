@@ -1,0 +1,23 @@
+#career .title {
+  margin-top: 80px;
+}
+
+#career img {
+  margin-top: 100px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#career h2 {
+  text-align: center;
+  color: #cea6dd;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  width: 75%;
+  min-width: 200px;
+  margin-left: auto; 
+  margin-right: auto;
+}

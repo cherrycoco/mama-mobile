@@ -1,0 +1,136 @@
+.about-title {
+  text-align: center;
+  color: #cea6dd;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 55px;
+  line-height: .9em;
+  margin-bottom: 60px;
+  padding-top: 80px;
+  margin-top: 0;
+}
+
+b {
+  font-weight: 900;
+}
+
+/* founder */
+
+#founder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#founder img {
+  display: block;
+  width: 400px;
+  height: 100%;
+}
+
+#founder-content {
+  min-width: 30%;
+  max-width: 40%;
+  flex-grow: 1;
+}
+
+/* team bios */
+
+#team-select {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#team-select h5 {
+  color: gray;
+  margin-bottom: 5px;
+}
+
+#team-wrapper {
+  background-color: #f8f8f8;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-card-wrapper {
+  width: 400px;
+  height: 360px;
+  position: relative;
+  margin: 40px 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.team-card-wrapper img {
+  height: 70%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-card-tag {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  color: #4a4a4a;
+}
+
+.team-card-tag h3 {
+  color: #4a4a4a;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.team-card-tag h4 {
+  font-weight: 300;
+  margin: 0;
+  color: #878787;
+}
+
+.team-card-tag.onHover h3,
+.team-card-tag.onHover h4{
+  color: white;
+}
+
+.team-card-tag.onHover p{
+  color: white;
+  margin-top: 30px; 
+  overflow: hidden;
+}
+
+.team-card-bio {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 360px;
+  left: 0;
+  overflow: hidden;
+  padding: 10%;
+  transition: 0.3s all;
+}
+
+.team-card-bio.bio-show {
+  top: 0;
+}
+
+.team-card-bio p {
+  color: white;
+}
