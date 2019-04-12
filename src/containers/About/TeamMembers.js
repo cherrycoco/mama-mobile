@@ -13,11 +13,10 @@ const Members = [
     location: ['All', 'Etobicoke', 'Missisauga', 'Brampton'],
     area: 'Etobicoke, Missisauga, Brampton',
     description: [
-      'Samantha is a graduate from the Sutherland-Chan School of Massage Therapy diploma program. She also holds an Honours Bachelor of Science degree in Kinesiology and Health Science from York University. In addition to being a massage therapist, Samantha is a teaching assistant at Sutherland-Chan School, providing her with a strong ongoing academic foundation upon which to base her treatment practice. She currently co-supervises the school’s Student Pregnancy Clinic, which has helped develop her skills in perinatal massage.',
-      'Her massage focus includes general wellness, injury prevention and rehabilitation, and therapeutic exercise.',
-      'When it comes to pregnancy massage, Samantha understands the importance of where a mother is in her stage of pregnancy and how to adapt her treatment to address these needs, as well as the particular self-care that should accompany a treatment. Samantha also recognizes the importance of wellness and relaxation, which, sometimes, is exactly what an expecting mother, a new mom or a family member may need.',
-      'When Samantha is not teaching or treating, she enjoys cycling and powerlifting.She spends whatever time she has left with her fiancé and her two German Shepherds.'
+      'When I am not massaging our mamas I can be found teaching and overseeing the student prenatal pregnancy clinic at Sutherland-Chan!',
+      'I believe that wellness and relaxation are pillars for mamas of all stages of life.',
     ],
+    funFact: 'Sam loves powerlifting and has two german shepherds!',
     img: sam,
   },
   {
@@ -40,11 +39,9 @@ const Members = [
     location: ['All', 'Richmond Hill', 'Thornhill', 'Vaughan'],
     area: 'Richmond Hill, Thornhill & Vaughan*',
     description: [
-      "Michelle has been practicing Massage Therapy for over 3 years. She enhances the well being of her clients through safe, qualitative & caring therapeutic touch. ",
-      "Early on in her journey as a Registered Massage Therapist Michelle developed a passion for working with prenatal and postantal mama's. She has aquired techniques that have incredible affects on releasing pain associated with pregnancy.",
-      "Michelle customizes each Massage to suit your individual pains/injuries. Her clients find comfort in her relaxed yet professional presence.",
-      "Michelle cares deeply for the wellbeing of each and every client that she works with. She always sends our clients home with stretches, strengthening exercises or heat/cold application instruction to ensure maximum benefits from their Massage.",
+      "Early on in my journey as a Registered Massage Therapist I developed a passion for working with prenatal and postnatal mama's. I have aquired techniques that have incredible effects on releasing pain associated with pregnancy.",  
     ],
+    funFact: '',
     img: michelle,
   },
   {
@@ -53,11 +50,9 @@ const Members = [
     location: ['All', 'Leslieville'],
     area: 'Leslieville',
     description: [
-      "Lindsay is an admirer and supporter of pregnant and birthing persons. A graduate of Sutherland-Chan School and Teaching Clinic in Toronto, Lindsay has found deep happiness in working with the childbearing population. She has spent most of her professional career learning all she can about pregnancy and childbirth, taking extensive post-graduate courses in pre- and post-natal massage care, breast/chest treatment and post cesarean birth recovery. She is also a DONA International mentored birth doula and currently studying to become a Childbirth Educator. As a massage therapist, Lindsay’s job is to keep you functional (mentally and physically), help you unwind, and to facilitate an environment where you can listen to and connect with your body and baby, feel safe and be heard.",
-      "Lindsay believes that pregnancy and birth are physically and spiritually transformative and that massage is a fantastic way to navigate these changes. She believes in honouring different experiences, cultures, family and personal meanings associated with pregnancy and the birth of a child.",
-      "Offering in-home, mobile massage therapy brings an accessibility to new and expecting parents that Lindsay feels very passionate about and she is so excited to meet you and take care of you.",
-      "Outside of her work, Lindsay is excited to be back in Toronto after living on Vancouver Island for the past three years. She is an avid hiker, writer and cat lover.",
+      'I have spent most of my professional career learning all I can about pregnancy and childbirth, taking extensive post-graduate courses in pre- and post-natal massage care, breast/chest treatment and post cesarean birth recovery. I am also a DONA International mentored birth doula and currently studying to become a Childbirth Educator!',
     ],
+      funFact: 'Lindsay is happy to be back in Toronto after returning from living on Vancouver island!',
     img: lindsay,
   },
   {
@@ -90,11 +85,9 @@ const Members = [
     location: ['All', 'Ottawa'],
     area: 'All major areas of Ottawa',
     description: [
-      "Patricia is a Registered Massage Therapist in practice since 1986. A member of the Registered Massage Therapists Association of Ontario (RMTAO); she brings a vast array of experience and training to her perinatal massage therapy care. Patricia designed and supervised pre and perinatal and newborn massage therapy training programs for 5 massage therapy colleges in the Ottawa area. These internships were held at the Civic and General campuses of the Ottawa Hospital system for 15 years.",
-      "Her perinatal massage training includes certifications with Trimesters Massage Therapy Education; Carole Osborne-Sheets, author of Pre and perinatal Massage Therapy; Myofascial Release for the post surgical patient; and, certification in Scar treatment.",
-      "Patricia is passionate about the benefits of early cranial sacral and massage therapy treatment for newborns and toddlers and their effects on bonding and attachment. She has given numerous courses in newborn and paediatric massage and holds certificates in Cranial Sacral Therapy and The Rice Infant Sensorimotor Stimulation Technique for newborns in clinical settings.",
-      "Patricia is happy to be a member of Mama Mobile Massage Therapy. Her mission: happy mums, partners and babies at every stage of gestation and birth translate into positive bonding, attachment and wholesome family units. An avid hiker, she enjoys reading, spending time with her standard poodle Sophie, and ….. Laughter!",
+      'I’ve been an RMT since 1986! I designed and supervised pre and perinatal and newborn massage therapy training programs for 5 massage therapy colleges in the Ottawa area. These internships were held at the Civic and General campuses of the Ottawa Hospital system for 15 years.',
     ],
+    funFact: 'Patricia has the cutest standard poodle names Sophie!',
     img: patricia,
   },
 ]

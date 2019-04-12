@@ -34,8 +34,6 @@ const Footer = () => (
         <Link to='/contact'>Contact</Link>
       </div>
     </div>
-    {/* <MadeBy /> */}
-    {/* <Finale /> */}
   </div>
 )
 

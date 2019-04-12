@@ -47,41 +47,22 @@
 
 #mobile-nav button {
   float: right;
-  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
   margin-right: 20px;
 }
 
-#reservation {
-  margin: 10px;
-  text-align: left;
-}
-
-#reservation h4 {
-  font-size: 13px;
-  font-weight: 600;
-  margin: 8px 0;
-}
-
-#reservation a {
-  font-weight: 400;
-}
-
 #nav-side-list {
-  width: 250px;
+  width: 280px;
+  padding-left: 10%;
+  padding-right: 10%;
   text-transform: uppercase;
   text-align: center;
 }
 
 #nav-side-list-logo {
   margin-top: 20px;
-}
-
-@media only screen and (max-width: 599px) {
-  #header h1 {
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
 }
 
 #social-media {
@@ -95,4 +76,14 @@
 #social-media a {
   display: block;
   margin-bottom: 5px;
+}
+
+#mobile-nav-social {
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+}
+
+#mobile-nav-social a {
+  display: inline-block;
 }

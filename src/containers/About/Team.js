@@ -14,6 +14,7 @@ const Team = ({ team }) => (
         <TeamCard 
           key={member.name}
           description={member.description}
+          funFact={member.funFact}
           title={member.title}
           name={member.name}
           url={member.img} 

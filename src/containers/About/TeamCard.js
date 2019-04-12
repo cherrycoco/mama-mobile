@@ -6,15 +6,8 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
     super(props);
     this.state = {
       hover: false,
-      bio: ['bio'],
       open: false,
     };
-  }
-
-  componentWillMount () {
-    this.setState({
-      bio: this.props.description
-    })
   }
 
   handleMouseEnter = (e) => {
@@ -37,7 +30,9 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
 
   renderBio = () => (
     <div className={!this.state.click ? 'team-card-bio' : 'team-card-bio bio-show'} style={{backgroundColor: this.props.color}}>
-      <p>{this.state.bio[0]}</p>
+      {this.props.description.map((des, idx) => <p key={idx}>{des}</p>)}
+      <p><b>Did you know?</b></p>
+      <p>{this.props.funFact}</p>
     </div>
   )
 
@@ -59,19 +54,6 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
         </div>
       )
     }
-  }
-
-  displayContent() {
-    return (
-      <div  className='team-card-hover'>
-        <div className='team-card-bio'>
-          {
-            this.state.bio.map((line, idx) => {
-              return <p key={idx}>{line}</p>})
-          }
-        </div>
-      </div>
-    );
   }
 
   render() {
