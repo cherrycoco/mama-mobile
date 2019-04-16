@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../../components/Button/ButtonAnimated';
 
 const PriceCard = (props) => (
   <div className='price-card'>

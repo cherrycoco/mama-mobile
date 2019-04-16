@@ -9,7 +9,7 @@ const styles = {
     backgroundColor: 'rgba(228,193,235,.84)',
     boxShadow: '0 2px 0 0 rgba(215,163,225,.84)',
     color: 'white',
-    borderRadius: '5px',
+    borderRadius: '0',
   },
   icon: {
     float: 'right',
@@ -31,7 +31,7 @@ const ButtonAnimated = props => (
       height: '60px',
       backgroundColor: `${props.buttonColor}`,
       color: `${props.color}`,
-      borderRadius: '5px',
+      borderRadius: '0',
     }} 
     animated
     onClick={props.onClick ? props.onClick : null}

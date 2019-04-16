@@ -8,7 +8,7 @@ import HowItWorks from './HowItWorks';
 const MamaType = () => (
   <div className='mama-type'>
     <h1 className='title'>WHICH MAMA ARE YOU?</h1>
-    <div className='divider' />
+    {/* <div className='divider' /> */}
     <div className='card-wrapper' id='type-card-wrapper'>
       <TypeCard
         img={prenatal}

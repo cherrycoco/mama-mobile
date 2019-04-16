@@ -59,7 +59,12 @@
   }
 }
 
-
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 25px;
+    padding-top: 80px;
+  }
+}
 
 .card-wrapper {
   display: flex;
@@ -136,6 +141,13 @@
   padding: 0 7% 50px 7%;
 }
 
+.mama-type h5 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: #454545;
+}
+
 /* type cards  */
 
 #type-card-wrapper {
@@ -143,8 +155,7 @@
 }
 
 .type-card {
-  width: 20vw;
-  min-width: 225px;
+  width: 225px;
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -271,17 +282,49 @@
   margin-top: 0;
 }
 
-.mama-type h5 {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  color: #454545;
+@media only screen and (max-width: 620px) {
+  .price-card h2 {
+    font-size: 26px;
+  }
+  
+  .price-card p {
+    font-size: 14px;
+  }
+  
+  .price-card h4 {
+    font-size: 16px;
+  }
+
+  .price-card {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .price-card h2 {
+    font-size: 18px;
+  }
+  
+  .price-card p {
+    font-size: 12px;
+  }
+  
+  .price-card h4 {
+    font-size: 14px;
+  }
+
+  .price-card {
+    height: 40px;
+  }
 }
 
 /* visit our blog */
 
 #visit-blog {
   position: relative;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #visit-blog-content {
@@ -303,17 +346,28 @@
 /* give gift certificate */
 
 #give-gift-certificate {
-  margin: 150px 0 50px 0;
+  margin: 150px auto 50px auto;
+  width: 100vw;
+  max-width: 620px;
 }
 
 #give-gift-certificate img {
   display: block;
+  width: 100%;
   margin: 40px auto;
 }
 
 #give-gift-certificate-button {
-  width: 300px;
+  width: 80%;
+  max-width: 400px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 25px;
+    padding-top: 80px;
+  }
 }
 
 /* seen on */
@@ -345,7 +399,7 @@
 }
 
 #upcoming-events h2 {
-  width: 80%;
+  width: 90%;
   background-color: #E4B9D7;
   text-align: center;
   margin-left: auto;
@@ -355,7 +409,7 @@
 }
 
 #upcoming-events-content {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }

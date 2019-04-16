@@ -5,18 +5,20 @@
 
 .FAQ-card-questions {
   cursor: pointer;
-  margin: 20px;
+  margin: 30px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .FAQ-card-questions h4 {
-  display: inline-block;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
   font-size: 20px;
   font-weight: 400;
 }
 
 .FAQ-card-questions i {
-  margin-top: -8px;
   color: #cea6dd;
 }
 
@@ -32,4 +34,30 @@
 
 .FAQ-card-answers b {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 880px) {
+  #FAQ {
+    padding: 20px 10% 100px 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #FAQ {
+    padding: 20px 5% 100px 5%;
+  }
+
+  .FAQ-card-questions h4 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #FAQ {
+    padding: 20px 2% 50px 2%;
+  }
+
+  .FAQ-card-questions h4 {
+    font-size: 14px;
+  }
 }
