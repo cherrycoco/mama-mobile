@@ -7,7 +7,7 @@ import step3 from '../../assets/how-it-works-3.png';
 const HowItWorks = () => (
   <div id='how-it-works'>
     <h1 className='title'>HOW IT WORKS</h1>
-    <div className='card-wrapper'>
+    <div className='card-wrapper' id='how-it-works-wrapper'>
       <HowItWorksCard 
         img={step1} 
         title='Planning' 

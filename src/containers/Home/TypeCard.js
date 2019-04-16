@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../components/Button/ButtonBorder';
+import Button from '../../components/Button/ButtonBasic';
 
 class TypeCard extends React.Component {
 
@@ -33,7 +33,10 @@ class TypeCard extends React.Component {
         <h2>{this.props.title}</h2>
 
         <div className={this.state.hover ? 'type-card-description show-description' : 'type-card-description'}>
-          <p>{this.props.description}</p>
+          <div className='type-card-paragraph'>
+            <p>{this.props.description1}</p>
+            <p>{this.props.description2}</p>
+          </div>
           <div className='type-card-button'>
             <Button 
               content='BOOK NOW'
