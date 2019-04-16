@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 import Button from '../../components/Button/ButtonAnimated';
 import ScrollAnimation from 'react-animate-on-scroll';
 import LocationSelect from '../../components/LocationSelect/index';
@@ -58,7 +57,7 @@ const FirstImage = (props) => (
       <div id='home-first-image-content'>
         <h1>{props.title}</h1>
         <div id='location'>
-          <div id='location-select'>
+          <div id='location-select-wrapper'>
             <LocationSelect />
           </div>
           <div className='book-button'>

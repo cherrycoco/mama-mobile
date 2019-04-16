@@ -32,13 +32,63 @@
   margin: 40px auto;
 }
 
-#location-select {
+#location-select-wrapper {
   float: left;
+}
+
+#location-select {
+  background-color: white;
+  width: 300px;
+  height: 55px;
+  padding: 10px;
+  position: relative;
 }
 
 .book-button {
   width: 200px;
   float: right;
+}
+
+@media only screen and (max-width: 750px) {
+  #home-first-image-content h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  #home-first-image-content h1 {
+    font-size: 2em;
+  }
+
+  #home-first-image-content {
+    width: 90%;
+  }
+
+  .book-button {
+    width: 120px;
+  }
+
+  .book-button h3{
+    font-size: 12px !important;
+  }
+
+  #location {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .book-button {
+    width: 100px;
+  }
+
+  #location {
+    width: 320px;
+  }
+
+  #location-select {
+    width: 220px;
+  }
 }
 
 .title {
@@ -225,9 +275,13 @@
   #type-card-wrapper {
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .mama-type {
+    padding: 0;
   }
 }
-
 /* price cards */
 
 #prices {
@@ -298,6 +352,12 @@
   .price-card {
     height: 80px;
   }
+
+  #prices {
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -346,7 +406,7 @@
 /* give gift certificate */
 
 #give-gift-certificate {
-  margin: 150px auto 50px auto;
+  margin: 100px auto 20px auto;
   width: 100vw;
   max-width: 620px;
 }

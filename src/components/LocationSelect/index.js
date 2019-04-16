@@ -24,13 +24,6 @@ const locations = [
 ];
 
 const styles = {
-  root: {
-    backgroundColor: 'white',
-    width: '300px',
-    height: '55px',
-    padding: '10px',
-    position: 'relative',
-  },
   icon: {
     position: 'absolute',
     left: '10px',
@@ -41,7 +34,7 @@ const styles = {
   dropdown: {
     position: 'absolute',
     left: '35px',
-    width: '260px',
+    minWidth: '80%',
     color: '#5f5f5f',
     border: 'none',
     fontSize: '16px',
@@ -55,7 +48,7 @@ const locationOptions = locations.map(location => ({
 }));
 
 const LocationSelect = ({ location, changeLocation}) => (
-  <div style={styles.root}>
+  <div id='location-select'>
     <Icon style={styles.icon} size='large' name='map marker alternate' />
     <Dropdown 
       style={styles.dropdown}
