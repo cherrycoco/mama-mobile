@@ -6,7 +6,7 @@ import OurMission from './OurMission';
 import './about.css';
 
 const About = () => (
-  <div>
+  <div className='page'>
     <ScrollToTop />
     <h1 className='about-title'>OUR<b> MISSION</b></h1>
     <OurMission />

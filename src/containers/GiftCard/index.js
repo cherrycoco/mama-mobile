@@ -27,7 +27,7 @@ class GiftCard extends React.Component {
 
   render () {
     return (
-      <div id='gift-card'>
+      <div className='page' id='gift-card'>
         <ScrollToTop />
         <h1 className='title'>SEND A MAMA SOME LOVE!</h1>
         <div className="gift-up-target" data-site-id="b4505f6e-76b7-4266-baf7-997157d45350" data-platform="Other" />

@@ -3,5 +3,16 @@
 }
 
 #gift-card .title {
-  margin-top: 80px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #gift-card .title {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .gift-up-target {
+    margin-bottom: 50px;
+  }
 }

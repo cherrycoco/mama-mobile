@@ -102,6 +102,6 @@ a:hover {
   letter-spacing: 0.15em;
 }
 
-/* .button-border h3: hover {
-  color: white;
-} */
+.page {
+  padding-top: 80px;
+}
