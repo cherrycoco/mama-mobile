@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
 import logo from '../../assets/mama-mobile-logo.png';
 import ScrollAnimation from 'react-animate-on-scroll';
+import './footer.css';
 
 const MobileFooter = () => (
   <ScrollAnimation

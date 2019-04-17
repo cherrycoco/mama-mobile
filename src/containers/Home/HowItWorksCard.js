@@ -8,8 +8,8 @@ const HowItWorksCard = (props) => (
     animateOnce
   >
     <div className='how-it-works-card'>
-      <h2>{props.title}</h2>
       <img src={props.img} alt={props.alt} />
+      <h2>{props.title}</h2>
       <p><b>{props.subtitle}</b></p>
       <p>{props.description}</p>
     </div>

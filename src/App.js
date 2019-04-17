@@ -8,7 +8,7 @@ import About from './containers/About/index';
 import Contact from './containers/Contact/index';
 import GiftCard from './containers/GiftCard/index';
 import Blog from './containers/Blog/index';
-import Footer from './containers/Footer/index';
+import Footer from './containers/Footer/MobileFooter';
 import './App.css';
 import Career from './containers/Career';
 
