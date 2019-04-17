@@ -50,3 +50,11 @@
   border-radius: 0 !important;
 }
 
+@media only screen and (max-width: 550px) {
+  #subscribe-dialog {
+    width: 350px;
+  }
+  .subscribe-form-button button {
+    font-size: 13px !important;
+  }
+}

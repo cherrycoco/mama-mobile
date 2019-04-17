@@ -69,7 +69,7 @@
   }
 
   .book-button h3{
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
 
   #location {
@@ -78,16 +78,21 @@
 }
 
 @media only screen and (max-width: 460px) {
+
+  .book-button h3{
+    letter-spacing: 1px;
+  }
+
   .book-button {
     width: 100px;
   }
 
   #location {
-    width: 320px;
+    width: 340px;
   }
 
   #location-select {
-    width: 220px;
+    width: 240px;
   }
 
   #home-first-image {
