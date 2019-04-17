@@ -134,9 +134,8 @@
 }
 
 .how-it-works-card {
-  width: 30%;
   min-width: 210px;
-  margin-bottom: 30px;
+  margin: 30px 20px;
 }
 
 .how-it-works-card img {
@@ -178,6 +177,8 @@
     width: 100%;
     margin-bottom: 30px;
     margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .how-it-works-card img {
@@ -301,6 +302,7 @@
 
 #price-card-wrapper {
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 
 .price-card {
@@ -367,6 +369,9 @@
     margin-top: 0;
   }
 
+  #price-card-wrapper {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 450px) {

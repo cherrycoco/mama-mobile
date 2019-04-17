@@ -2,6 +2,7 @@
   height: 550px;
   width: 100vw;
   display: flex;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   background-size: cover;
