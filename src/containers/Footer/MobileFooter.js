@@ -15,6 +15,7 @@ const MobileFooter = () => (
       <Link to='/about'>About</Link>
       <Link to='/gift-card'>Gift Card</Link>
       <Link to='/careers'>Careers</Link>
+      <Link to='/blog'>Blog</Link>
       <Link to='/contact'>Contact</Link>
       <img src={logo} alt='mama mobile logo' />
       <div>
