@@ -89,6 +89,11 @@
   #location-select {
     width: 220px;
   }
+
+  #home-first-image {
+    height: 550px;
+    background-attachment: initial;
+  }
 }
 
 .title {
