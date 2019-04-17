@@ -2,6 +2,46 @@
   margin-top: 100px;
 }
 
+#mobile-footer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background: linear-gradient(245deg, #ffc0cb, white, #c0fff4);
+  animation: Gradient 16s ease infinite;
+  background-size: 600% 600%;
+}
+
+#mobile-footer a {
+  margin-bottom: 10px; 
+}
+
+#mobile-footer img {
+  margin-top: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#mobile-footer p {
+  padding-top: 15px;
+}
+
+@keyframes Gradient
+{
+  0%  { 
+    background-position: 0% 50%;
+  }
+  50% { 
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #footer-content {
   display: flex;
   flex-direction: row;
