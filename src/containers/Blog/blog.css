@@ -15,7 +15,9 @@
 }
 
 #blog-select {
-  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
   margin-left: auto;
   margin-right: auto;
 }

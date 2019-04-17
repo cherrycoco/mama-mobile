@@ -10,7 +10,7 @@ const HowItWorksCard = (props) => (
     <div className='how-it-works-card'>
       <img src={props.img} alt={props.alt} />
       <h2>{props.title}</h2>
-      <p><b>{props.subtitle}</b></p>
+      {/* <p><b>{props.subtitle}</b></p> */}
       <p>{props.description}</p>
     </div>
   </ScrollAnimation>
