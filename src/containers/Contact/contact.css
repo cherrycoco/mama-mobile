@@ -13,12 +13,15 @@
 
 #contact-title {
   height: 250px;
+  margin-left: 40px;
 }
 
 #contact-form {
   width: 50%;
   min-width: 350px;
   padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-form-input {

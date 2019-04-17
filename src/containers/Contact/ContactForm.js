@@ -75,7 +75,7 @@ class ContactForm extends React.Component {
 
   render () {
     return (
-      <form id='contact-form' className='career-contact-form' onSubmit={this.handleSubmit}>
+      <form id='contact-form' onSubmit={this.handleSubmit}>
         <div className='contact-form-input'>
           <TextField
             required

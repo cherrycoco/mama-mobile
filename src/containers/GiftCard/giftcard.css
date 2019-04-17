@@ -1,5 +1,6 @@
 .gift-up-target {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #gift-card .title {
@@ -10,9 +11,5 @@
   #gift-card .title {
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .gift-up-target {
-    margin-bottom: 50px;
   }
 }
