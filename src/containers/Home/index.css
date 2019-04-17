@@ -130,7 +130,7 @@
 
 /* How it works */
 #how-it-works {
-  padding: 0 10%;
+  padding: 40px 10% 0 10%;
 }
 
 .how-it-works-card {
@@ -196,7 +196,7 @@
 /* MamaType */
 
 .mama-type {
-  padding: 0 7% 50px 7%;
+  padding: 0 7%;
 }
 
 .mama-type h5 {
