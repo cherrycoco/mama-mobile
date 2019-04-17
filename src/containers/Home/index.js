@@ -12,6 +12,7 @@ import UpcomingEvents from './UpcomingEvents';
 import FAQ from '../FAQ/index';
 import Prices from './Prices';
 import HowItWorks from './HowItWorks';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => (
   <div>
@@ -23,13 +24,36 @@ const Home = () => (
     <SeenOn />
     <HowItWorks />
     <MamaType />
-    <div className='divider' />
     <Prices />
     <FAQ />
-    <h1 className='title'>What Our Mama Tribe Says!</h1>
-    <Testimonial />
-    <UpcomingEvents />
-    <GiftCertificate />
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <h1 className='title testimonial-title'>What Our Mama Tribe Says!</h1>
+    </ScrollAnimation>
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <Testimonial />
+    </ScrollAnimation>
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <UpcomingEvents />
+    </ScrollAnimation>
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <GiftCertificate />
+    </ScrollAnimation>
     <VisitBlog />
   </div>
 )

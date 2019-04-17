@@ -3,6 +3,10 @@
   background-color: rgb(250, 227, 253, 0.2);
 }
 
+#FAQ h1{
+  padding-top: 20px;
+}
+
 .FAQ-card-questions {
   cursor: pointer;
   margin: 30px 10px;

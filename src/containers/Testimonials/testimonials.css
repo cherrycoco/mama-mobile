@@ -103,6 +103,11 @@
 }
 
 @media only screen and (max-width: 425px) {
+
+  #customer-avatar-wrapper {
+    width: 90%;
+  }
+
   .customer-avatar-content h4 {
     font-size: 12px;
   }
@@ -113,5 +118,10 @@
 
   .testimonial-card {
     padding: 20px;
+    border-radius: 0;
+  }
+
+  #testimonial {
+    background-attachment: initial;
   }
 }

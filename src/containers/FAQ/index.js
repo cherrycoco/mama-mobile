@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './FAQ.css';
 
 class FAQ extends React.Component {
@@ -177,126 +178,138 @@ class FAQ extends React.Component {
   render () {
     return (
       <div id='FAQ'>
-        <h1 className='title'>Frequently Asked Questions</h1>
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a1')}>
-            {this.state.a1 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you have a physical location?</h4>
+        <ScrollAnimation
+          animatePreScroll
+          animateIn="slideInUp"
+          animateOnce
+        >
+          <h1 className='title'>Frequently Asked Questions</h1>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animatePreScroll
+          animateIn="slideInUp"
+          animateOnce
+        >
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a1')}>
+              {this.state.a1 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you have a physical location?</h4>
+            </div>
+            {this.state.a1 && this.renderA1()}
           </div>
-          {this.state.a1 && this.renderA1()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a2')}>
-            {this.state.a2 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Is this covered by insurance benefits?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a2')}>
+              {this.state.a2 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Is this covered by insurance benefits?</h4>
+            </div>
+            {this.state.a2 && this.renderA2()}
           </div>
-          {this.state.a2 && this.renderA2()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a3')}>
-            {this.state.a3 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>What is your cancellation policy?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a3')}>
+              {this.state.a3 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>What is your cancellation policy?</h4>
+            </div>
+            {this.state.a3 && this.renderA3()}
           </div>
-          {this.state.a3 && this.renderA3()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a4')}>
-            {this.state.a4 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you have that pregnancy pillow?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a4')}>
+              {this.state.a4 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you have that pregnancy pillow?</h4>
+            </div>
+            {this.state.a4 && this.renderA4()}
           </div>
-          {this.state.a4 && this.renderA4()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a5')}>
-            {this.state.a5 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>My boobs are leaky</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a5')}>
+              {this.state.a5 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>My boobs are leaky</h4>
+            </div>
+            {this.state.a5 && this.renderA5()}
           </div>
-          {this.state.a5 && this.renderA5()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a6')}>
-            {this.state.a6 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you offer direct billing?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a6')}>
+              {this.state.a6 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you offer direct billing?</h4>
+            </div>
+            {this.state.a6 && this.renderA6()}
           </div>
-          {this.state.a6 && this.renderA6()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a7')}>
-            {this.state.a7 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>How do I book?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a7')}>
+              {this.state.a7 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>How do I book?</h4>
+            </div>
+            {this.state.a7 && this.renderA7()}
           </div>
-          {this.state.a7 && this.renderA7()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a8')}>
-            {this.state.a8 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>How do I pay?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a8')}>
+              {this.state.a8 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>How do I pay?</h4>
+            </div>
+            {this.state.a8 && this.renderA8()}
           </div>
-          {this.state.a8 && this.renderA8()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a9')}>
-            {this.state.a9 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Will I receive an insurance receipt?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a9')}>
+              {this.state.a9 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Will I receive an insurance receipt?</h4>
+            </div>
+            {this.state.a9 && this.renderA9()}
           </div>
-          {this.state.a9 && this.renderA9()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a10')}>
-            {this.state.a10 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>What do I do with baby during my massage?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a10')}>
+              {this.state.a10 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>What do I do with baby during my massage?</h4>
+            </div>
+            {this.state.a10 && this.renderA10()}
           </div>
-          {this.state.a10 && this.renderA10()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a11')}>
-            {this.state.a11 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you massage papas too?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a11')}>
+              {this.state.a11 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you massage papas too?</h4>
+            </div>
+            {this.state.a11 && this.renderA11()}
           </div>
-          {this.state.a11 && this.renderA11()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a12')}>
-            {this.state.a12 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>When will you come to my area?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a12')}>
+              {this.state.a12 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>When will you come to my area?</h4>
+            </div>
+            {this.state.a12 && this.renderA12()}
           </div>
-          {this.state.a12 && this.renderA12()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a13')}>
-            {this.state.a13 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you offer group massages for mama friends?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a13')}>
+              {this.state.a13 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you offer group massages for mama friends?</h4>
+            </div>
+            {this.state.a13 && this.renderA13()}
           </div>
-          {this.state.a13 && this.renderA13()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a14')}>
-            {this.state.a14 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Do you have gift certificates?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a14')}>
+              {this.state.a14 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Do you have gift certificates?</h4>
+            </div>
+            {this.state.a14 && this.renderA14()}
           </div>
-          {this.state.a14 && this.renderA14()}
-        </div>
 
-        <div className='FAQ-card'>
-          <div className='FAQ-card-questions' onClick={() => this.handleClick('a15')}>
-            {this.state.a15 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-            <h4>Where are your prices?</h4>
+          <div className='FAQ-card'>
+            <div className='FAQ-card-questions' onClick={() => this.handleClick('a15')}>
+              {this.state.a15 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
+              <h4>Where are your prices?</h4>
+            </div>
+            {this.state.a15 && this.renderA15()}
           </div>
-          {this.state.a15 && this.renderA15()}
-        </div>
+        </ScrollAnimation>
       </div>
     )
   }

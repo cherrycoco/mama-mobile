@@ -103,8 +103,8 @@
   text-align: center;
   font-size: 45px;
   line-height: .9em;
-  margin-bottom: 50px;
-  padding-top: 80px;
+  padding-bottom: 30px;
+  padding-top: 50px;
   margin-top: 0;
 }
 
@@ -176,12 +176,15 @@
 
   .how-it-works-card {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 
   .how-it-works-card img {
     min-width: 100px;
     width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .how-it-works-card h2 {
@@ -281,6 +284,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .mama-type {
@@ -392,22 +396,6 @@
   margin-right: auto;
 }
 
-#visit-blog-content {
-  position: absolute;
-  right: 60px;
-  top: 30%;
-}
-
-#visit-blog-content h1 {
-  color: white;
-  margin-bottom: 20px;
-}
-
-#visit-blog-button {
-  float: right;
-  width: 250px;
-}
-
 /* give gift certificate */
 
 #give-gift-certificate {
@@ -451,9 +439,17 @@
 
 @media only screen and (max-width: 450px) {
   #seen-on img {
-    width: 60px !important;
-    margin-left: calc((100% - 240px) / 8);
-    margin-right: calc((100% - 240px) / 8);
+    width: 70px !important;
+    margin-left: calc((100% - 230px) / 8);
+    margin-right: calc((100% - 230px) / 8);
+  }
+
+  #seen-on img:first-child {
+    width: 50px !important;
+  }
+
+  #seen-on img:last-child {
+    width: 40px !important;
   }
 }
 
@@ -487,4 +483,8 @@
 #upcoming-events-content p 
 #upcoming-events-content li {
   font-size: 15px;
+}
+
+h1.testimonial-title {
+  margin-top: 20px;
 }

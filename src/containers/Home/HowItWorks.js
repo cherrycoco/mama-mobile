@@ -3,10 +3,17 @@ import HowItWorksCard from './HowItWorksCard';
 import step1 from '../../assets/how-it-works-1.png';
 import step2 from '../../assets/how-it-works-2.png';
 import step3 from '../../assets/how-it-works-3.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const HowItWorks = () => (
   <div id='how-it-works'>
-    <h1 className='title'>HOW IT WORKS</h1>
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <h1 className='title'>HOW IT WORKS</h1>
+    </ScrollAnimation>
     <div className='card-wrapper' id='how-it-works-wrapper'>
       <HowItWorksCard 
         img={step1} 

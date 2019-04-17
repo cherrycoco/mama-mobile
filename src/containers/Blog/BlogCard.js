@@ -49,9 +49,8 @@ export default class BlogCard extends React.Component { // eslint-disable-line r
     return (
       <ScrollAnimation
         animatePreScroll
-        animateIn="fadeIn"
+        animateIn="slideInUp"
         animateOnce
-        animateOut="fadeOut"
       >
         <div className='blog-card-wrapper'
           onMouseEnter={this.handleMouseEnter}

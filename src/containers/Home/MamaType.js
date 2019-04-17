@@ -3,12 +3,18 @@ import TypeCard from './TypeCard';
 import prenatal from '../../assets/type-prenatal.jpg';
 import postnatal from '../../assets/type-postnatal.png';
 import couples from '../../assets/couple.png';
-import HowItWorks from './HowItWorks';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const MamaType = () => (
   <div className='mama-type'>
-    <h1 className='title'>WHICH MAMA ARE YOU?</h1>
-    {/* <div className='divider' /> */}
+    <ScrollAnimation
+      animatePreScroll
+      animateIn="slideInUp"
+      animateOnce
+    >
+      <h1 className='title'>WHICH MAMA ARE YOU?</h1>
+    </ScrollAnimation>
     <div className='card-wrapper' id='type-card-wrapper'>
       <TypeCard
         img={prenatal}

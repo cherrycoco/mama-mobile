@@ -59,11 +59,11 @@
 }
 
 .blog-card-wrapper {
-  width: 95vw;
+  width: 90vw;
   max-width: 400px;
   height: 360px;
   position: relative;
-  margin: 40px 20px;
+  margin: 20px;
   cursor: pointer;
   overflow: hidden;
 }

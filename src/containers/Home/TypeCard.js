@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button/ButtonBasic';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class TypeCard extends React.Component {
 
@@ -24,6 +25,11 @@ class TypeCard extends React.Component {
 
   render () {
     return (
+      <ScrollAnimation
+        animatePreScroll
+        animateIn="slideInUp"
+        animateOnce
+      >
       <div 
         className='type-card'
         onMouseEnter={this.handleMouseEnter}
@@ -46,6 +52,7 @@ class TypeCard extends React.Component {
           </div>
         </div>
       </div>
+      </ScrollAnimation>
     )
   }
 }

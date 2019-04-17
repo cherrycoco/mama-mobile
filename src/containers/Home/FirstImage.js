@@ -39,34 +39,28 @@ const renderButton = () => (
 )
 
 const FirstImage = (props) => (
-  <ScrollAnimation
-    animatePreScroll
-    animateIn="fadeInUp"
-    animateOnce
+  <div 
+    id='home-first-image' 
+    style=
+      {{backgroundImage: 
+        `linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)),
+        url(${props.img})`
+      }} 
   >
-    <div 
-      id='home-first-image' 
-      style=
-        {{backgroundImage: 
-          `linear-gradient(
-          rgba(255, 255, 255, 0), 
-          rgba(255, 255, 255, 0)),
-          url(${props.img})`
-        }} 
-    >
-      <div id='home-first-image-content'>
-        <h1>{props.title}</h1>
-        <div id='location'>
-          <div id='location-select-wrapper'>
-            <LocationSelect />
-          </div>
-          <div className='book-button'>
-            {props.location !== "Don't see your city?" ? renderJane(props.location) : renderButton()}
-          </div>
+    <div id='home-first-image-content'>
+      <h1>{props.title}</h1>
+      <div id='location'>
+        <div id='location-select-wrapper'>
+          <LocationSelect />
+        </div>
+        <div className='book-button'>
+          {props.location !== "Don't see your city?" ? renderJane(props.location) : renderButton()}
         </div>
       </div>
     </div>
-  </ScrollAnimation>
+  </div>
 )
 
 const mapStateToProps = (state) => ({
