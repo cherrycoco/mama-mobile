@@ -156,7 +156,7 @@ class FAQ extends React.Component {
   renderA15 = () => (
     <div className='FAQ-card-answers'> 
       <p>
-        Ready to talk dollas’?! Check out our main page- you will see our “A La Carté” listings. When you click on our online schedule you will also see a full list of services with prices.
+        Ready to talk dollas’?! Check out our main page- you will see our “Pricing”. When you click on our online schedule you will also see a full list of services with prices.
       </p>
       <p>
         <Link to='/prices'>Click here to book online/see prices</Link>

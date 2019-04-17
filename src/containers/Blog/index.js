@@ -9,10 +9,10 @@ const Blog = ({ blogs, filterBlog}) => (
     <ScrollToTop />
     <h1 className='title'>WELCOME TO MAMASPHERE!</h1>
     <div id='blog-select'>
-      <button>Show All</button>
-      <button>Educate</button>
-      <button>Booking</button>
-      <button>Mama Review</button>
+      <button onClick={() => filterBlog('all')}>Show All</button>
+      <button onClick={() => filterBlog('Educate')}>Educate</button>
+      <button onClick={() => filterBlog('Booking')}>Booking</button>
+      <button onClick={() => filterBlog('Mama Review')}>Mama Review</button>
     </div>
     <div className='clear-float' />
     <div id='blog-cards'>
@@ -28,9 +28,10 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  filterBlog: (blogType) => (
+  filterBlog: (blogType) => {
+    console.log('filter');
     dispatch(filterBlog(blogType))
-  )
+  }
 });
 
 export default connect (

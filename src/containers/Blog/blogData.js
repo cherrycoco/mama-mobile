@@ -6,7 +6,7 @@ import blog11 from '../../assets/blog11.jpg';
 import blog10 from '../../assets/blog10.jpg';
 import blog9 from '../../assets/blog9.jpg';
 import blog8 from '../../assets/blog8.jpg';
-import blog7 from '../../assets/blog8.jpg';
+import blog7 from '../../assets/blog3.jpg';
 import blog6 from '../../assets/blog6.jpg';
 import blog5 from '../../assets/blog5.jpg';
 import blog4 from '../../assets/blog4.jpg';
@@ -35,7 +35,7 @@ const blogData = [
     id: 13,
     date_created: new Date('NOVEMBER 29, 2018'),
     img: blog13,
-    title: 'Partner Massage',
+    title: 'HELP My Partner Wants a Massage Too!',
     type: 'Educate',
   },
   {
@@ -49,7 +49,7 @@ const blogData = [
     id: 11,
     date_created: new Date('NOVEMBER 16, 2018'),
     img: blog11,
-    title: 'Guest Blog: Saving During Maternity Leave',
+    title: 'Is it possible to save money during maternity leave? Guest Blog: Assured Kids Boutique',
     type: 'Educate',
   },
   {
@@ -126,7 +126,7 @@ const blogData = [
     id: 0,
     date_created: new Date('MARCH 9, 2018'),
     img: blog0,
-    title: "Taking a Mama Minute",
+    title: "Why sometimes you need to take a Mama Minute",
     type: 'Educate',
   },
 ];

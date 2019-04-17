@@ -91,6 +91,7 @@
 }
 
 .blog-card-tag h3 {
+  text-transform: capitalize;
   color: #4a4a4a;
   font-weight: 400;
   font-size: 15px;
