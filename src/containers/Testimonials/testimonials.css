@@ -1,5 +1,5 @@
 #testimonial {
-  height: 550px;
+  height: 450px;
   width: 100vw;
   display: flex;
   margin-top: 20px;
@@ -76,8 +76,8 @@
 
 @media only screen and (max-width: 720px) {
   .testimonial-card {
-    width: 90%;
-    height: 85%;
+    width: 85%;
+    height: 80%;
     padding: 40px;
     padding-bottom: 20px;
   }
