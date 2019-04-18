@@ -15,7 +15,7 @@ class Nav extends React.Component {
         <NavLink activeStyle={activeStyle} to='/blog'>BLOG</NavLink>
         <NavLink activeStyle={activeStyle} to='/contact'>CONTACT</NavLink>
         <form type='get' action='https://mamamobilemassage.janeapp.com/'>
-          <Button color='#c68bbdb3' content='BOOK' />
+          <Button buttonColor='white' color='#c68bbdb3' content='BOOK' />
         </form>
       </div>
   )}

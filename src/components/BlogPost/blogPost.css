@@ -1,0 +1,39 @@
+#blog-post-header {
+  margin-top: 100px;
+}
+
+#blog-post-header-link {
+  text-align: center;
+}
+
+#blog-post-header-link a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #898989;
+}
+
+#blog-post-header-link i {
+  color: #898989;
+  padding-left: 5px;
+}
+
+#blog-post-header h1 {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.blog-header-author-date {
+  text-align: center;
+}
+
+.blog-header-author-date h5 {
+  color: #898989;
+  display: inline-block;
+}
+
+.author-divider {
+  margin: 0 10px;
+  font-size: 1.8em;
+  color: #898989;
+}

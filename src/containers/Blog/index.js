@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import ScrollToTop from '../../components/ScrollTop/index';
 import BlogCard from './BlogCard';
 import filterBlog from '../../actions/filterBlog';
@@ -17,7 +18,11 @@ const Blog = ({ blogs, filterBlog}) => (
     <div className='clear-float' />
     <div id='blog-cards'>
       {blogs.map((blog, idx) => {
-        return (<BlogCard blog={blog} key={idx} />)
+        return (
+          <Link key={idx} to={`/blog/${blog.title}`}>
+            <BlogCard blog={blog} />
+          </Link>
+        )
       })}
     </div>
   </div>
