@@ -63,6 +63,13 @@ export default class Subscribe extends React.Component {
           city: '',
           open: false
         });
+      } else {
+        alert('Sorry, your subscription did not go through - please try again later or e-mail us at info@mamamobilemassage.com');
+        this.setState({
+          email: '',
+          city: '',
+          open: false
+        });
       }
     });
   }
@@ -83,7 +90,7 @@ export default class Subscribe extends React.Component {
           </div>
           <div id='subscribe-dialog-body'>
             <p>We are expanding quickly and we will let you know when we’re coming to your area.</p>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit.bind(this)}>
               <div className='subscribe-form-input'>
                 <TextField
                   style={styles.textField}
