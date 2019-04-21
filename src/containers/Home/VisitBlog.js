@@ -2,9 +2,12 @@ import React from 'react';
 import BlogCard from '../Blog/BlogCard';
 import blogData from '../Blog/blogData';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import selectBlogPost from '../../actions/selectBlogPost';
 import '../Blog/blog.css';
 
-const VisitBlog = () => (
+const VisitBlog = ({ selectBlogPost }) => (
   <div id='visit-blog'>
     <ScrollAnimation
       animatePreScroll
@@ -15,10 +18,27 @@ const VisitBlog = () => (
     </ScrollAnimation>
     <div id='blog-cards' className='blog-cards-home'>
       {blogData.slice(0, 4).map((blog, idx) => {
-        return (<BlogCard blog={blog} key={idx} />)
+        return (
+          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title}`}>
+            <BlogCard blog={blog} />
+          </Link>
+        )
       })}
     </div>
   </div>
 )
 
-export default VisitBlog;
+const mapStateToProps = (state) => ({
+  blogs: state.blogs
+});
+
+const mapDispatchToProps = dispatch => ({
+  selectBlogPost: (blogPost) => {
+    dispatch(selectBlogPost(blogPost))
+  }
+});
+
+export default connect (
+  mapStateToProps, 
+  mapDispatchToProps
+)(VisitBlog);

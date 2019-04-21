@@ -1,17 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import MaterialButton from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import { createMuiTheme } from '@material-ui/core/styles';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/mama-mobile-logo.png';
-import ButtonBasic from '../../components/Button/ButtonBasic';
 import { Button, Icon } from 'semantic-ui-react';
 
 const styles = {
@@ -52,9 +46,11 @@ class MobileNav extends React.Component {
           <NavLink to='/'><img width="200" src={logo} /></NavLink>
         </div>
         <Divider style={styles.divider} />
-        <Button style={styles.bookButton}>
-          Book a Massage
-        </Button>
+        <form type='get' action='https://mamamobilemassage.janeapp.com/'>
+          <Button style={styles.bookButton}>
+            Book a Massage
+          </Button>
+        </form>
         <List>
           {['about', 'gift-card', 'blog', 'contact', 'careers'].map((text, index) => {
             let endPoint = text.split('-').join(' ');

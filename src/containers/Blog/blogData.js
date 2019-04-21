@@ -45,7 +45,7 @@ const blogData = [
       },
       {
         type: 'img',
-        content: blog15
+        content: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1555877668/blog/blog_1_2.jpg'
       },
       {
         type: 'p_arr',

@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import img from '../../assets/baby2.jpg';
-import imgActive from '../../assets/sarah.jpeg';
+import img from '../../assets/rsz_1baby3.jpg';
 import ella from '../../assets/review-ella.png';
 import ellaBW from '../../assets/review-ella-bw.jpg';
 import vanessa from '../../assets/review-vanessa.png';
@@ -22,12 +21,12 @@ const reviews = [
 const Testimonials = ({ testimonial, selectTestimonial }) => (
   <div 
     id='testimonial' 
-    style={{backgroundImage: 
-        `linear-gradient(
-        rgba(255, 255, 255, 0.3), 
-        rgba(255, 255, 255, 0.3)),
-        url(${img})`
-      }} 
+    // style={{backgroundImage: 
+    //     `linear-gradient(
+    //     rgba(255, 255, 255, 0.3), 
+    //     rgba(255, 255, 255, 0.3)),
+    //     url(${img})`
+    //   }} 
   >
     <div className='testimonial-card'>
       <Icon name='quote left' size='big' />
