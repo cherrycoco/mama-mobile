@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
 import logo from '../../assets/mama-mobile-logo.png';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Intercom from 'react-intercom';
 import './footer.css';
 
 const MobileFooter = () => (
@@ -11,6 +12,7 @@ const MobileFooter = () => (
     animateIn="slideInUp"
     animateOnce
   >
+    <Intercom appID={process.env.REACT_APP_INTERCOM_ID} />
     <div id='mobile-footer'>
       <Link to='/about'>About</Link>
       <Link to='/gift-card'>Gift Card</Link>

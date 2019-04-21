@@ -31,16 +31,16 @@ const Testimonials = ({ testimonial, selectTestimonial }) => (
     <div className='testimonial-card'>
       <Icon name='quote left' size='big' />
       <p>{reviews[testimonial]}</p>
-      <div id='customer-avatar-wrapper'>
-        <div onClick={() => selectTestimonial(0)}>
-          <CustomerAvatar active={testimonial === 0 ? true : false} img={ellaBW} imgActive={ella} name='Ella' type='Postnatal' />
-        </div>
-        <div onClick={() => selectTestimonial(1)}>
-          <CustomerAvatar active={testimonial === 1 ? true : false} img={vanessaBW} imgActive={vanessa} name='Vanessa' type='Prenatal' />
-        </div>
-        <div onClick={() => selectTestimonial(2)}>
-          <CustomerAvatar active={testimonial === 2 ? true : false} img={madelineBW} imgActive={madeline} name='Madeline' type='Postnatal' />
-        </div>
+    </div>
+    <div id='customer-avatar-wrapper'>
+      <div onClick={() => selectTestimonial(0)}>
+        <CustomerAvatar active={testimonial === 0 ? true : false} img={ellaBW} imgActive={ella} name='Ella' type='Postnatal' />
+      </div>
+      <div onClick={() => selectTestimonial(1)}>
+        <CustomerAvatar active={testimonial === 1 ? true : false} img={vanessaBW} imgActive={vanessa} name='Vanessa' type='Prenatal' />
+      </div>
+      <div onClick={() => selectTestimonial(2)}>
+        <CustomerAvatar active={testimonial === 2 ? true : false} img={madelineBW} imgActive={madeline} name='Madeline' type='Postnatal' />
       </div>
     </div>
   </div>
