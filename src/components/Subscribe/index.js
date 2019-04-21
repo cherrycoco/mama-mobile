@@ -29,7 +29,7 @@ export default class Subscribe extends React.Component {
     this.state = {
       email: '',
       city: '',
-      open: true,
+      open: false,
     }
   };
 
