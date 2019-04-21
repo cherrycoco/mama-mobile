@@ -4,5 +4,6 @@ import locationBooking from './locationBooking';
 import team from './team';
 import testimonials from './testimonials';
 import blogs from './blogs';
+import blogPost from './blogPost';
 
-export default combineReducers({locationTeam, locationBooking, team, testimonials, blogs});
+export default combineReducers({locationTeam, blogPost, locationBooking, team, testimonials, blogs});

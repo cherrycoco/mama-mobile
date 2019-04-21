@@ -23,6 +23,13 @@
   text-align: center;
 }
 
+#blog-post-header img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
 .blog-header-author-date {
   text-align: center;
 }
@@ -36,4 +43,74 @@
   margin: 0 10px;
   font-size: 1.8em;
   color: #898989;
+}
+
+.blog-post-body {
+  padding: 30px 20% 80px 20%;
+}
+
+.blog-post-h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: rgb(198, 139, 189);
+  margin-bottom: 30px;
+}
+
+.blog-post-img {
+  width: 50%;
+  margin: 50px auto;
+  display: block;
+}
+
+.blog-post-quote {
+  width: 80%;
+  text-align: center;
+  margin: 50px auto;
+  line-height: 1.9rem;
+  letter-spacing: .03em;
+  font-size: 16px;
+}
+
+.blog-post-link {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.blog-post-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: .03em;
+  margin-bottom: 30px;
+}
+
+.blog-post-imgFull {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.blog-post-li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.blog-post-video {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .blog-post-body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .blog-post-img {
+    width: 70%;
+  }
+
+  .blog-post-quote {
+    width: 90%;
+  }
 }

@@ -8,7 +8,7 @@ import About from './containers/About/index';
 import Contact from './containers/Contact/index';
 import GiftCard from './containers/GiftCard/index';
 import Blog from './containers/Blog/index';
-import BlogPostHeader from './components/BlogPost/BlogPostHeader';
+import BlogPost from './components/BlogPost/index';
 import Footer from './containers/Footer/MobileFooter';
 import './App.css';
 import Career from './containers/Career';
@@ -25,7 +25,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route exact path="/blog" component={Blog} />
-            <Route path='/blog/:title' component={BlogPostHeader} />
+            <Route path='/blog/:title' component={BlogPost} />
             <Route path="/gift-card" component={GiftCard} />
             <Route path="/careers" component={Career} />
             <Footer />

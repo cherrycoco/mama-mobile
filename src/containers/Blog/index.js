@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import ScrollToTop from '../../components/ScrollTop/index';
 import BlogCard from './BlogCard';
 import filterBlog from '../../actions/filterBlog';
+import selectBlogPost from '../../actions/selectBlogPost';
 
-const Blog = ({ blogs, filterBlog}) => (
+const Blog = ({ blogs, filterBlog, selectBlogPost}) => (
   <div id='blog-post-wrapper'>
     <ScrollToTop />
     <h1 className='title'>WELCOME TO MAMASPHERE!</h1>
@@ -19,7 +20,7 @@ const Blog = ({ blogs, filterBlog}) => (
     <div id='blog-cards'>
       {blogs.map((blog, idx) => {
         return (
-          <Link key={idx} to={`/blog/${blog.title}`}>
+          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title}`}>
             <BlogCard blog={blog} />
           </Link>
         )
@@ -34,8 +35,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
   filterBlog: (blogType) => {
-    console.log('filter');
     dispatch(filterBlog(blogType))
+  },
+  selectBlogPost: (blogPost) => {
+    dispatch(selectBlogPost(blogPost))
   }
 });
 
