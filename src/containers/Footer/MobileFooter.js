@@ -12,7 +12,7 @@ const MobileFooter = () => (
     animateIn="slideInUp"
     animateOnce
   >
-    <Intercom appID={process.env.REACT_APP_INTERCOM_ID} />
+    <Intercom appID="dknh8le8" />
     <div id='mobile-footer'>
       <Link to='/about'>About</Link>
       <Link to='/gift-card'>Gift Card</Link>

@@ -51,6 +51,7 @@ export default class Subscribe extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    
     console.log(this.state);
     fetch('/.netlify/functions/subscribe', {
       method: 'POST',
