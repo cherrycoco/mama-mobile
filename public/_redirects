@@ -1,7 +1,2 @@
 # Redirects from what the browser requests to what we serve
-/home              /
-/about             /about
-/contact           /contact
-/blog              /blog
-/careers           /careers
-/gift-card         /gift-card
+/*    /index.html   200
