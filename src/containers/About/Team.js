@@ -17,7 +17,7 @@ const Team = ({ team }) => (
           funFact={member.funFact}
           title={member.title}
           name={member.name}
-          url={member.img} 
+          img={member.img} 
           location={member.area}
           color={colors[idx%colors.length]}
         />

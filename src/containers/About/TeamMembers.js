@@ -1,10 +1,4 @@
-import sam from '../../assets/sam.jpg';
-import judy from '../../assets/judy.jpg';
-import michelle from '../../assets/michelle.jpg';
-import lindsay from '../../assets/lindsay.jpg';
-import alma from '../../assets/alma.jpg';
-import oleksandra from '../../assets/oleksandra.jpg';
-import patricia from '../../assets/patricia.jpg';
+const comingSoon = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556066478/coming_soon.png';
 
 const Members = [
   {
@@ -17,7 +11,7 @@ const Members = [
       'I believe that wellness and relaxation are pillars for mamas of all stages of life.',
     ],
     funFact: 'Sam loves powerlifting and has two german shepherds!',
-    img: sam,
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065457/team/Sam.jpg',
   },
   {
     name: 'Judy Peleck',
@@ -28,7 +22,7 @@ const Members = [
       "Massage helped me in both my pregnancies to ease the symptoms as my body prepared for birth and to manage my wellbeing as I dealt with life as a new mom.",
     ],
     funFact: 'Judy used massage as a tool to help with the teething phase for her own children!',
-    img: judy,
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065598/team/Judy.jpg',
   },
   {
     name: 'Michelle Caron',
@@ -38,8 +32,8 @@ const Members = [
     description: [
       "Early on in my journey as a Registered Massage Therapist I developed a passion for working with prenatal and postnatal mama's. I have aquired techniques that have incredible effects on releasing pain associated with pregnancy.",  
     ],
-    funFact: '',
-    img: michelle,
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065367/team/Michelle.jpg',
   },
   {
     name: 'Lindsay Finnie',
@@ -50,17 +44,7 @@ const Members = [
       'I have spent most of my professional career learning all I can about pregnancy and childbirth, taking extensive post-graduate courses in pre- and post-natal massage care, breast/chest treatment and post cesarean birth recovery. I am also a DONA International mentored birth doula and currently studying to become a Childbirth Educator!',
     ],
       funFact: 'Lindsay is happy to be back in Toronto after returning from living on Vancouver island!',
-    img: lindsay,
-  },
-  {
-    name: 'Alma Gonzalez',
-    title: 'RMT',
-    location: ['All', 'Bolton', 'Caledon', 'Palgrave', 'Brampton', 'Nobleton'],
-    area: 'Bolton, Caledon, Palgrave, Brampton, Nobleton',
-    description: [
-      '',
-    ],
-    img: alma,
+    img: comingSoon,
   },
   {
     name: 'Oleksandra Markunina',
@@ -68,9 +52,10 @@ const Members = [
     location: ['All', 'North York'],
     area: 'North York',
     description: [
-      "Hi, I'm Oleksandra!",
+      "Coming Soon...",
     ],
-    img: oleksandra,
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065164/team/Oleksandra.jpg',
   },
   {
     name: 'Patricia MacNeil',
@@ -81,11 +66,11 @@ const Members = [
       'I’ve been an RMT since 1986! I designed and supervised pre and perinatal and newborn massage therapy training programs for 5 massage therapy colleges in the Ottawa area. These internships were held at the Civic and General campuses of the Ottawa Hospital system for 15 years.',
     ],
     funFact: 'Patricia has the cutest standard poodle names Sophie!',
-    img: patricia,
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065743/team/Patricia.jpg',
   },
   {
     name: 'Katelyn',
-    title: '',
+    title: 'RMT',
     location: ['All',],
     area: '',
     description: [
@@ -93,7 +78,40 @@ const Members = [
       "I always take extra time with each client to create a unique treatment plan catered to their individual needs. I believe it is important to educate all of the mamas I see on ways to prevent injury and live pain free!",
     ],
     funFact: 'You might recognize Katelyn from our emails! She helps us behind the scenes as our admin assistant!',
-    img: patricia,
+    img: comingSoon,
+  },
+  {
+    name: 'Amey McGurk',
+    title: 'RMT',
+    location: ['All', 'Ottawa'],
+    area: 'All major areas of Ottawa',
+    description: [
+      "Coming Soon..."
+    ],
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_250,w_400/v1556064262/team/amey.jpg',
+  },
+  {
+    name: 'Mackenzie',
+    title: 'RMT',
+    location: ['All',],
+    area: '',
+    description: [
+      "Coming Soon..."
+    ],
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556064854/team/Mackenzie.jpg',
+  },
+  {
+    name: 'Ramandeep',
+    title: 'RMT',
+    location: ['All',],
+    area: '',
+    description: [
+      "Coming Soon..."
+    ],
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,q_71,w_400/v1556065904/team/Ramandeep.jpg',
   },
 ]
 

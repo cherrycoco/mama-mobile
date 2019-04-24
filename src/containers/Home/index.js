@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import ScrollToTop from '../../components/ScrollTop/index';
 import FirstImage from './FirstImage';
 import './index.css';

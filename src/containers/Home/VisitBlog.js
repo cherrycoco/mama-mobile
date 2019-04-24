@@ -29,7 +29,7 @@ const VisitBlog = ({ selectBlogPost }) => (
 )
 
 const mapStateToProps = (state) => ({
-  blogs: state.blogs
+  blogs: state.blogs,
 });
 
 const mapDispatchToProps = dispatch => ({

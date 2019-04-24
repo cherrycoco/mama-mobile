@@ -18,7 +18,7 @@ const initialState = {
   team: TeamMembers,
   testimonials: 1,
   blogs: blogData, 
-  blogPost: blogData[0]
+  blogPost: blogData[0],
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

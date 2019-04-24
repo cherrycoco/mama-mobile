@@ -68,7 +68,7 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
           onMouseLeave={this.handleMouseLeave}
           onClick={this.handleClick}
         >
-          <img src='https://www.madwell.com/wp-content/uploads/2018/01/Jessica_Auville.jpg' alt={this.props.name} />
+          <img src={this.props.img} alt={this.props.name} />
           {this.renderTag()}
           {this.renderBio()}
         </div>
