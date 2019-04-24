@@ -7,21 +7,21 @@ import Subscribe from '../../components/Subscribe/index';
 
 const locationsBooking = {
   Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
-  Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua-brampton/book',
-  Missisagua: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua-brampton/book',
-  Brampton: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua-brampton/book',
+  Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua/book',
+  Missisagua: 'https://mamamobilemassage.janeapp.com//locations/etobicoke-missisagua/book',
+  Brampton: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
+  Caledon: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
   Toronto: 'https://mamamobilemassage.janeapp.com/locations/downtown-toronto-midtown/book',
   Leslieville: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
   Danforth: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
   Oakville: 'https://mamamobilemassage.janeapp.com/locations/oakville/book',
   'North York': 'https://mamamobilemassage.janeapp.com/locations/north-york/book',
-  Bolton: '',
-  Caledon: '',
-  Nobleton: '',
-  Palgrave: '',
-  'Richmond Hill': '',
-  Thornhill: '',
-  Vaughan: ''
+  Bolton: 'https://mamamobilemassage.janeapp.com/',
+  Nobleton: 'https://mamamobilemassage.janeapp.com/',
+  Palgrave: 'https://mamamobilemassage.janeapp.com/',
+  'Richmond Hill': 'https://mamamobilemassage.janeapp.com/',
+  Thornhill: 'https://mamamobilemassage.janeapp.com/',
+  Vaughan: 'https://mamamobilemassage.janeapp.com/'
 }
 
 const renderJane = (location) => (

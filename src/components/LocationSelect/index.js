@@ -11,7 +11,7 @@ const locations = [
   'Etobicoke', 
   'Toronto', 
   'Leslieville', 
-  'Missisauga', 
+  'Missisagua', 
   'Nobleton',
   'North York',
   'Ottawa',
