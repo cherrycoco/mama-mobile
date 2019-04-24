@@ -4,8 +4,8 @@ const Members = [
   {
     name: 'Samantha Mendonca',
     title: 'RMT, BSc. Kin',
-    location: ['All', 'Etobicoke', 'Missisauga', 'Brampton'],
-    area: 'Etobicoke, Missisauga, Brampton',
+    location: ['All', 'Etobicoke', 'Missisauga'],
+    area: 'Etobicoke & Missisauga',
     description: [
       'When I am not massaging our mamas I can be found teaching and overseeing the student prenatal pregnancy clinic at Sutherland-Chan!',
       'I believe that wellness and relaxation are pillars for mamas of all stages of life.',
@@ -16,8 +16,8 @@ const Members = [
   {
     name: 'Judy Peleck',
     title: 'RMT',
-    location: ['All', 'Leslieville'],
-    area: 'Leslieville',
+    location: ['All', 'Leslieville', 'Danforth', 'East York'],
+    area: 'Leslieville, Danforth & East York',
     description: [
       "Massage helped me in both my pregnancies to ease the symptoms as my body prepared for birth and to manage my wellbeing as I dealt with life as a new mom.",
     ],
@@ -27,8 +27,8 @@ const Members = [
   {
     name: 'Michelle Caron',
     title: 'RMT',
-    location: ['All', 'Richmond Hill', 'Thornhill', 'Vaughan'],
-    area: 'Richmond Hill, Thornhill & Vaughan*',
+    location: ['All', 'Richmond Hill', 'Thornhill', 'Vaughan', 'Woodbridge', 'Maple'],
+    area: 'Richmond Hill, Thornhill, Vaughan, Woodbridge & Maple',
     description: [
       "Early on in my journey as a Registered Massage Therapist I developed a passion for working with prenatal and postnatal mama's. I have aquired techniques that have incredible effects on releasing pain associated with pregnancy.",  
     ],
@@ -36,10 +36,21 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065367/team/Michelle.jpg',
   },
   {
+    name: 'Dawne',
+    title: 'RMT',
+    location: ['All', 'Richmond Hill', 'Thornhill', 'Vaughan', 'Woodbridge', 'Maple'],
+    area: 'Richmond Hill, Thornhill, Vaughan, Woodbridge & Maple',
+    description: [
+      "Coming Soon...",  
+    ],
+    funFact: 'Coming Soon...',
+    img: comingSoon,
+  },
+  {
     name: 'Lindsay Finnie',
     title: 'RMT',
-    location: ['All', 'Leslieville'],
-    area: 'Leslieville',
+    location: ['All', 'Leslieville', 'Danforth', 'East York'],
+    area: 'Leslieville, Danforth & East York',
     description: [
       'I have spent most of my professional career learning all I can about pregnancy and childbirth, taking extensive post-graduate courses in pre- and post-natal massage care, breast/chest treatment and post cesarean birth recovery. I am also a DONA International mentored birth doula and currently studying to become a Childbirth Educator!',
     ],
@@ -69,10 +80,10 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065743/team/Patricia.jpg',
   },
   {
-    name: 'Katelyn',
+    name: 'Katelyn Frannssen',
     title: 'RMT',
-    location: ['All',],
-    area: '',
+    location: ['All', 'Toronto'],
+    area: 'Downtown and midtown Toronto',
     description: [
       "I believe massage provides the perfect combination to ease both the mind and the body. I love supporting mamas as they bring beautiful new life into the world.",
       "I always take extra time with each client to create a unique treatment plan catered to their individual needs. I believe it is important to educate all of the mamas I see on ways to prevent injury and live pain free!",
@@ -92,6 +103,18 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_250,w_400/v1556064262/team/amey.jpg',
   },
   {
+    name: 'Stevie-Lynn Farrell',
+    title: 'RMT',
+    location: ['All', 'Ottawa'],
+    area: 'All major areas of Ottawa',
+    description: [
+      "I am trained in all swedish massage variations, I love working with mamas for lymphatic drainage to ease swelling and breast massage for issues like blocked milk ducts!",
+      "I have found working alongside all Mama’s providing them with comfort and tension relief during this delicate time to be extremely fulfilling.",
+    ],
+    funFact: 'She got her name from her creative parents, Steve and Lynn!',
+    img: comingSoon,
+  },
+  {
     name: 'Mackenzie',
     title: 'RMT',
     location: ['All',],
@@ -103,15 +126,37 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556064854/team/Mackenzie.jpg',
   },
   {
-    name: 'Ramandeep',
+    name: 'Ramandeep Kaur Dhillon',
     title: 'RMT',
-    location: ['All',],
-    area: '',
+    location: ['All', 'Brampton', 'Caledon', 'Bolton', 'Nobleton'],
+    area: 'Brampton, Caledon, Bolton & Nobleton',
     description: [
       "Coming Soon..."
     ],
     funFact: 'Coming Soon...',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,q_71,w_400/v1556065904/team/Ramandeep.jpg',
+  },
+  {
+    name: 'Sasha Markunina',
+    title: 'RMT',
+    location: ['All', 'North York'],
+    area: 'North York',
+    description: [
+      "Coming Soon..."
+    ],
+    funFact: 'Coming Soon...',
+    img: comingSoon,
+  },
+  {
+    name: 'Tina Trinh',
+    title: 'RMT',
+    location: ['All', 'Oakville'],
+    area: 'Oakville',
+    description: [
+      "Coming Soon..."
+    ],
+    funFact: 'Coming Soon...',
+    img: comingSoon,
   },
 ]
 
