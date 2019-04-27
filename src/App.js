@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <MuiPickersUtilsProvider utils={MomentUtils}>
+        {/* <MuiPickersUtilsProvider utils={MomentUtils}> */}
           <Router>
             <div>
               <Header />
@@ -34,7 +34,7 @@ class App extends Component {
               <Footer />
             </div>
           </Router>
-        </MuiPickersUtilsProvider>
+        {/* </MuiPickersUtilsProvider> */}
       </Provider>
     );
   }
