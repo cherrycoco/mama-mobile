@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from 'react-redux';
 // import { MuiPickersUtilsProvider } from 'material-ui-pickers';
 // import MomentUtils from '@date-io/moment';
@@ -24,13 +24,16 @@ class App extends Component {
           <Router>
             <div>
               <Header />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/blog" component={Blog} />
-              <Route exact path='/blog/:title' component={BlogPost} />
-              <Route exact path="/gift-card" component={GiftCard} />
-              <Route exact path="/careers" component={Career} />
-              <Route path="/" component={Home} />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/blog" component={Blog} />
+                <Route path='/blog/:title' component={BlogPost} />
+                <Route path="/gift-card" component={GiftCard} />
+                <Route path="/careers" component={Career} />
+                <Route component={Home} />
+              </Switch>
               <Footer />
             </div>
           </Router>
