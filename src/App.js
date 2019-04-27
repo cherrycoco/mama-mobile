@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
-import { MuiPickersUtilsProvider } from 'material-ui-pickers';
-import MomentUtils from '@date-io/moment';
+// import { MuiPickersUtilsProvider } from 'material-ui-pickers';
+// import MomentUtils from '@date-io/moment';
 import store from './store'
 import Header from './containers/Header/index';
 import Home from './containers/Home/index';
