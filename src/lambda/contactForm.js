@@ -19,7 +19,7 @@ export function handler(event, context, callback) {
 
   let data = {
     from: `${firstName} ${lastName} <${email}>`,
-    to: 'Mama Mobile <hello@mamamobilemassage.com>',
+    to: 'Mama Mobile <cherryxuqianyun@gmail.com>',
     subject: body.subject,
     text: body.message
   };
