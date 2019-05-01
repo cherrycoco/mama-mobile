@@ -13,6 +13,12 @@
   display: none;
 }
 
+#booking-request-page {
+  width: 100%;
+  max-width: 550px;
+  margin: 90px auto 40px auto;
+}
+
 #booking-form {
   height: 500px;
   top: 20%;
@@ -43,10 +49,12 @@
 
 #subscribe-dialog-body {
   padding: 40px;
+  box-sizing: border-box;
 }
 
 #booking-form-body {
   padding: 40px 60px;
+  box-sizing: border-box;
 }
 
 .subscribe-form-input {

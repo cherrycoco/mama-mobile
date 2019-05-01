@@ -11,6 +11,7 @@ import Contact from './containers/Contact/index';
 import GiftCard from './containers/GiftCard/index';
 import Blog from './containers/Blog/index';
 import BlogPost from './components/BlogPost/index';
+import BookingRequestPage from './components/Subscribe/BookingRequestPage';
 import Footer from './containers/Footer/MobileFooter';
 import './App.css';
 import Career from './containers/Career';
@@ -32,6 +33,7 @@ class App extends Component {
                 <Route path='/blog/:title' component={BlogPost} />
                 <Route path="/gift-card" component={GiftCard} />
                 <Route path="/careers" component={Career} />
+                <Route path="/booking-request" component={BookingRequestPage} />
                 <Route component={Home} />
               </Switch>
               <Footer />
