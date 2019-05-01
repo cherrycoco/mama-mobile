@@ -1,3 +1,5 @@
+
+#booking-form,
 #subscribe-dialog {
   height: 430px;
   width: 500px;
@@ -10,10 +12,19 @@
   display: none;
 }
 
+#booking-form {
+  height: 500px;
+  top: 20%;
+  transform: translate(-50%);
+  overflow-y: scroll;
+}
+
+#booking-form.display,
 #subscribe-dialog.display {
   display: block;
 }
 
+#booking-form-header,
 #subscribe-dialog-header {
   height: 50px;
   width: 100%;
@@ -21,6 +32,7 @@
   position: relative;
 }
 
+#booking-form-header h5,
 #subscribe-dialog-header h5 {
   margin-top: 0;
   text-align: center;
@@ -30,6 +42,10 @@
 
 #subscribe-dialog-body {
   padding: 40px;
+}
+
+#booking-form-body {
+  padding: 40px 60px;
 }
 
 .subscribe-form-input {
@@ -61,4 +77,31 @@
   .subscribe-form-button button {
     font-size: 13px !important;
   }
+}
+
+/* Check box */
+
+.check-box-line-heading,
+.check-box-line-one,
+.check-box-line-two,
+.check-box-line-three {
+  display: flex;
+}
+
+.check-box-line-heading h5,
+.check-box-line-one h5,
+.check-box-line-two h5,
+.check-box-line-three h5 {
+  width: 80px;
+  margin-bottom: 0;
+  padding-top: 15px;
+}
+
+.check-box-line-heading h4 {
+  width: 40px;
+  text-align: center;
+}
+
+.check-box {
+  
 }

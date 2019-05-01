@@ -9,8 +9,8 @@ const locations = [
   'Caledon',
   'Danforth',
   'Etobicoke', 
-  'Toronto', 
-  'Leslieville', 
+  'Leslieville',
+  'Maple', 
   'Missisagua', 
   'Nobleton',
   'North York',
@@ -18,7 +18,10 @@ const locations = [
   'Oakville',
   'Palgrave', 
   'Richmond Hill', 
+  'Scarborough',
   'Thornhill', 
+  'Toronto',
+  'Woodbridge',
   'Vaughan', 
   "Don't see your city?"
 ];

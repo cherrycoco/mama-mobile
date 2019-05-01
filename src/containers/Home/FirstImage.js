@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Button from '../../components/Button/ButtonAnimated';
-import ScrollAnimation from 'react-animate-on-scroll';
 import LocationSelect from '../../components/LocationSelect/index';
 import Subscribe from '../../components/Subscribe/index';
+import BookingForm from '../../components/Subscribe/bookingForm';
 
-const locationsBooking = {
+const locationsJane = {
   Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
   Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua/book',
   Missisagua: 'https://mamamobilemassage.janeapp.com//locations/etobicoke-missisagua/book',
@@ -16,27 +16,25 @@ const locationsBooking = {
   Danforth: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
   Oakville: 'https://mamamobilemassage.janeapp.com/locations/oakville/book',
   'North York': 'https://mamamobilemassage.janeapp.com/locations/north-york/book',
-  Bolton: 'https://mamamobilemassage.janeapp.com/',
-  Nobleton: 'https://mamamobilemassage.janeapp.com/',
-  Palgrave: 'https://mamamobilemassage.janeapp.com/',
-  'Richmond Hill': 'https://mamamobilemassage.janeapp.com/',
-  Thornhill: 'https://mamamobilemassage.janeapp.com/',
-  Vaughan: 'https://mamamobilemassage.janeapp.com/'
 }
 
-const renderJane = (location) => (
-  <form method='get' action={locationsBooking[location]}>
-    <Button 
-      content="BOOK NOW"
-      icon="heart"
-      center
-    />
-  </form> 
-)
-
-const renderButton = () => (
-  <Subscribe />
-)
+const renderBookButton = (location) => {
+  if (location === "Don't see your city?") {
+    return <Subscribe />;
+  } else if (locationsJane[location]) {
+    return (
+      <form method='get' action={locationsJane[location]}>
+        <Button 
+          content="BOOK NOW"
+          icon="heart"
+          center
+        />
+      </form> 
+    )
+  } else {
+    return <BookingForm />
+  }
+}
 
 const FirstImage = (props) => (
   <div 
@@ -56,7 +54,7 @@ const FirstImage = (props) => (
           <LocationSelect />
         </div>
         <div className='book-button'>
-          {props.location !== "Don't see your city?" ? renderJane(props.location) : renderButton()}
+          {renderBookButton(props.location)}
         </div>
       </div>
     </div>

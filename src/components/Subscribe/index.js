@@ -82,7 +82,7 @@ export default class Subscribe extends React.Component {
           content="SUBSCRIBE"
           icon="heart"
           center
-          onClick={this.handleClickOpen.bind(this)}
+          onClick={this.handleClickOpen}
         />
         <div id='subscribe-dialog' className={this.state.open ? 'display' : ''}>
           <div id='subscribe-dialog-header'>
@@ -91,7 +91,7 @@ export default class Subscribe extends React.Component {
           </div>
           <div id='subscribe-dialog-body'>
             <p>We are expanding quickly and we will let you know when we’re coming to your area.</p>
-            <form onSubmit={this.handleSubmit.bind(this)}>
+            <form onSubmit={this.handleSubmit}>
               <div className='subscribe-form-input'>
                 <TextField
                   style={styles.textField}
