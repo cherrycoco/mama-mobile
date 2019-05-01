@@ -2,7 +2,8 @@
 #booking-form,
 #subscribe-dialog {
   height: 430px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -102,6 +103,20 @@
   text-align: center;
 }
 
-.check-box {
-  
+@media only screen and (max-width: 500px) {
+  #booking-form {
+    top: 12%;
+  }
+
+  #booking-form-body {
+    padding: 40px 15px;
+  }
+
+  .check-box-line-heading h5,
+  .check-box-line-one h5,
+  .check-box-line-two h5,
+  .check-box-line-three h5  {
+    width: 50px;
+    font-size: 11px;
+  }
 }

@@ -6,8 +6,6 @@ import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
 import CheckBox from './CheckBox';
-import { ActionViewDay } from 'material-ui/svg-icons';
-
 
 const styles = {
   root: {
