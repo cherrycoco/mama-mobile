@@ -8,7 +8,7 @@ import BookingForm from '../../components/Subscribe/bookingForm';
 const locationsJane = {
   Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
   Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke-missisagua/book',
-  Missisagua: 'https://mamamobilemassage.janeapp.com//locations/etobicoke-missisagua/book',
+  Mississauga: 'https://mamamobilemassage.janeapp.com//locations/etobicoke-missisagua/book',
   Brampton: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
   Caledon: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
   Toronto: 'https://mamamobilemassage.janeapp.com/locations/downtown-toronto-midtown/book',
