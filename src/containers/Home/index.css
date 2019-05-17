@@ -444,15 +444,15 @@
 #seen-on img {
   width: 80px;
   vertical-align: middle;
-  margin-left: calc((100% - 370px) / 8);
-  margin-right: calc((100% - 370px) / 8);
+  margin-left: calc((100% - 450px) / 10);
+  margin-right: calc((100% - 450px) / 10);
 }
 
 @media only screen and (max-width: 450px) {
   #seen-on img {
     width: 70px !important;
-    margin-left: calc((100% - 230px) / 8);
-    margin-right: calc((100% - 230px) / 8);
+    margin-left: calc((100% - 300px) / 10);
+    margin-right: calc((100% - 300px) / 10);
   }
 
   #seen-on img:first-child {

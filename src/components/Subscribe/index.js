@@ -29,7 +29,7 @@ export default class Subscribe extends React.Component {
     this.state = {
       email: '',
       city: '',
-      open: false,
+      open: true,
     }
   };
 
@@ -47,6 +47,7 @@ export default class Subscribe extends React.Component {
 
   handleClose = () => {
     this.setState({ open: false });
+    this.props.changeLocation('');
   };
 
   handleSubmit = (e) => {

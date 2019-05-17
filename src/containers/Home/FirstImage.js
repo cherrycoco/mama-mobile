@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Button from '../../components/Button/ButtonAnimated';
+import changeLocationBooking from '../../actions/changeLocationBooking';
 import LocationSelect from '../../components/LocationSelect/index';
 import Subscribe from '../../components/Subscribe/index';
 import BookingForm from '../../components/Subscribe/bookingForm';
@@ -16,12 +17,13 @@ const locationsJane = {
   Danforth: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
   Oakville: 'https://mamamobilemassage.janeapp.com/locations/oakville/book',
   'North York': 'https://mamamobilemassage.janeapp.com/locations/north-york/book',
+  Vaughan: 'https://mamamobilemassage.janeapp.com/locations/vaughan/book',
 }
 
-const renderBookButton = (location) => {
+const renderBookButton = (location, changeLocation) => {
   if (location === "Don't see your city?") {
-    return <Subscribe />;
-  } else if (locationsJane[location]) {
+    return <Subscribe changeLocation={changeLocation} />;
+  } else if (locationsJane[location] || location === '') {
     return (
       <form method='get' action={locationsJane[location]}>
         <Button 
@@ -54,16 +56,21 @@ const FirstImage = (props) => (
           <LocationSelect />
         </div>
         <div className='book-button'>
-          {renderBookButton(props.location)}
+          {renderBookButton(props.location, props.changeLocationBooking)}
         </div>
       </div>
     </div>
   </div>
 )
 
+const mapDispatchToProps = (dispatch) => ({
+  changeLocationBooking: (location) => (
+    dispatch(changeLocationBooking(location))
+  )
+});
+
 const mapStateToProps = (state) => ({
   location: state.locationBooking
 });
 
-export default connect (mapStateToProps)(FirstImage);
-
+export default connect (mapStateToProps, mapDispatchToProps)(FirstImage);

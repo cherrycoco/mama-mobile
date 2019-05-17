@@ -47,6 +47,18 @@ const Members = [
     img: comingSoon,
   },
   {
+    name: 'Toni Sgro',
+    title: 'RMT',
+    location: ['All', 'Vaughan'],
+    area: 'Vaughan',
+    description: [
+      'I have a Kinesiology degree and Athletic Therapy certificate from York University and a diploma from Sutherland-Chan School of Massage Therapy',
+      'I enjoy helping all patients (especially busy mamas!) to feel not only relaxed and soothed but also better and pain free after their treatments. When possible I can give some helpful pointers and self care which can help to prevent or manage discomfort.',  
+    ],
+    funFact: 'Coming Soon...',
+    img: comingSoon,
+  },
+  {
     name: 'Lindsay Finnie',
     title: 'RMT',
     location: ['All', 'Leslieville', 'Danforth', 'East York'],
