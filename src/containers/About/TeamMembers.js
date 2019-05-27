@@ -25,6 +25,17 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065598/team/Judy.jpg',
   },
   {
+    name: 'Danuta Debowski',
+    title: 'RMT',
+    location: ['All', 'Scarborough'],
+    area: 'Scarborough',
+    description: [
+      'I graduated from Sutherland Chan in 2011, and have had a special interest area in Therapeutic Breast Massage & Pregnancy massage! I have successfully treated those with abdominal wall scars, Caesarian scars, chest wall & breast tissue surgical procedures and post-surgical conditions such as lymphedema.',  
+    ],
+    funFact: 'I have a Husky mix named Shadow!',
+    img: comingSoon,
+  },
+  {
     name: 'Michelle Caron',
     title: 'RMT',
     location: ['All', 'Richmond Hill', 'Thornhill', 'Vaughan', 'Woodbridge', 'Maple'],
@@ -44,6 +55,17 @@ const Members = [
       "Coming Soon...",  
     ],
     funFact: 'Coming Soon...',
+    img: comingSoon,
+  },
+  {
+    name: 'Danuta Debowski',
+    title: 'RMT',
+    location: ['All', 'Etobicoke', 'Missisauga'],
+    area: 'Etobicoke & Missisauga',
+    description: [
+      'I have been making mamas feel better for over 19 years! Through many hours of continuing education I have developed my own treatment style. A few of the courses I have taken are in Myofascial Release, Thai Yoga Massage, Accupuncture for pain relief  Trimesters Pregnancy, Delivery and Infant Massage.',  
+    ],
+    funFact: 'Danuta is a mama of 3, one being her giant fur baby!  In her spare time she loves to chill out on a beach and go for long walks.',
     img: comingSoon,
   },
   {

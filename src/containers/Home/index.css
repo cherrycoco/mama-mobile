@@ -480,6 +480,13 @@
   padding: 15px 0;
 }
 
+#upcoming-events img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 #upcoming-events-content {
   width: 85%;
   margin-left: auto;
