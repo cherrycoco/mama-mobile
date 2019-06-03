@@ -116,6 +116,11 @@
     padding: 40px 15px;
   }
 
+  #booking-form {
+    height: 100vh;
+    max-height: 100vh;
+  }
+
   .check-box-line-heading h5,
   .check-box-line-one h5,
   .check-box-line-two h5,
