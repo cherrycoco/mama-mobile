@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
+import PhoneNumberMask from './PhoneNumberMask';
 import CheckBox from './CheckBox';
 
 const styles = {
@@ -56,6 +57,7 @@ export default class BookingForm extends React.Component {
       firstName: '',
       lastName: '',
       email: '',
+      tel: '',
       subject: '',
       message: '',
       unit: '',
@@ -147,6 +149,7 @@ export default class BookingForm extends React.Component {
           email: '',
           subject: '',
           unit: '',
+          tel: '',
           message: '',
           mon: {
             morning: false,
@@ -238,12 +241,29 @@ export default class BookingForm extends React.Component {
                   name='email'
                   value={this.state.email}
                   onChange={this.handleChange}
-                  style={styles.root}
+                  style={styles.fname}
                   id="email"
                   type="email"
                   autoComplete="email"
                   label="E-mail"
                   placeholder="E-mail"
+                />
+                <TextField
+                  required
+                  name='tel'
+                  value={this.state.tel}
+                  onChange={this.handleChange}
+                  style={styles.lname}
+                  id="tel"
+                  type="tel"
+                  autoComplete="tel"
+                  label="Phone Number"
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                  InputProps={{
+                    inputComponent: PhoneNumberMask,
+                  }}
                 />
               </div>
               <div className='contact-form-input'>

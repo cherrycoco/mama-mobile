@@ -5,6 +5,8 @@ import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
+import NumberFormat from 'react-number-format';
+// import PhoneInput from './PhoneInput';
 import CheckBox from './CheckBox';
 
 const styles = {
@@ -227,6 +229,21 @@ export default class BookingRequestPage extends React.Component {
                 label="E-mail"
                 placeholder="E-mail"
               />
+            </div>
+            <div className='contact-form-input'>
+              <NumberFormat customInput={TextField} format="+1 (###) ###-####" mask="_"/>
+              {/* <TextField
+                required
+                name='tel'
+                value={this.state.tel}
+                onChange={this.handleChange}
+                style={styles.root}
+                id="tel"
+                type="tel"
+                autoComplete="tel"
+                label="Phone Number"
+                placeholder="Phone Number"
+              /> */}
             </div>
             <div className='contact-form-input'>
               <Autocomplete

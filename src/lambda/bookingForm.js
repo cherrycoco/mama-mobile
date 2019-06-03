@@ -21,6 +21,8 @@ export function handler(event, context, callback) {
     <div>
       <h5>Name:</h5>
       <p>${fullName}</p>
+      <h5>Phone Number:</h5>
+      <p>${body.tel}</p>
       <h5>Address:</h5>
       <p>${body.address}</p>
       <h5>Unit Number:</h5>
@@ -58,6 +60,8 @@ export function handler(event, context, callback) {
   if (body.sun.night) {messageBody += '<li>sunday night</li>';}
 
   messageBody += '</ul></div>'
+
+  console.log(messageBody);
 
   let data = {
     from: `${fullName} <${email}>`,
