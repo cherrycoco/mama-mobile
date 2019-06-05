@@ -7,6 +7,7 @@ import MamaType from './MamaType';
 import SeenOn from './SeenOn';
 import VisitBlog from './VisitBlog';
 import GiftCertificate from './GiftCertificate';
+import { Helmet } from "react-helmet";
 import Testimonial from '../Testimonials/index';
 import UpcomingEvents from './UpcomingEvents';
 import FAQ from '../FAQ/index';
@@ -16,6 +17,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => (
   <div>
+    <Helmet>
+        <title>Mama Mobile Massage | In-home Massage Therapy for prenatal, postnatal, and busy moms</title>
+        <meta name="description" content="Mama Mobile Massage delivers highest qualified Registered Massage Therapists to your home or office for your prenatal, postnatal, or busy mama massage." />
+    </Helmet>
     <ScrollToTop />
     <FirstImage 
       img={imageOne}
