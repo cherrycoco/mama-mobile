@@ -19,6 +19,7 @@ const initialState = {
   testimonials: 1,
   blogs: blogData, 
   blogPost: blogData[0],
+  isFirstLoad: true,
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

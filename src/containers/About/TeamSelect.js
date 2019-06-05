@@ -15,6 +15,7 @@ const locations = [
   'Brampton', 
   'Leslieville', 
   'Richmond Hill', 
+  'Port Credit',
   'Thornhill', 
   'Vaughan', 
   'Bolton', 

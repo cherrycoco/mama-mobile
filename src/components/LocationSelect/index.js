@@ -17,6 +17,7 @@ const locations = [
   'Ottawa',
   'Oakville',
   'Palgrave', 
+  'Port Credit',
   'Richmond Hill', 
   'Scarborough',
   'Thornhill', 

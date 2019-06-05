@@ -4,8 +4,8 @@ const Members = [
   {
     name: 'Samantha Mendonca',
     title: 'RMT, BSc. Kin',
-    location: ['All', 'Etobicoke', 'Missisauga'],
-    area: 'Etobicoke & Missisauga',
+    location: ['All', 'Etobicoke'],
+    area: 'Etobicoke',
     description: [
       'When I am not massaging our mamas I can be found teaching and overseeing the student prenatal pregnancy clinic at Sutherland-Chan!',
       'I believe that wellness and relaxation are pillars for mamas of all stages of life.',
@@ -25,7 +25,7 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065598/team/Judy.jpg',
   },
   {
-    name: 'Danuta Debowski',
+    name: 'Christina Gouveia',
     title: 'RMT',
     location: ['All', 'Scarborough'],
     area: 'Scarborough',
@@ -60,8 +60,8 @@ const Members = [
   {
     name: 'Danuta Debowski',
     title: 'RMT',
-    location: ['All', 'Etobicoke', 'Missisauga'],
-    area: 'Etobicoke & Missisauga',
+    location: ['All', 'Port Credit', 'Missisauga'],
+    area: 'Port Credit & Missisauga',
     description: [
       'I have been making mamas feel better for over 19 years! Through many hours of continuing education I have developed my own treatment style. A few of the courses I have taken are in Myofascial Release, Thai Yoga Massage, Accupuncture for pain relief  Trimesters Pregnancy, Delivery and Infant Massage.',  
     ],
@@ -135,18 +135,6 @@ const Members = [
     ],
     funFact: 'Coming Soon...',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_250,w_400/v1556064262/team/amey.jpg',
-  },
-  {
-    name: 'Stevie-Lynn Farrell',
-    title: 'RMT',
-    location: ['All', 'Ottawa'],
-    area: 'All major areas of Ottawa',
-    description: [
-      "I am trained in all swedish massage variations, I love working with mamas for lymphatic drainage to ease swelling and breast massage for issues like blocked milk ducts!",
-      "I have found working alongside all Mama’s providing them with comfort and tension relief during this delicate time to be extremely fulfilling.",
-    ],
-    funFact: 'She got her name from her creative parents, Steve and Lynn!',
-    img: comingSoon,
   },
   {
     name: 'Mackenzie',
