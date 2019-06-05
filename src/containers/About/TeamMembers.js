@@ -148,6 +148,19 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556064854/team/Mackenzie.jpg',
   },
   {
+    name: 'Nadia Bonaldi',
+    title: 'RMT',
+    location: ['All', 'North York'],
+    area: 'North York',
+    description: [
+      "I have been in love with the world of wellness for as long as I can remember. Throughout my 20 years of experience as a Massage Therapist, I have had extensive training and the privilege to work alongside numerous therapists, holistic practitioners and midwives.",
+      "After becoming a mom, I really felt the need to help women with motherhood. Offering moms massage therapy service to help ease physical discomforts, manage stress and facilitate this stage of transition.",
+      "I am able to provide clients a therapeutic touch, getting deeper into mucle tissue, as needed, but also giving them a strong sense of relaxation.",
+    ],
+    funFact: 'Nadia is also a Hatha Yoga teacher and used a very effective Yoga breathing technique, known as "the three part breath", during childbirth herself.',
+    img: comingSoon,
+  },
+  {
     name: 'Ramandeep Kaur Dhillon',
     title: 'RMT',
     location: ['All', 'Brampton', 'Caledon', 'Bolton', 'Nobleton'],
