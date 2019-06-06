@@ -18,7 +18,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Home = () => (
   <div>
     <Helmet>
-        <title>Mama Mobile Massage | In-home Massage Therapy for prenatal, postnatal, and busy moms</title>
+        <title>Mama Mobile Massage | In-home Prenatal & Postnatal Massage | RMT</title>
         <meta name="description" content="Mama Mobile Massage delivers highest qualified Registered Massage Therapists to your home or office for your prenatal, postnatal, or busy mama massage." />
     </Helmet>
     <ScrollToTop />
