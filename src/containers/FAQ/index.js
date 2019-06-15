@@ -115,7 +115,7 @@ class FAQ extends React.Component {
   renderA11 = () => (
     <div className='FAQ-card-answers'> 
       <p>
-        Although we focus on mamas we do in fact massage papas too! We actually created a special option so that we can let them experience some TLC too. On our schedule this option is called “mama/papa” <b>We do not offer couple massages simultaneously</b>. Like everything we do, our mama/papa massages are a little bit unconventional. We provide each of you with either a 60 or 90 minute individual massage back to back. The idea behind this is that you will be able to tag team the kids to bed! Since our RMT is only travelling once <b>this treatment option is ALWAYS discounted</b>. This gives our mamas a little way to save some $$$.   
+        Although we focus on mamas we do in fact massage papas too! We actually created a special option so that we can let them experience some TLC too. On our schedule this option is called “mama/papa” <b>We do not offer couple massages simultaneously</b>. Like everything we do, our mama/papa massages are a little bit unconventional. We provide each of you with either a 60 or 90 minute individual massage back to back. The idea behind this is that you will be able to tag team the kids to bed!.   
       </p>
     </div>
   )
