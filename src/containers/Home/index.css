@@ -308,11 +308,11 @@
 
 #price-card-wrapper {
   margin-bottom: 60px;
-  padding-top: 20px;
+  padding: 20px 10%;
 }
 
 .price-card {
-  width: calc(100vw/3);
+  width: 50%;
   height: 120px;
   position: relative;
 }
