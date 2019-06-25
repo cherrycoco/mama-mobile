@@ -1,12 +1,9 @@
 import React from 'react';
 import Button from '../Button/ButtonAnimated';
-// import DatePicker from '../DatePicker/index';
 import TextField from '@material-ui/core/TextField';
-import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
-import NumberFormat from 'react-number-format';
-// import PhoneInput from './PhoneInput';
+import PhoneNumberMask from './PhoneNumberMask';
 import CheckBox from './CheckBox';
 
 const styles = {
@@ -59,6 +56,7 @@ export default class BookingRequestPage extends React.Component {
       email: '',
       subject: '',
       message: '',
+      tel: '',
       unit: '',
       mon: {
         morning: false,
@@ -140,6 +138,7 @@ export default class BookingRequestPage extends React.Component {
           subject: '',
           unit: '',
           message: '',
+          tel: '',
           mon: {
             morning: false,
             afternoon: false,
@@ -222,28 +221,30 @@ export default class BookingRequestPage extends React.Component {
                 name='email'
                 value={this.state.email}
                 onChange={this.handleChange}
-                style={styles.root}
+                style={styles.fname}
                 id="email"
                 type="email"
                 autoComplete="email"
                 label="E-mail"
                 placeholder="E-mail"
               />
-            </div>
-            <div className='contact-form-input'>
-              <NumberFormat customInput={TextField} format="+1 (###) ###-####" mask="_"/>
-              {/* <TextField
+              <TextField
                 required
                 name='tel'
                 value={this.state.tel}
                 onChange={this.handleChange}
-                style={styles.root}
+                style={styles.lname}
                 id="tel"
                 type="tel"
                 autoComplete="tel"
                 label="Phone Number"
-                placeholder="Phone Number"
-              /> */}
+                InputLabelProps={{
+                  shrink: true,
+                }}
+                InputProps={{
+                  inputComponent: PhoneNumberMask,
+                }}
+              />
             </div>
             <div className='contact-form-input'>
               <Autocomplete

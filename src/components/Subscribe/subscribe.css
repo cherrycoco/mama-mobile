@@ -2,7 +2,6 @@
 #booking-form,
 #subscribe-dialog {
   height: 90vh;
-  overflow-y: scroll; 
   max-height: 430px;
   width: 100%;
   max-width: 500px;
@@ -13,6 +12,10 @@
   z-index: 10000;
   transform: translate(-50%,-50%);
   display: none;
+}
+
+#booking-form {
+  overflow-y: scroll;
 }
 
 #booking-request-page {

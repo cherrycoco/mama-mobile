@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../Button/ButtonAnimated';
-// import DatePicker from '../DatePicker/index';
 import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
