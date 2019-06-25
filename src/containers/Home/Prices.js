@@ -19,16 +19,11 @@ const Prices = () => (
         <div className='card-wrapper' id='price-card-wrapper'>
           <PriceCard 
             minutes='60'
-            price='$113'
-          />
-          <PriceCard 
-            minutes='75'
-            price='$130'
-            divider
+            price='$128'
           />
           <PriceCard 
             minutes='90'
-            price='$140'
+            price='$188'
             divider
           />
         </div>
