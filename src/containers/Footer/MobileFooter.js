@@ -19,6 +19,11 @@ const MobileFooter = () => (
       <Link to='/contact'>Contact</Link>
       <img src={logo} alt='mama mobile logo' />
       <div>
+        <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
+        <a href='tel:800-626-2055'>1 (800) 626 - 2055</a>
+      </div>
+      <br />
+      <div>
         <Icon name='mail' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
         <a href='mailto:info@mamamobilemassage.com'>info@mamamobilemassage.com</a>
       </div>

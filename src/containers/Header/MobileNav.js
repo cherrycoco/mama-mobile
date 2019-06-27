@@ -23,6 +23,12 @@ const styles = {
   },
   icon: {
     color: '#CC98C5',
+  },
+  phone: {
+    margin: '30px auto',
+  },
+  phoneNumber: {
+    fontWeight: 500,
   }
 }
 
@@ -61,6 +67,11 @@ class MobileNav extends React.Component {
             )
           })}
         </List>
+        <Divider style={styles.divider}/>
+        <div style={styles.phone}>
+          <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
+          <a style={styles.phoneNumber} href='tel:800-626-2055'>1 (800) 626 - 2055</a>
+        </div>
         <Divider style={styles.divider}/>
         <div id='mobile-nav-social'>
           <a href='https://www.instagram.com/mamamobilemassage/' target='_blank'>

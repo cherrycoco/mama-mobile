@@ -1,4 +1,4 @@
-const comingSoon = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556066478/coming_soon.png';
+const comingSoon = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556066478/coming_soon.jpg';
 
 const Members = [
   {
@@ -172,6 +172,17 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,q_71,w_400/v1556065904/team/Ramandeep.jpg',
   },
   {
+    name: 'Hasina Ireland',
+    title: 'RMT',
+    location: ['All', 'Brampton'],
+    area: 'Brampton',
+    description: [
+      "I have been committed to provide educational information and therapeutic assistance on building and maintaining wellness as a Registered Massage Therapist since 2018. The ability to assist mama's through their most precious phases in life is truly rewarding. I am in good standing with the Canadian Massage Therapists of Ontario, and the Canadian Association of Holistic Nutrition Professionals."
+    ],
+    funFact: 'I love nature, energy healing, cats, and write poetry',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,q_100,w_400/v1561658914/team/hasina.jpg',
+  },
+  {
     name: 'Sasha Markunina',
     title: 'RMT',
     location: ['All', 'North York'],
@@ -180,6 +191,30 @@ const Members = [
       "Coming Soon..."
     ],
     funFact: 'Coming Soon...',
+    img: comingSoon,
+  },
+  {
+    name: 'Nadia Bonaldi',
+    title: 'RMT',
+    location: ['All', 'North York'],
+    area: 'North York',
+    description: [
+      "I have been in love with the world of wellness for as long as I can remember. Throughout my 20 years of experience as a Massage Therapist, I have had extensive training and the privilege to work alongside numerous therapists, holistic practitioners and midwives.",
+      "After becoming a mom, I really felt the need to help women with motherhood. Offering moms massage therapy service to help ease physical discomforts, manage stress and facilitate this stage of transition.",
+      "I am able to provide clients a therapeutic touch, getting deeper into mucle tissue, as needed, but also giving them a strong sense of relaxation.",
+    ],
+    funFact: 'Nadia is also a Hatha Yoga teacher and used a very effective Yoga breathing technique, known as "the three part breath", during childbirth herself.',
+    img: comingSoon,
+  },
+  {
+    name: 'Amanda Marshall',
+    title: 'RMT',
+    location: ['All', 'Brampton'],
+    area: 'Brampton',
+    description: [
+      "I knew from the beginning of my career i was highly interested in working with mamas and babies. During pregnancy the body goes through many changes and it is important for me to provide treatments to reduce pain and discomfort, as well as improve relaxation. As an RMT I believe in the physical and mental wellness of all moms.",
+    ],
+    funFact: 'On the weekend I can be found providing therapeutic babies massages at a baby spa.',
     img: comingSoon,
   },
   {

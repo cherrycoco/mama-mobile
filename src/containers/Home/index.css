@@ -472,8 +472,8 @@
 }
 
 #upcoming-events h2 {
-  width: 90%;
-  max-width: 700px;
+  width: 80%;
+  /* max-width: 700px; */
   background-color: #E4B9D7;
   text-align: center;
   margin-left: auto;
@@ -491,7 +491,7 @@
 }
 
 #upcoming-events-content {
-  width: 85%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
