@@ -218,6 +218,17 @@ const Members = [
     img: comingSoon,
   },
   {
+    name: 'Kayla Dumouchel',
+    title: 'RMT',
+    location: ['All', 'Ottawa'],
+    area: 'Ottawa',
+    description: [
+      "I come from the small town of Timmins in northern Ontario. I did my studies in French at Collège Boréal in Sudbury. Since graduating I have had the opportunity to fill my nine year career of work within a variety of industries such as, Chiropractic & Physiotherapy clinics, Martial Arts Academy, local Hospital, yoga studio, spas, and in remote mining sites. I am an outdoor enthusiast spending most of my summers days into Fall evenings fishing and hunting. I have found great fulfillment helping others and making an improvement in your life.",
+    ],
+    funFact: 'Kayla has an identical twin sister Krista, oddly enough whilst her twin was pregnant Kayla and her sister had some in-sync activity felt throughout the pregnancy. Kayla got similar cravings and pains as Krista. She believes Twin powers do exist ;).',
+    img: comingSoon,
+  },
+  {
     name: 'Tina Trinh',
     title: 'RMT',
     location: ['All', 'Oakville'],
