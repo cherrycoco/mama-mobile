@@ -25,7 +25,7 @@ const MobileFooter = () => (
       <br />
       <div>
         <Icon name='mail' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-        <a href='mailto:info@mamamobilemassage.com'>info@mamamobilemassage.com</a>
+        <a href='mailto:hello@mamamobilemassage.com'>hello@mamamobilemassage.com</a>
       </div>
       <p>© Mama Mobile Massage</p>
     </div>
