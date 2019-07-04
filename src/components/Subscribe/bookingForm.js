@@ -202,157 +202,159 @@ export default class BookingForm extends React.Component {
           center
           onClick={this.handleClickOpen}
         />
-        <div id='booking-form' className={this.state.open ? 'display' : ''}>
-          <div id='booking-form-header'>
-            <Icon onClick={this.handleClose} style={styles.icon}>close</Icon>
-            <h5>REQUEST A BOOKING</h5>
-          </div>
-          <div id='booking-form-body'>
-            <p>Please submit a booking request here:</p>
-            <form onSubmit={this.handleSubmit}>
-              <div className='contact-form-input'>
-                <TextField
-                  required
-                  name='firstName'
-                  value={this.state.firstName}
-                  onChange={this.handleChange}
-                  style={styles.fname}
-                  id="firstName"
-                  label="First Name"
-                  placeholder="First Name"
-                  autoComplete="given-name"
-                />
-                <TextField
-                  required
-                  name='lastName'
-                  value={this.state.lastName}
-                  onChange={this.handleChange}
-                  style={styles.lname}
-                  id="lastName"
-                  label="Last Name"
-                  placeholder="Last Name"
-                  autoComplete="family-name"
-                />
-              </div>
-              <div className='contact-form-input'>
-                <TextField
-                  required
-                  name='email'
-                  value={this.state.email}
-                  onChange={this.handleChange}
-                  style={styles.fname}
-                  id="email"
-                  type="email"
-                  autoComplete="email"
-                  label="E-mail"
-                  placeholder="E-mail"
-                />
-                <TextField
-                  required
-                  name='tel'
-                  value={this.state.tel}
-                  onChange={this.handleChange}
-                  style={styles.lname}
-                  id="tel"
-                  type="tel"
-                  autoComplete="tel"
-                  label="Phone Number"
-                  InputLabelProps={{
-                    shrink: true,
-                  }}
-                  InputProps={{
-                    inputComponent: PhoneNumberMask,
-                  }}
-                />
-              </div>
-              <div className='contact-form-input'>
-                <Autocomplete
-                  style={styles.autoComplete}
-                  onPlaceSelected={(address) => {
-                    this.handleAddressSelect(address);
-                  }}
-                  onChange={this.handleChange}
-                  placeholder="Address"
-                  required
-                  name='address'
-                  types={['address']}
-                  componentRestrictions={{country: "ca"}}
-                />
-                <TextField
-                  name='unit'
-                  value={this.state.unit}
-                  onChange={this.handleChange}
-                  style={styles.unit}
-                  id="unit"
-                  label="Unit #"
-                  placeholder="Unit #"
-                />
-              </div>
-              <div className='check-box-wrapper'>
-                <p>Please select your availability here: </p>
-                <div className='check-box-line-heading'>
-                  <h5> </h5>
-                  <h4>Mon</h4>   
-                  <h4>Tues</h4> 
-                  <h4>Wed</h4> 
-                  <h4>Thurs</h4> 
-                  <h4>Fri</h4> 
-                  <h4>Sat</h4> 
-                  <h4>Sun</h4>                
+        <div className={this.state.open ? 'display overlay' : ''}>
+          <div id='booking-form' className={this.state.open ? 'display' : ''}>
+            <div id='booking-form-header'>
+              <Icon onClick={this.handleClose} style={styles.icon}>close</Icon>
+              <h5>REQUEST A BOOKING</h5>
+            </div>
+            <div id='booking-form-body'>
+              <p>Please submit a booking request here:</p>
+              <form onSubmit={this.handleSubmit}>
+                <div className='contact-form-input'>
+                  <TextField
+                    required
+                    name='firstName'
+                    value={this.state.firstName}
+                    onChange={this.handleChange}
+                    style={styles.fname}
+                    id="firstName"
+                    label="First Name"
+                    placeholder="First Name"
+                    autoComplete="given-name"
+                  />
+                  <TextField
+                    required
+                    name='lastName'
+                    value={this.state.lastName}
+                    onChange={this.handleChange}
+                    style={styles.lname}
+                    id="lastName"
+                    label="Last Name"
+                    placeholder="Last Name"
+                    autoComplete="family-name"
+                  />
                 </div>
-                <div className='check-box-line-one'>
-                  <h5>Morning: </h5>
-                  <CheckBox value='mon.morning' checked={this.state.mon.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='tues.morning' checked={this.state.tues.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='wed.morning' checked={this.state.wed.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='thurs.morning' checked={this.state.thurs.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='fri.morning' checked={this.state.fri.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sat.morning' checked={this.state.sat.morning} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sun.morning' checked={this.state.sun.morning} onCheck={this.handleCheckBox} />
+                <div className='contact-form-input'>
+                  <TextField
+                    required
+                    name='email'
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    style={styles.fname}
+                    id="email"
+                    type="email"
+                    autoComplete="email"
+                    label="E-mail"
+                    placeholder="E-mail"
+                  />
+                  <TextField
+                    required
+                    name='tel'
+                    value={this.state.tel}
+                    onChange={this.handleChange}
+                    style={styles.lname}
+                    id="tel"
+                    type="tel"
+                    autoComplete="tel"
+                    label="Phone Number"
+                    InputLabelProps={{
+                      shrink: true,
+                    }}
+                    InputProps={{
+                      inputComponent: PhoneNumberMask,
+                    }}
+                  />
                 </div>
-                <div className='check-box-line-two'>
-                  <h5>Afternoon: </h5>
-                  <CheckBox value='mon.afternoon' checked={this.state.mon.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='tues.afternoon' checked={this.state.tues.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='wed.afternoon' checked={this.state.wed.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='thurs.afternoon' checked={this.state.thurs.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='fri.afternoon' checked={this.state.fri.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sat.afternoon' checked={this.state.sat.afternoon} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sun.afternoon' checked={this.state.sun.afternoon} onCheck={this.handleCheckBox} />
+                <div className='contact-form-input'>
+                  <Autocomplete
+                    style={styles.autoComplete}
+                    onPlaceSelected={(address) => {
+                      this.handleAddressSelect(address);
+                    }}
+                    onChange={this.handleChange}
+                    placeholder="Address"
+                    required
+                    name='address'
+                    types={['address']}
+                    componentRestrictions={{country: "ca"}}
+                  />
+                  <TextField
+                    name='unit'
+                    value={this.state.unit}
+                    onChange={this.handleChange}
+                    style={styles.unit}
+                    id="unit"
+                    label="Unit #"
+                    placeholder="Unit #"
+                  />
                 </div>
-                <div className='check-box-line-three'>
-                  <h5>Night: </h5>
-                  <CheckBox value='mon.night' checked={this.state.mon.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='tues.night' checked={this.state.tues.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='wed.night' checked={this.state.wed.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='thurs.night' checked={this.state.thurs.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='fri.night' checked={this.state.fri.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sat.night' checked={this.state.sat.night} onCheck={this.handleCheckBox} />
-                  <CheckBox value='sun.night' checked={this.state.sun.night} onCheck={this.handleCheckBox} />
+                <div className='check-box-wrapper'>
+                  <p>Please select your availability here: </p>
+                  <div className='check-box-line-heading'>
+                    <h5> </h5>
+                    <h4>Mon</h4>   
+                    <h4>Tues</h4> 
+                    <h4>Wed</h4> 
+                    <h4>Thurs</h4> 
+                    <h4>Fri</h4> 
+                    <h4>Sat</h4> 
+                    <h4>Sun</h4>                
+                  </div>
+                  <div className='check-box-line-one'>
+                    <h5>Morning: </h5>
+                    <CheckBox value='mon.morning' checked={this.state.mon.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='tues.morning' checked={this.state.tues.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='wed.morning' checked={this.state.wed.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='thurs.morning' checked={this.state.thurs.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='fri.morning' checked={this.state.fri.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sat.morning' checked={this.state.sat.morning} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sun.morning' checked={this.state.sun.morning} onCheck={this.handleCheckBox} />
+                  </div>
+                  <div className='check-box-line-two'>
+                    <h5>Afternoon: </h5>
+                    <CheckBox value='mon.afternoon' checked={this.state.mon.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='tues.afternoon' checked={this.state.tues.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='wed.afternoon' checked={this.state.wed.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='thurs.afternoon' checked={this.state.thurs.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='fri.afternoon' checked={this.state.fri.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sat.afternoon' checked={this.state.sat.afternoon} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sun.afternoon' checked={this.state.sun.afternoon} onCheck={this.handleCheckBox} />
+                  </div>
+                  <div className='check-box-line-three'>
+                    <h5>Night: </h5>
+                    <CheckBox value='mon.night' checked={this.state.mon.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='tues.night' checked={this.state.tues.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='wed.night' checked={this.state.wed.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='thurs.night' checked={this.state.thurs.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='fri.night' checked={this.state.fri.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sat.night' checked={this.state.sat.night} onCheck={this.handleCheckBox} />
+                    <CheckBox value='sun.night' checked={this.state.sun.night} onCheck={this.handleCheckBox} />
+                  </div>
                 </div>
-              </div>
-              <div className='contact-form-input'>
-                <TextField
-                  name='message'
-                  style={styles.root}
-                  value={this.state.message}
-                  onChange={this.handleChange}
-                  id="message"
-                  label="Additional notes..."
-                  placeholder="Additional notes..."
-                  multiline
-                  rows="3"
-                  variant="outlined"
-                />
-              </div>
-              <div id='subscribe-form-button'>
-                <Button 
-                  content='SEND!'
-                  icon='mail'
-                  center
-                />
-              </div>
-            </form>
+                <div className='contact-form-input'>
+                  <TextField
+                    name='message'
+                    style={styles.root}
+                    value={this.state.message}
+                    onChange={this.handleChange}
+                    id="message"
+                    label="Additional notes..."
+                    placeholder="Additional notes..."
+                    multiline
+                    rows="3"
+                    variant="outlined"
+                  />
+                </div>
+                <div id='subscribe-form-button'>
+                  <Button 
+                    content='SEND!'
+                    icon='mail'
+                    center
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

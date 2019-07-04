@@ -85,42 +85,44 @@ export default class Subscribe extends React.Component {
           center
           onClick={this.handleClickOpen}
         />
-        <div id='subscribe-dialog' className={this.state.open ? 'display' : ''}>
-          <div id='subscribe-dialog-header'>
-            <Icon onClick={this.handleClose} style={styles.icon}>close</Icon>
-            <h5>JOIN OUR MAILING LIST</h5>
-          </div>
-          <div id='subscribe-dialog-body'>
-            <p>We are expanding quickly and we will let you know when we’re coming to your area.</p>
-            <form onSubmit={this.handleSubmit}>
-              <div className='subscribe-form-input'>
-                <TextField
-                  style={styles.textField}
-                  required
-                  name='email'
-                  onChange={this.handleChange}
-                  value={this.state.email}
-                  label='E-MAIL ADDRESS'
-                  margin="normal"
-                  type="email"
-                  autoComplete="email"
-                />
-              </div>
-              <div className='subscribe-form-input'>
-                <TextField
-                  style={styles.textField}
-                  required
-                  name='city'
-                  onChange={this.handleChange}
-                  value={this.state.city}
-                  label='CITY'
-                  margin="normal"
-                />
-              </div>
-              <div className='subscribe-form-button'>
-                <Button content='KEEP ME POSTED' icon='mail' center/>
-              </div>
-            </form>
+        <div className={this.state.open ? 'display overlay' : ''}>
+          <div id='subscribe-dialog' className={this.state.open ? 'display' : ''}>
+            <div id='subscribe-dialog-header'>
+              <Icon onClick={this.handleClose} style={styles.icon}>close</Icon>
+              <h5>JOIN OUR MAILING LIST</h5>
+            </div>
+            <div id='subscribe-dialog-body'>
+              <p>We are expanding quickly and we will let you know when we’re coming to your area.</p>
+              <form onSubmit={this.handleSubmit}>
+                <div className='subscribe-form-input'>
+                  <TextField
+                    style={styles.textField}
+                    required
+                    name='email'
+                    onChange={this.handleChange}
+                    value={this.state.email}
+                    label='E-MAIL ADDRESS'
+                    margin="normal"
+                    type="email"
+                    autoComplete="email"
+                  />
+                </div>
+                <div className='subscribe-form-input'>
+                  <TextField
+                    style={styles.textField}
+                    required
+                    name='city'
+                    onChange={this.handleChange}
+                    value={this.state.city}
+                    label='CITY'
+                    margin="normal"
+                  />
+                </div>
+                <div className='subscribe-form-button'>
+                  <Button content='KEEP ME POSTED' icon='mail' center/>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { Dropdown, Icon } from 'semantic-ui-react'
 import changeLocationBooking from '../../actions/changeLocationBooking';
 
 const locations = [
+  'Ajax',
   'Bolton', 
   'Brampton', 
   'Caledon',
@@ -11,7 +12,9 @@ const locations = [
   'Etobicoke', 
   'Leslieville',
   'Maple', 
-  'Mississauga', 
+  'Markham',
+  'Mississauga',
+  'Newmarket', 
   'Nobleton',
   'North York',
   'Ottawa',

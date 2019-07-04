@@ -80,7 +80,7 @@ export default class SubscribeInit extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={this.state.open ? 'display overlay' : ''}>
         <div id='subscribe-dialog' className={this.state.open ? 'display' : ''}>
           <div id='subscribe-dialog-header'>
             <Icon onClick={this.handleClose} style={styles.icon}>close</Icon>
