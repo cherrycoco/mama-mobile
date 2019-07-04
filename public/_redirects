@@ -1,3 +1,12 @@
 # Redirects from what the browser requests to what we serve
-/booking-request   /booking-request
-/*    /index.html   200
+/home-1                     /
+/upcomingevents/            /
+/about-moksha               /
+/mommy-connections          /
+/new-page                   /
+/resume                     /
+/resume-submission          /
+/terms-and-policies-moksha  / 
+/leslieville/               /
+/services-1                 /
+/torontoappointmentrequest  /
