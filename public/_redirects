@@ -1,11 +1,11 @@
 # Redirects from what the browser requests to what we serve
-/about                      /about
-/booking-requests           /booking-requests
-/gift-card                  /gift-card
-/blog                       /blog
-/blog/*                     /blog
-/contact                    /contact
-/careers                    /careers
+# /about                      /about
+# /booking-request            /booking-request
+# /gift-card                  /gift-card
+# /blog                       /blog
+# /blog/*                     /blog
+# /contact                    /contact
+# /careers                    /careers
 /home-1                     /
 /upcomingevents/            /
 /about-moksha               /
