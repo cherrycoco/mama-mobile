@@ -27,7 +27,9 @@ const Prices = () => (
             divider
           />
         </div>
-        <h5>All prices subject to HST (13%)</h5>
+        <h4>We provide an insurance receipt! (RMT)</h4>
+        <h5><i>(Ask your provider for your coverage)</i></h5>
+        <h5>*All prices subject to HST (13%)*</h5>
       </ScrollAnimation>
     </div>
 )

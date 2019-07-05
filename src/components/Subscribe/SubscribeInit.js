@@ -31,10 +31,15 @@ export default class SubscribeInit extends React.Component {
       city: '',
       open: false,
     }
+  
   };
 
   componentDidMount = () => {
-    setInterval(this.handleClickOpen, 40000);
+    this.interval = setInterval(this.handleClickOpen, 40000);
+  }
+
+  componentWillUnmount = () => {
+    clearInterval(this.interval);
   }
 
   handleChange = (e) => {
@@ -57,7 +62,6 @@ export default class SubscribeInit extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     
-    console.log(this.state);
     fetch('/.netlify/functions/subscribe', {
       method: 'POST',
       body: JSON.stringify(this.state),

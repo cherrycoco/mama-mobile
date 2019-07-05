@@ -10,6 +10,7 @@ const locations = [
   'Caledon',
   'Danforth',
   'Etobicoke', 
+  'King City',
   'Leslieville',
   'Maple', 
   'Markham',
@@ -20,13 +21,16 @@ const locations = [
   'Ottawa',
   'Oakville',
   'Palgrave', 
+  'Pickering',
   'Port Credit',
   'Richmond Hill', 
+  'Rosedale',
   'Scarborough',
   'Thornhill', 
   'Toronto',
   'Woodbridge',
   'Vaughan', 
+  'Yorkville',
   "Don't see your city?"
 ];
 
