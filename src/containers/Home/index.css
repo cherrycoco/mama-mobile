@@ -130,18 +130,20 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-basis: auto;
   margin-bottom: 30px;
 }
 
 /* How it works */
 #how-it-works {
-  padding: 40px 10% 0 10%;
+  padding: 40px 5% 0 5%;
 }
 
 .how-it-works-card {
   min-width: 210px;
-  margin: 30px 20px;
+  max-width: 300px;
+  margin: 30px 10px;
 }
 
 .how-it-works-card img {
@@ -175,11 +177,6 @@
 }
 
 @media only screen and (max-width: 725px) {
-  #how-it-works-wrapper {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
   .how-it-works-card {
     width: 100%;
     margin-bottom: 30px;
@@ -288,13 +285,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  #type-card-wrapper {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 0;
-  }
-
   .mama-type {
     padding: 0;
   }
