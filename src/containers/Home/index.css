@@ -302,14 +302,14 @@
   padding: 20px 10%;
 }
 
-#prices h4 {
+h4.pricing-insurance {
   margin: 0;
   color: rgb(215, 174, 209);
   font-size: 17px;
   margin-bottom: 3px;
 }
 
-#prices h5 {
+h5.pricing-footer {
   margin: 0;
   color: #4a4a4a;
   margin-bottom: 10px;
@@ -385,6 +385,15 @@
 }
 
 @media only screen and (max-width: 450px) {
+  h4.pricing-insurance {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  h5.pricing-footer {
+    font-size: 12px;
+  }
+  
   .price-card h2 {
     font-size: 18px;
   }
