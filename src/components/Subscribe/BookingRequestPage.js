@@ -4,7 +4,12 @@ import TextField from '@material-ui/core/TextField';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
 import PhoneNumberMask from './PhoneNumberMask';
-import CheckBox from './CheckBox';
+import MomentUtils from '@date-io/moment';
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
+import DateTimePickerWrapper from './DateTimePicker';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
 
 const styles = {
   root: {
@@ -54,45 +59,13 @@ export default class BookingRequestPage extends React.Component {
       firstName: '',
       lastName: '',
       email: '',
-      subject: '',
       message: '',
       tel: '',
       unit: '',
-      mon: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      tues: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      wed: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      thurs: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      fri: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      sat: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
-      sun: {
-        morning: false,
-        afternoon: false,
-        night: false,
-      },
+      option1: null,
+      option2: null,
+      option3: null,
+      massage: '',
     }
   };
 
@@ -116,6 +89,12 @@ export default class BookingRequestPage extends React.Component {
     });
   };
 
+  handleDateChange = (name, time) => {
+    this.setState({
+      [name]: time
+    });
+  };
+
   handleAddressSelect = (address) => {
     this.setState({
       'address': address.formatted_address
@@ -135,45 +114,13 @@ export default class BookingRequestPage extends React.Component {
           firstName: '',
           lastName: '',
           email: '',
-          subject: '',
           unit: '',
           message: '',
           tel: '',
-          mon: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          tues: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          wed: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          thurs: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          fri: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          sat: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
-          sun: {
-            morning: false,
-            afternoon: false,
-            night: false,
-          },
+          option1: null,
+          option2: null,
+          option3: null,
+          massage: '',
         });
         alert('Hey Mama - we are working our best to get you a booking!');
       } else {
@@ -189,7 +136,6 @@ export default class BookingRequestPage extends React.Component {
           <h5>REQUEST A BOOKING</h5>
         </div>
         <div id='booking-form-body'>
-          <p>Please submit a booking request here:</p>
           <form onSubmit={this.handleSubmit}>
             <div className='contact-form-input'>
               <TextField
@@ -269,49 +215,46 @@ export default class BookingRequestPage extends React.Component {
                 placeholder="Unit #"
               />
             </div>
-            <div className='check-box-wrapper'>
-              <p>Please select your availability here: </p>
-              <div className='check-box-line-heading'>
-                <h5> </h5>
-                <h4>Mon</h4>   
-                <h4>Tues</h4> 
-                <h4>Wed</h4> 
-                <h4>Thurs</h4> 
-                <h4>Fri</h4> 
-                <h4>Sat</h4> 
-                <h4>Sun</h4>                
-              </div>
-              <div className='check-box-line-one'>
-                <h5>Morning: </h5>
-                <CheckBox value='mon.morning' checked={this.state.mon.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='tues.morning' checked={this.state.tues.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='wed.morning' checked={this.state.wed.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='thurs.morning' checked={this.state.thurs.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='fri.morning' checked={this.state.fri.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='sat.morning' checked={this.state.sat.morning} onCheck={this.handleCheckBox} />
-                <CheckBox value='sun.morning' checked={this.state.sun.morning} onCheck={this.handleCheckBox} />
-              </div>
-              <div className='check-box-line-two'>
-                <h5>Afternoon: </h5>
-                <CheckBox value='mon.afternoon' checked={this.state.mon.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='tues.afternoon' checked={this.state.tues.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='wed.afternoon' checked={this.state.wed.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='thurs.afternoon' checked={this.state.thurs.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='fri.afternoon' checked={this.state.fri.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='sat.afternoon' checked={this.state.sat.afternoon} onCheck={this.handleCheckBox} />
-                <CheckBox value='sun.afternoon' checked={this.state.sun.afternoon} onCheck={this.handleCheckBox} />
-              </div>
-              <div className='check-box-line-three'>
-                <h5>Night: </h5>
-                <CheckBox value='mon.night' checked={this.state.mon.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='tues.night' checked={this.state.tues.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='wed.night' checked={this.state.wed.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='thurs.night' checked={this.state.thurs.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='fri.night' checked={this.state.fri.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='sat.night' checked={this.state.sat.night} onCheck={this.handleCheckBox} />
-                <CheckBox value='sun.night' checked={this.state.sun.night} onCheck={this.handleCheckBox} />
-              </div>
+            <div className='massage-select'>
+              <InputLabel>Select your massage:</InputLabel>
+              <Select
+                value={this.state.massage}
+                onChange={(e) => this.handleChange(e)}
+                inputProps={{
+                  name: 'massage',
+                }}
+              >
+                <MenuItem value={'Prenatal Massage - 60 Minutes'}>Prenatal Massage - 60 Minutes</MenuItem>
+                <MenuItem value={'Prenatal Massage - 90 Minutes'}>Prenatal Massage - 90 Minutes</MenuItem>
+                <MenuItem value={'Postnatal Massage - 60 Minutes'}>Postnatal Massage - 60 Minutes</MenuItem>
+                <MenuItem value={'Postnatal Massage - 90 Minutes'}>Postnatal Massage - 90 Minutes</MenuItem>
+                <MenuItem value={'Busy Mama Massage- 60 Minutes'}>Busy Mama Massage- 60 Minutes</MenuItem>
+                <MenuItem value={'Busy Mama Massage- 90 Minutes'}>Busy Mama Massage- 90 Minutes</MenuItem>
+                <MenuItem value={'Mama & Papa Massage - 60 Minutes'}>Mama & Papa Massage - 60 Minutes</MenuItem>
+                <MenuItem value={'Mama & Papa Massage - 90 Minutes'}>Mama & Papa Massage - 90 Minutes</MenuItem>
+              </Select>
             </div>
+            <InputLabel>Select your top three appointment dates:</InputLabel>
+            <MuiPickersUtilsProvider utils={MomentUtils}>
+              <DateTimePickerWrapper 
+                label='Option 1 - top pick 🎉'
+                value={this.state.option1}
+                name='option1'
+                onChange={this.handleDateChange}
+              />
+              <DateTimePickerWrapper 
+                label='Option 2 - this is alright too 🙌'
+                value={this.state.option2}
+                name='option2'
+                onChange={this.handleDateChange}
+              />
+              <DateTimePickerWrapper 
+                label='Option 3 - I guess this will do 💕'
+                value={this.state.option3}
+                name='option3'
+                onChange={this.handleDateChange}
+              />
+            </MuiPickersUtilsProvider>
             <div className='contact-form-input'>
               <TextField
                 name='message'
