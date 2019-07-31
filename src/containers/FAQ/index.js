@@ -11,7 +11,6 @@ class FAQ extends React.Component {
       a1: false,
       a2: false,
       a3: false,
-      a4: false,
       a5: false,
       a6: false,
       a7: false,
@@ -50,14 +49,6 @@ class FAQ extends React.Component {
     <div className='FAQ-card-answers'> 
       <p>We have a strict 24 hour cancellation policy. Although we want to make life as easy as possible for our mamas our RMT’s also only are able to see limited mamas per day because of the extra time we schedule! We typically have a long waiting list and can fill your space but need a little notice, you know? </p>
       <p>You can cancel and reschedule online. If you are close to labour we may be a little bit more understanding, just let us know on booking and we can reschedule till baby is in your arms if need be.</p>
-    </div>
-  )
-
-  renderA4 = () => (
-    <div className='FAQ-card-answers'> 
-      <p>
-        OMG so glad you asked. YES. We have special pillowing that supports not only that precious bump of yours but all of the joints, ligaments and muscles surrounding it! Did we mention…all of our RMT’s are prenatal massage experts? We will be sure to only put you in this position if it is 100% safe for your specific pregnancy. We have loads of alternative solutions for your comfort if this isn’t the ideal position for you today. Rest easy knowing we got your bump.
-      </p>
     </div>
   )
 
@@ -212,14 +203,6 @@ class FAQ extends React.Component {
               <h4>What is your cancellation policy?</h4>
             </div>
             {this.state.a3 && this.renderA3()}
-          </div>
-
-          <div className='FAQ-card'>
-            <div className='FAQ-card-questions' onClick={() => this.handleClick('a4')}>
-              {this.state.a4 ? <Icon name='angle down' size='large'/> : <Icon name='angle right' size='large'/> }
-              <h4>Do you have that pregnancy pillow?</h4>
-            </div>
-            {this.state.a4 && this.renderA4()}
           </div>
 
           <div className='FAQ-card'>

@@ -21,7 +21,7 @@ const MamaType = () => (
         alt='prenatal massage'
         title='Prenatal Mama?'
         description1='Wanna lay on your bump? Want an expert RMT?'
-        description2='Enjoy our secret contoured belly pillows and pregnancy massage by one of our specially trained RMT’s. Ease swelling and muscle/joint pain and prepare your bod for a more comfortable delivery!'
+        description2='One of our specially trained RMT’s will help ease swelling and muscle/joint pain and prepare your bod for a more comfortable delivery!'
       />
       <TypeCard
         img={postnatal}
