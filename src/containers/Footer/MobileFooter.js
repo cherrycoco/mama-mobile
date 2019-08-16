@@ -20,7 +20,7 @@ const MobileFooter = () => (
       <img src={logo} alt='mama mobile logo' />
       <div>
         <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-        <a href='tel:800-626-2055'>1 (800) 626 - 2055</a>
+        <a href='tel:866-266-3779'>1 (866) 266 - 3779</a>
       </div>
       <br />
       <div>

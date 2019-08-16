@@ -70,7 +70,7 @@ class MobileNav extends React.Component {
         <Divider style={styles.divider}/>
         <div style={styles.phone}>
           <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-          <a style={styles.phoneNumber} href='tel:800-626-2055'>1 (800) 626 - 2055</a>
+          <a style={styles.phoneNumber} href='tel:866-266-3779'>1 (866) 266 - 3779</a>
         </div>
         <Divider style={styles.divider}/>
         <div id='mobile-nav-social'>
