@@ -5,9 +5,6 @@ import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
 import PhoneNumberMask from './PhoneNumberMask';
-import MomentUtils from '@date-io/moment';
-import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateTimePickerWrapper from './DateTimePicker';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -65,59 +62,29 @@ export default class BookingForm extends React.Component {
       tel: '',
       message: '',
       unit: '',
-      option1: null,
-      option2: null,
-      option3: null,
+      option1: '',
+      option2: '',
+      option3: '',
       massage: '',
-      // mon: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // tues: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // wed: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // thurs: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // fri: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // sat: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
-      // sun: {
-      //   morning: false,
-      //   afternoon: false,
-      //   night: false,
-      // },
     }
   };
 
-  // handleCheckBox = (e) => {
-  //   const name = e.target.value;
-  //   let day = name.split('.')[0];
-  //   let time = name.split('.')[1];
-  //   let state = {...this.state[day]};
-  //   state[time] = !state[time];
+  componentDidMount = () => {
+    this.setState({
+      option1: this.generateSampleDate()
+    });
+  }
 
-  //   this.setState({
-  //     [day]: state,
-  //   });
-  // };
+  generateSampleDate = () => {
+    const monthMap = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+    const today = new Date();
+    let month = monthMap[today.getMonth()]; 
+    let day = today.getDate();
+    if (day < 10) day = `0${day}`;
+    const dateString = `${today.getFullYear()}-${month}-${day}T19:00`;
+    console.log(dateString);
+    return dateString;
+  } 
 
   handleChange = (e) => {
     const name = e.target.name;
@@ -131,12 +98,6 @@ export default class BookingForm extends React.Component {
   handleAddressSelect = (address) => {
     this.setState({
       'address': address.formatted_address
-    });
-  };
-
-  handleDateChange = (name, time) => {
-    this.setState({
-      [name]: time
     });
   };
 
@@ -165,45 +126,10 @@ export default class BookingForm extends React.Component {
           unit: '',
           tel: '',
           message: '',
-          option1: null,
-          option2: null,
-          option3: null,
+          option1: '',
+          option2: '',
+          option3: '',
           massage: '',
-          // mon: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // tues: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // wed: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // thurs: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // fri: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // sat: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
-          // sun: {
-          //   morning: false,
-          //   afternoon: false,
-          //   night: false,
-          // },
         });
         alert('Hey Mama - we are working our best to get you a booking!');
       } else {
@@ -327,8 +253,42 @@ export default class BookingForm extends React.Component {
                   </Select>
                 </div>
                 <InputLabel>Select your top three appointment dates:</InputLabel>
-                <MuiPickersUtilsProvider utils={MomentUtils}>
-                  <DateTimePickerWrapper 
+                <TextField
+                  required
+                  className='date-selector'
+                  label='Option 1 - top pick 🎉'
+                  type="datetime-local"
+                  value={this.state.option1}
+                  name='option1'
+                  onChange={this.handleChange}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+                <TextField
+                  required
+                  className='date-selector'
+                  label='Option 2 - this is alright too 🙌'
+                  type="datetime-local"
+                  value={this.state.option2}
+                  name='option2'
+                  onChange={this.handleChange}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+                <TextField
+                  className='date-selector'
+                  label='Option 3 - I guess this will do 💕'
+                  type="datetime-local"
+                  value={this.state.option3}
+                  name='option3'
+                  onChange={this.handleChange}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+                  {/* <DateTimePickerWrapper 
                     label='Option 1 - top pick 🎉'
                     value={this.state.option1}
                     name='option1'
@@ -346,7 +306,7 @@ export default class BookingForm extends React.Component {
                     name='option3'
                     onChange={this.handleDateChange}
                   />
-                </MuiPickersUtilsProvider>
+                </MuiPickersUtilsProvider> */}
                 {/* <div className='check-box-wrapper'>
                   <p>Please select your availability here: </p>
                   <div className='check-box-line-heading'>

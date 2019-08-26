@@ -4,9 +4,6 @@ import TextField from '@material-ui/core/TextField';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
 import PhoneNumberMask from './PhoneNumberMask';
-import MomentUtils from '@date-io/moment';
-import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateTimePickerWrapper from './DateTimePicker';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -62,36 +59,35 @@ export default class BookingRequestPage extends React.Component {
       message: '',
       tel: '',
       unit: '',
-      option1: null,
-      option2: null,
-      option3: null,
+      option1: '',
+      option2: '',
+      option3: '',
       massage: '',
     }
   };
 
-  handleCheckBox = (e) => {
-    const name = e.target.value;
-    let day = name.split('.')[0];
-    let time = name.split('.')[1];
-    let state = {...this.state[day]};
-    state[time] = !state[time];
-
+  componentDidMount = () => {
     this.setState({
-      [day]: state,
+      option1: this.generateSampleDate()
     });
-  };
+  }
+
+  generateSampleDate = () => {
+    const monthMap = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+    const today = new Date();
+    let month = monthMap[today.getMonth()]; 
+    let day = today.getDate();
+    if (day < 10) day = `0${day}`;
+    const dateString = `${today.getFullYear()}-${month}-${day}T19:00`;
+    console.log(dateString);
+    return dateString;
+  } 
 
   handleChange = (e) => {
     const name = e.target.name;
 
     this.setState({
       [name]: e.target.value
-    });
-  };
-
-  handleDateChange = (name, time) => {
-    this.setState({
-      [name]: time
     });
   };
 
@@ -117,9 +113,9 @@ export default class BookingRequestPage extends React.Component {
           unit: '',
           message: '',
           tel: '',
-          option1: null,
-          option2: null,
-          option3: null,
+          option1: '',
+          option2: '',
+          option3: '',
           massage: '',
         });
         alert('Hey Mama - we are working our best to get you a booking!');
@@ -235,7 +231,42 @@ export default class BookingRequestPage extends React.Component {
               </Select>
             </div>
             <InputLabel>Select your top three appointment dates:</InputLabel>
-            <MuiPickersUtilsProvider utils={MomentUtils}>
+            <TextField
+              required
+              className='date-selector'
+              label='Option 1 - top pick 🎉'
+              type="datetime-local"
+              value={this.state.option1}
+              name='option1'
+              onChange={this.handleChange}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+            <TextField
+              required
+              className='date-selector'
+              label='Option 2 - this is alright too 🙌'
+              type="datetime-local"
+              value={this.state.option2}
+              name='option2'
+              onChange={this.handleChange}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+            <TextField
+              className='date-selector'
+              label='Option 3 - I guess this will do 💕'
+              type="datetime-local"
+              value={this.state.option3}
+              name='option3'
+              onChange={this.handleChange}
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+            {/* <MuiPickersUtilsProvider utils={MomentUtils}>
               <DateTimePickerWrapper 
                 label='Option 1 - top pick 🎉'
                 value={this.state.option1}
@@ -254,7 +285,7 @@ export default class BookingRequestPage extends React.Component {
                 name='option3'
                 onChange={this.handleDateChange}
               />
-            </MuiPickersUtilsProvider>
+            </MuiPickersUtilsProvider> */}
             <div className='contact-form-input'>
               <TextField
                 name='message'
