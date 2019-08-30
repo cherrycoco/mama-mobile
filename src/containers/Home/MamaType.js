@@ -35,7 +35,6 @@ const MamaType = () => (
         alt='couples massage'
         title='Power Duo?'
         description1='Let’s be real, both partners deserve TLC. Tag team together to get the little ones to bed while your better half gets massaged in peace. No ifs, fomo or fights about it.'
-        description2='Ooo also enjoy our discounted couples rates!'
       />
     </div>
   </div>
