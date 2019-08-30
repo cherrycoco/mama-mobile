@@ -17,6 +17,63 @@ import blog0 from '../../assets/blog0.png';
 
 const blogData = [
   {
+    id: 16,
+    date_created: new Date('AUGUST 30, 2019'), 
+    img: `https://res.cloudinary.com/dhze7gimq/image/upload/q_40/v1567180122/blog/blog_16.png`,
+    title: 'Why I CHOSE a C-Section',
+    author: 'Amanda Thomson',
+    type: 'Mama Story',
+    blogPost: [
+      {
+        type: 'p',
+        content:`“I had a c-section.” Every time you say that sentence you are immediately met with the same kind of questions or statements. “Emergency? Oh I\someone I know, had to have an emergency C-section” “oh, I was worried about that. Luckily I was able to have a natural birth.”  Now I don’t even pause I just immediately follow it up with…  “by choice.” The truth is, vaginal birth never even crossed my mind as an option.`
+      },
+      {
+        type: 'img',
+        content: `https://res.cloudinary.com/dhze7gimq/image/upload/q_40/v1567180122/blog/blog_16.png`
+      },
+      {
+        type: 'p_bold',
+        content: `Have you ever asked if you can have an elective C-section?`
+      },
+      {
+        type: 'p_bold',
+        content: `Have you ever talked about it in a group setting?`
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `Even discussing it is met with hushed tones and disapproval. Mom shamed is an understatement. I was questioned at every single turn, most people I talked to didn’t even know you could ask.`,
+          `I was told about risks every single time I brought it up, which I had thoroughly researched and understood. One doctor I saw wouldn’t even discuss it with me and became almost standoffish every time I brought it up, I learned that advocating for yourself is the most important thing to do.`,
+        ]
+      },
+      {
+        type: 'quote',
+        content: `My birth wasn’t any less natural because it’s what came naturally to me. I’m not any less of a mother because they used a scalpel, I’m a mother because I love my child with my entire existence.`
+      },
+      {
+        type: 'p',
+        content: `Lyric was welcomed to the world on November 5, 2018. My husband was at my side and was able to snap this epic photo.`,
+      },
+      {
+        type: 'p_bold',
+        content: `I have no shame in my birth story. It's mine.`,
+      },
+      {
+        type: 'img',
+        content: `https://res.cloudinary.com/dhze7gimq/image/upload/q_40/v1567181573/blog/Screen_Shot_2019-08-30_at_9.07.07_AM_hnqmli.png`,
+      },
+      {
+        type: 'p',
+        content: `About the author: Amanda is a bad-ass mama residing in Leslieville Toronto, Ontario.`,
+      },
+      {
+        type: 'p',
+        content: `Connect with her over on IG @amanda.c.thomson`,
+      },
+    ],
+  },
+  {
     id: 15,
     date_created: new Date('FEBRUARY 26, 2019'), 
     img: blog15,
@@ -61,7 +118,7 @@ const blogData = [
     date_created: new Date('DECEMBER 7, 2018'),
     img: blog14,
     title: 'The Mom Blog',
-    type: 'Mama Review',
+    type: 'Mama Story',
     author: 'Daniella',
     blogPost: [
       {
@@ -128,7 +185,7 @@ const blogData = [
     date_created: new Date('NOVEMBER 26, 2018'),
     img: blog12,
     title: 'Leslievillemom.com',
-    type: 'Mama Review',
+    type: 'Mama Story',
     author: 'Angela',
     blogPost: [
       {
@@ -379,7 +436,7 @@ const blogData = [
     date_created: new Date('JUNE 11, 2018'),
     img: blog6,
     title: 'Juniorgrownup.com',
-    type: 'Mama Review',
+    type: 'Mama Story',
     author: 'Juniorgrownup.com',
     blogPost: [
       {
@@ -423,7 +480,7 @@ const blogData = [
     date_created: new Date('JUNE 11, 2018'),
     img: blog5,
     title: 'TalesofMommyhood.com',
-    type: 'Mama Review',
+    type: 'Mama Story',
     author: 'Ashley',
     blogPost: [
       {

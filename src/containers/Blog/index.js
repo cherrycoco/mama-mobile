@@ -19,7 +19,7 @@ const Blog = ({ blogs, filterBlog, selectBlogPost}) => (
       <button onClick={() => filterBlog('all')}>Show All</button>
       <button onClick={() => filterBlog('Educate')}>Educate</button>
       <button onClick={() => filterBlog('Booking')}>Booking</button>
-      <button onClick={() => filterBlog('Mama Review')}>Mama Review</button>
+      <button onClick={() => filterBlog('Mama Story')}>Mama Story</button>
     </div>
     <div className='clear-float' />
     <div id='blog-cards'>
