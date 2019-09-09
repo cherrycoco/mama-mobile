@@ -1,5 +1,4 @@
 import React from 'react';
-import ButtonAnimated from '../../components/Button/ButtonAnimated';
 
 const UpcomingEvents = () => (
   <div id='upcoming-events'>
@@ -16,7 +15,7 @@ const UpcomingEvents = () => (
       </ol>
       <h5>New courses coming soon!</h5> 
       <h5>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSfshj8ARHlAq1Or4cxEdJGOSAU1zWaBxl7vtk7Op8w0bX7eJg/viewform' target='_blank'><b>CLICK HERE </b></a> 
+        <a className='underline' href='https://docs.google.com/forms/d/e/1FAIpQLSfshj8ARHlAq1Or4cxEdJGOSAU1zWaBxl7vtk7Op8w0bX7eJg/viewform' target='_blank'><b>CLICK HERE </b></a> 
         to be added to the waitlist for upcoming courses in your location!
       </h5>
     </div>

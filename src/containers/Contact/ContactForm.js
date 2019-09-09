@@ -1,6 +1,5 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
-import Button from '../../components/Button/ButtonAnimated';
 
 const styles = {
   root: {
@@ -144,13 +143,7 @@ class ContactForm extends React.Component {
             variant="outlined"
           />
         </div>
-        <div id='contact-form-button'>
-          <Button 
-            content='SEND!'
-            icon='mail'
-            center
-          />
-        </div>
+        <button className='book-button button-outline'>SEND!</button>
         <div className='clearFloat' />
         {this.renderMessage()}
       </form>

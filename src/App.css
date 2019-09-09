@@ -1,12 +1,65 @@
+:root {
+  --color-pink: #F5C3CF;
+  --color-pink1: #F087A0;
+  --color-pink2: #F08EB7;
+  --color-pink3: #F4ADA5;
+  --color-blue: #819aff;
+  --color-paleBlue: #adbdff;
+  --color-darkGray: #444;
+  --color-gray: #9c969a;
+  --color-lightGray: #b5b5b5;
+  --color-accent: #f50057;
+  --color-background: #FDF3EA;
+}
+
+@font-face {
+  font-family: 'galano-semibold';
+  src: url('./galano/galanogrotesquealt-semibold-webfont.woff2') format('woff2'),
+       url('./galano/galanogrotesquealt-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'galano-light';
+  src: url('./galano/galanogrotesquealt-light-webfont.woff2') format('woff2'),
+       url('./galano/galanogrotesquealt-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'galano-reg';
+  src: url('./galano/GalanoGrotesque-Regular-webfont.woff2') format('woff2'),
+       url('./galano/GalanoGrotesque-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'galano-bold';
+  src: url('./galano/GalanoGrotesque-Bold-webfont.woff2') format('woff2'),
+       url('./galano/GalanoGrotesque-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 a, p, h1, h2, h4, h5 {
-  color: rgb(69, 69, 69);
+  color: var(--color-darkGray);
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'galano-bold', sans-serif;
   font-size: 1.4em;
-  font-weight: 800;
   letter-spacing: 0.2em;
+}
+
+h2 {
+  font-family: 'galano-bold', sans-serif;
+}
+
+h4 {
+  font-family: 'galano-semibold', sans-serif;
 }
 
 .divider {
@@ -16,16 +69,30 @@ h3 {
   margin-right: auto;
 }
 
-p, li, a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+p, li {
+  font-family: 'galano-reg', sans-serif;
   font-size: 15px;
   letter-spacing: .05em;
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  font-family: 'galano-reg', sans-serif;
+  color: var(--color-darkGray);
+  font-size: 14px;
+  letter-spacing: .12em;
+}
+
 a:hover {
-  color: #cea6dd;
+  color: var(--color-darkGray);
+}
+
+a.underline:hover {
+  background-image: linear-gradient(180deg, var(--color-pink), var(--color-pink));
+  background-repeat: no-repeat;
+  background-position: 4px bottom;
+  background-size: 100% 10px;
 }
 
 .clearFloat {
@@ -64,7 +131,7 @@ a:hover {
 }
 
 .box:hover {
-  color: rgba(228, 193, 235, 0.84);
+  color: var(--color-accent);
   border: none;
   transition: all 1s;
 }
@@ -72,8 +139,8 @@ a:hover {
 .box:hover::before {
   width: 100%;
   height: 100%;
-  border-top-color: rgba(228, 193, 235, 0.84);
-  border-right-color: rgba(228, 193, 235, 0.84);
+  border-top-color: var(--color-accent);
+  border-right-color: var(--color-accent);
   transition:
     width 0.25s ease-out,
     height 0.25s ease-out 0.25s;
@@ -82,8 +149,8 @@ a:hover {
 .box:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom-color: rgba(228, 193, 235, 0.84);
-  border-left-color: rgba(228, 193, 235, 0.84);
+  border-bottom-color: var(--color-accent);
+  border-left-color: var(--color-accent);
   transition:
     border-color 0s ease-out 0.5s,
     width 0.25s ease-out 0.5s,
@@ -92,9 +159,103 @@ a:hover {
 
 /* button border */
 
-.button-border:hover {
-  background-color: #c68bbd !important;
-  color: white !important;
+button.button-outline,
+.button-outline {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  position: relative;
+  z-index: 0;
+  padding: .75rem 1.5625rem;
+  -webkit-transform: translate3d(.375rem,-.375rem,0);
+  transform: translate3d(.375rem,-.375rem,0);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  color: black;
+  height: auto;
+  margin-bottom: .375rem;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  min-width: 9rem;
+  font-family: 'galano-bold', sans-serif;
+}
+
+button.button-outline:hover,
+button.button-outline:hover::before,
+.button-outline:hover,
+.button-outline:hover::before {
+  color: black;
+  transform: translateZ(0);
+}
+/* button.button-outline,
+.button-outline {
+  position: relative;
+  font-family: 'galano-bold', sans-serif;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #000;
+  color: #000;
+  padding: 6px 20px;
+  background: white;
+} */
+
+/* button.button-outline:hover,
+.button-outline:hover {
+  position: relative;
+  background: none;
+  color: black;
+}
+
+button.button-outline:hover::before,
+.button-outline:hover::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--color-pink);
+  content: "";
+  z-index: -2;
+} */
+
+button.button-outline:before,
+.button-outline:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-pink);
+  content: "";
+  -webkit-transform: translate3d(-.375rem,.375rem,0);
+  transform: translate3d(-.375rem,.375rem,0);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  border-radius: 5px;
+}
+
+button.button-outline:after,
+.button-outline:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  content: "";
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  border-radius: 5px;
 }
 
 .button-border h3 {
@@ -131,3 +292,4 @@ a:hover {
   z-index: 100;
   background: rgba(0, 0, 0, 0.8);
 }
+

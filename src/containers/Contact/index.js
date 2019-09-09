@@ -14,7 +14,7 @@ const Contact = () => (
     <h1 className='title'>DROP US A LINE!</h1>
     <div id='contact-wrapper'>
       <div id='contact-title'>
-        <h1><b>Questions?</b></h1>
+        <h1>Questions?</h1>
         <h1>Contact us today!</h1>
       </div>
       <ContactForm />

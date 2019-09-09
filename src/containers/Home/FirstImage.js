@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Button from '../../components/Button/ButtonAnimated';
 import changeLocationBooking from '../../actions/changeLocationBooking';
 import LocationSelect from '../../components/LocationSelect/index';
 import Subscribe from '../../components/Subscribe/index';
 import BookingForm from '../../components/Subscribe/bookingForm';
+import Fab from '@material-ui/core/Fab';
 
 const locationsJane = {
   Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
@@ -23,11 +23,13 @@ const renderBookButton = (location, changeLocation) => {
   } else if (locationsJane[location] || location === '') {
     return (
       <form method='get' action={locationsJane[location]}>
-        <Button 
-          content="BOOK NOW"
-          icon="heart"
-          center
-        />
+        <Fab
+          id='select-location-button'
+          variant="extended"
+          aria-label="book"
+        >
+          BOOK
+        </Fab>
       </form> 
     )
   } else {
@@ -48,13 +50,9 @@ const FirstImage = (props) => (
   >
     <div id='home-first-image-content'>
       <h1>{props.title}</h1>
-      <div id='location'>
-        <div id='location-select-wrapper'>
-          <LocationSelect />
-        </div>
-        <div className='book-button'>
-          {renderBookButton(props.location, props.changeLocationBooking)}
-        </div>
+      <div className='location'>
+        <LocationSelect />
+        {renderBookButton(props.location, props.changeLocationBooking)}
       </div>
     </div>
   </div>

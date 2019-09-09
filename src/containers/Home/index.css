@@ -1,5 +1,5 @@
 #home-first-image {
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -19,34 +19,50 @@
 
 #home-first-image-content h1 {
   color: white;
-  font-family: 'Raleway', cursive;
-  text-transform: uppercase;
+  font-family: 'galano-semibold', sans-serif;
   text-align: center;
   line-height: 1.1em;
   z-index: 1;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
-#location {
+.location {
   width: 500px;
   margin: 40px auto;
-}
-
-#location-select-wrapper {
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #location-select {
   background-color: white;
+  border-radius: 15px;
   width: 300px;
-  height: 55px;
-  padding: 10px;
   position: relative;
+  height: 50px;
+  padding: 3px;
 }
 
-.book-button {
-  width: 200px;
-  float: right;
+#location-select .ui.selection.active.dropdown {
+  box-shadow: none;
+}
+
+#location-select .ui.selection.active.dropdown .menu {
+  border-color: var(--color-pink);
+}
+
+#select-location-button {
+  margin-left: 10px;
+  background-color: var(--color-pink);
+  color: white;
+  font-family: 'galano-bold', sans-serif;
+  font-size: 14px;
+  letter-spacing: .12em;
+  padding: 0 40px;
+}
+
+#select-location-button:hover {
+  background-color: var(--color-accent);
 }
 
 @media only screen and (max-width: 750px) {
@@ -64,30 +80,13 @@
     width: 90%;
   }
 
-  .book-button {
-    width: 120px;
-  }
-
-  .book-button h3{
-    font-size: 10px !important;
-  }
-
-  #location {
+  .location {
     width: 420px;
   }
 }
 
 @media only screen and (max-width: 460px) {
-
-  .book-button h3{
-    letter-spacing: 1px;
-  }
-
-  .book-button {
-    width: 100px;
-  }
-
-  #location {
+  .location {
     width: 340px;
   }
 
@@ -102,11 +101,10 @@
 }
 
 .title {
-  color: #cea6dd;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  color: var(--color-pink2);
+  font-family: 'galano-bold', sans-serif;
   text-align: center;
-  font-size: 45px;
+  font-size: 2.5em;
   line-height: .9em;
   padding-bottom: 30px;
   padding-top: 50px;
@@ -159,10 +157,10 @@
 }
 
 .how-it-works-card h2 {
-  font-family: 'raley', sans-serif;
-  color: rgb(100, 100, 100, 0.8);
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'galano-semibold', sans-serif;
+  text-transform: lowercase;
+  color: var(--color-lightGray);
+  font-size: 1.2em;
   letter-spacing: 0.1em;
   margin-top: 0;
 }
@@ -205,7 +203,7 @@
 }
 
 .mama-type h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'galano-semibold', sans-serif;
   text-align: center;
   margin-top: 30px;
   color: #454545;
@@ -237,13 +235,18 @@
   height: 100%;
   color: white;
   padding: 15px; 
-  background-color: rgba(228, 193, 235);
+  border-radius: 15px;
+  background-color: var(--color-pink);
   transition: 0.5s all;
 }
 
 .type-card-description.show-description {
   transition: 0.5s all;
   top: 0;
+}
+
+.type-card-description p {
+  font-family: 'galano-semibold';
 }
 
 .type-card-button {
@@ -275,8 +278,6 @@
 }
 
 .type-card p {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: .03em;
   color: white;
@@ -304,7 +305,7 @@
 
 h4.pricing-insurance {
   margin: 0;
-  color: rgb(215, 174, 209);
+  color: var(--color-pink1);
   font-size: 17px;
   margin-bottom: 3px;
 }
@@ -326,13 +327,12 @@ h5.pricing-footer {
   height: 50%;
   top: 30px;
   left: 0;
-  border-right: 3px solid rgb(215, 174, 209);
+  border-right: 3px solid var(--color-pink);
 }
 
 .price-card h2 {
   color: #4a4a4a;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: 'galano-bold', sans-serif;
   text-align: center;
   font-size: 36px;
   margin: 0;
@@ -340,8 +340,6 @@ h5.pricing-footer {
 
 .price-card p {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
   letter-spacing: .18em;
   color: gray;
   font-size: 20px;
@@ -351,7 +349,7 @@ h5.pricing-footer {
 .price-card h4 {
   text-align: center;
   color: #5a5a5a;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'galano-reg', sans-serif;
   letter-spacing: .18em;
   font-size: 20px;
   margin-top: 0;
@@ -487,7 +485,7 @@ h5.pricing-footer {
 #upcoming-events h2 {
   width: 80%;
   /* max-width: 700px; */
-  background-color: #E4B9D7;
+  background-color: var(--color-pink);
   text-align: center;
   margin-left: auto;
   margin-right: auto;

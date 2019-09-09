@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/ButtonAnimated';
 import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
@@ -117,9 +116,7 @@ export default class SubscribeInit extends React.Component {
                   margin="normal"
                 />
               </div>
-              <div className='subscribe-form-button'>
-                <Button content='KEEP ME POSTED' icon='mail' center/>
-              </div>
+              <button className='button-outline subscribe-button'>KEEP ME POSTED</button>
             </form>
           </div>
         </div>

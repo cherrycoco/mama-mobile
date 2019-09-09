@@ -5,11 +5,10 @@ import { Button, Icon } from 'semantic-ui-react';
 const styles = {
   wrapper: {
     width: '100%',
-    height: '55px',
-    backgroundColor: 'rgba(228,193,235,.84)',
-    boxShadow: '0 2px 0 0 rgba(215,163,225,.84)',
+    height: '50px',
+    backgroundColor: '#f50057',
     color: 'white',
-    borderRadius: '0',
+    borderRadius: '5px',
   },
   icon: {
     float: 'right',
@@ -26,13 +25,7 @@ const styles = {
 
 const ButtonAnimated = props => (
   <Button 
-    style={!props.color ? styles.wrapper : {
-      width: '100%',
-      height: '60px',
-      backgroundColor: `${props.buttonColor}`,
-      color: `${props.color}`,
-      borderRadius: '0',
-    }} 
+    style={styles.wrapper} 
     animated
     onClick={props.onClick ? props.onClick : null}
   >

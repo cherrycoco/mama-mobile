@@ -5,13 +5,8 @@
   margin-right: auto;
   max-width: 700px;
   display: flex;
-  /* margin-top: 20px; */
   justify-content: center;
   align-items: center;
-  /* background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; */
   position: relative;
 }
 
@@ -19,13 +14,13 @@
   width: 100%;
   height: 100%;
   padding: 50px 80px;
-  background-color: white;
-  /* border-radius: 100px 0; */
+  /* background-color: var(--color-pink);
+  border-radius: 100px 0; */
   position: relative;
 }
 
 .testimonial-card i {
-  color: rgba(198, 139, 189);
+  color: var(--color-pink2);
   margin: 0 auto;
   display: block;
 }
@@ -75,7 +70,7 @@
 
 .customer-avatar-content.active h4,
 .customer-avatar-content.active h5 {
-  color: rgba(198, 139, 189);
+  color: var(--color-pink2);
 }
 
 @media only screen and (max-width: 720px) {

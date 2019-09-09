@@ -1,6 +1,6 @@
 #FAQ {
   padding: 40px 20%;
-  background-color: rgb(250, 227, 253, 0.2);
+  background-color: var(--color-background);
 }
 
 #FAQ h1{
@@ -16,16 +16,14 @@
 }
 
 .FAQ-card-questions h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'galano-light', sans-serif;
   margin: 0;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 17px;
 }
 
 .FAQ-card-questions i {
-  color: #cea6dd;
+  color: var(--color-pink2);
 }
-
 
 .FAQ-card-answers {
   margin-top: 20px;
@@ -34,6 +32,7 @@
 
 .FAQ-card-answers p {
   line-height: 1.5em;
+  color: var(--color-gray);
 }
 
 .FAQ-card-answers b {

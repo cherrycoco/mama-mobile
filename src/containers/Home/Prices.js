@@ -28,8 +28,7 @@ const Prices = () => (
           />
         </div>
         <h4 className='pricing-insurance'>We provide an insurance receipt! (RMT)</h4>
-        <h5 className='pricing-footer'><i>(Ask your provider for your coverage)</i></h5>
-        <h5 className='pricing-footer'>*All prices subject to HST (13%)*</h5>
+        <h5 className='pricing-footer'>*All prices subject to HST (13%)</h5>
       </ScrollAnimation>
     </div>
 )

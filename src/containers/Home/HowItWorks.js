@@ -12,7 +12,7 @@ const HowItWorks = () => (
       animateIn="slideInUp"
       animateOnce
     >
-      <h1 className='title'>HOW IT WORKS</h1>
+      <h1 className='title'>HOW IT WORKS?</h1>
     </ScrollAnimation>
     <div className='card-wrapper' id='how-it-works-wrapper'>
       <HowItWorksCard 

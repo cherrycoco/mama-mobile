@@ -43,13 +43,6 @@ class TypeCard extends React.Component {
             <p>{this.props.description1}</p>
             <p>{this.props.description2}</p>
           </div>
-          <div className='type-card-button'>
-            <Button 
-              content='BOOK NOW'
-              buttonColor='white'
-              color='#c68bbd'
-            />
-          </div>
         </div>
       </div>
       </ScrollAnimation>

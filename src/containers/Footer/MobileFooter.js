@@ -12,20 +12,23 @@ const MobileFooter = () => (
     animateOnce
   >
     <div id='mobile-footer'>
-      <Link to='/about'>About</Link>
-      <Link to='/gift-card'>Gift Card</Link>
-      <Link to='/careers'>Careers</Link>
-      <Link to='/blog'>Blog</Link>
-      <Link to='/contact'>Contact</Link>
-      <img src={logo} alt='mama mobile logo' />
-      <div>
+      <Link className='underline' to='/about'>About</Link>
+      <Link className='underline' to='/gift-card'>Gift Card</Link>
+      <Link className='underline' to='/careers'>Careers</Link>
+      <Link className='underline' to='/blog'>Blog</Link>
+      <Link className='underline' to='/contact'>Contact</Link>
+      {/* <img src={logo} alt='mama mobile logo' /> */}
+      <Link to='/'>
+        <div className='logo-top'>mama</div>
+        <div className='logo-bottom'>mobile massage</div>
+      </Link>
+      <div className='footer-contact-info'>
         <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-        <a href='tel:866-266-3779'>1 (866) 266 - 3779</a>
+        <a className='underline' href='tel:866-266-3779'>1 (866) 266 - 3779</a>
       </div>
-      <br />
-      <div>
+      <div className='footer-contact-info'>
         <Icon name='mail' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-        <a href='mailto:hello@mamamobilemassage.com'>hello@mamamobilemassage.com</a>
+        <a className='underline' href='mailto:hello@mamamobilemassage.com'>hello@mamamobilemassage.com</a>
       </div>
       <p>© Mama Mobile Massage</p>
     </div>

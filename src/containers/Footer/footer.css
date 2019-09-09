@@ -3,12 +3,11 @@
 }
 
 #mobile-footer {
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 20px;
   background: linear-gradient(245deg, #ffc0cb, white, #c0fff4);
   animation: Gradient 16s ease infinite;
@@ -16,7 +15,15 @@
 }
 
 #mobile-footer a {
-  margin-bottom: 10px; 
+  margin-top: 10px; 
+}
+
+#mobile-footer .logo-top {
+  padding-top: 30px;
+}
+
+#mobile-footer .logo-bottom {
+  padding-bottom: 30px;
 }
 
 #mobile-footer img {
@@ -27,6 +34,10 @@
 
 #mobile-footer p {
   padding-top: 15px;
+}
+
+.footer-contact-info a {
+  display: inline-block;
 }
 
 @keyframes Gradient

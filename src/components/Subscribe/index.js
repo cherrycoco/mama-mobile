@@ -118,9 +118,7 @@ export default class Subscribe extends React.Component {
                     margin="normal"
                   />
                 </div>
-                <div className='subscribe-form-button'>
-                  <Button content='KEEP ME POSTED' icon='mail' center/>
-                </div>
+                <button className='button-outline subscribe-button'>KEEP ME POSTED</button>
               </form>
             </div>
           </div>

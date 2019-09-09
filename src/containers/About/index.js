@@ -13,13 +13,13 @@ const About = () => (
         <meta name="description" content="Launched by women for women - our mission is to facilitate self-care for busy mothers and mothers-to-be!" />
     </Helmet>
     <ScrollToTop />
-    <h1 className='about-title'>OUR<b> MISSION</b></h1>
+    <h1 className='title'>OUR MISSION</h1>
     <OurMission />
-    {/* <h1 className='about-title'><b>WHY</b> CHOOSE US</h1> */}
-    <h1 className='about-title'>OUR <b>MAMA'S MAMA</b></h1>
+    {/* <h1 className='title'>WHY CHOOSE US</h1> */}
+    <h1 className='title'>OUR MAMA'S MAMA</h1>
     <Founder />
     <div id='team-wrapper'>
-      <h1 className='about-title'>MAMA'S LITTLE <b>HELPERS</b></h1>
+      <h1 className='title'>MAMA'S LITTLE HELPERS</h1>
       <TeamSelect />
     </div>
   </div>

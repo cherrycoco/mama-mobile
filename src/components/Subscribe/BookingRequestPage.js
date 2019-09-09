@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/ButtonAnimated';
 import TextField from '@material-ui/core/TextField';
 import './subscribe.css';
 import Autocomplete from 'react-google-autocomplete';
@@ -266,26 +265,6 @@ export default class BookingRequestPage extends React.Component {
                 shrink: true,
               }}
             />
-            {/* <MuiPickersUtilsProvider utils={MomentUtils}>
-              <DateTimePickerWrapper 
-                label='Option 1 - top pick 🎉'
-                value={this.state.option1}
-                name='option1'
-                onChange={this.handleDateChange}
-              />
-              <DateTimePickerWrapper 
-                label='Option 2 - this is alright too 🙌'
-                value={this.state.option2}
-                name='option2'
-                onChange={this.handleDateChange}
-              />
-              <DateTimePickerWrapper 
-                label='Option 3 - I guess this will do 💕'
-                value={this.state.option3}
-                name='option3'
-                onChange={this.handleDateChange}
-              />
-            </MuiPickersUtilsProvider> */}
             <div className='contact-form-input'>
               <TextField
                 name='message'
@@ -300,13 +279,7 @@ export default class BookingRequestPage extends React.Component {
                 variant="outlined"
               />
             </div>
-            <div id='subscribe-form-button'>
-              <Button 
-                content='SEND!'
-                icon='mail'
-                center
-              />
-            </div>
+            <button className='subscribe-button button-outline'>REQUEST BOOKING</button>
           </form>
         </div>
       </div>

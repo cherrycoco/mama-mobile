@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -16,10 +17,10 @@ const Blog = ({ blogs, filterBlog, selectBlogPost}) => (
     <ScrollToTop />
     <h1 className='title'>WELCOME TO MAMASPHERE!</h1>
     <div id='blog-select'>
-      <button onClick={() => filterBlog('all')}>Show All</button>
-      <button onClick={() => filterBlog('Educate')}>Educate</button>
-      <button onClick={() => filterBlog('Booking')}>Booking</button>
-      <button onClick={() => filterBlog('Mama Story')}>Mama Story</button>
+      <a className='underline' onClick={() => filterBlog('all')}>Show All</a>
+      <a className='underline' onClick={() => filterBlog('Educate')}>Educate</a>
+      <a className='underline' onClick={() => filterBlog('Booking')}>Booking</a>
+      <a className='underline' onClick={() => filterBlog('Mama Story')}>Mama Story</a>
     </div>
     <div className='clear-float' />
     <div id='blog-cards'>

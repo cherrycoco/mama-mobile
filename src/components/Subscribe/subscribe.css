@@ -1,7 +1,5 @@
-
 #booking-form,
 #subscribe-dialog {
-  height: 90vh;
   max-height: 430px;
   width: 100%;
   max-width: 500px;
@@ -12,6 +10,22 @@
   z-index: 100;
   transform: translate(-50%,-50%);
   display: none;
+}
+
+button.book-button.button-outline,
+button.subscribe-button.button-outline {
+  margin: auto;
+  margin-top: 15px;
+  display: block;
+  padding: 12px 70px;
+}
+
+button.book-button.button-outline {
+  padding: 12px 150px;
+}
+
+#booking-form {
+  height: 90vh;
 }
 
 #booking-form {
@@ -76,17 +90,6 @@
   width: 290px;
 }
 
-.subscribe-form-button {
-  margin-left: auto;
-  margin-right: auto;
-  width: 290px;
-  margin-top: 20px;
-}
-
-.subscribe-form-button button {
-  height: 50px !important;
-  border-radius: 0 !important;
-}
 
 @media only screen and (max-width: 550px) {
   #subscribe-dialog {
@@ -96,33 +99,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .subscribe-form-button button {
-    font-size: 13px !important;
-  }
 }
-
-/* Check box */
-
-/* .check-box-line-heading,
-.check-box-line-one,
-.check-box-line-two,
-.check-box-line-three {
-  display: flex;
-}
-
-.check-box-line-heading h5,
-.check-box-line-one h5,
-.check-box-line-two h5,
-.check-box-line-three h5 {
-  width: 80px;
-  margin-bottom: 0;
-  padding-top: 15px;
-}
-
-.check-box-line-heading h4 {
-  width: 40px;
-  text-align: center;
-} */
 
 @media only screen and (max-width: 500px) {
   #booking-form-body {
@@ -137,14 +114,6 @@
   #booking-request-page {
     box-shadow: none;
   }
-
-  /* .check-box-line-heading h5,
-  .check-box-line-one h5,
-  .check-box-line-two h5,
-  .check-box-line-three h5  {
-    width: 50px;
-    font-size: 11px;
-  } */
 }
 
 .MuiInputBase-root.MuiInput-root.MuiInput-underline {

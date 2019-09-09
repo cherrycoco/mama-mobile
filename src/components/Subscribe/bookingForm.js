@@ -8,6 +8,7 @@ import PhoneNumberMask from './PhoneNumberMask';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
+import Fab from '@material-ui/core/Fab';
 // import CheckBox from './CheckBox';
 
 const styles = {
@@ -141,12 +142,14 @@ export default class BookingForm extends React.Component {
   render() {
     return (
       <div>
-        <Button
-          content="BOOK NOW"
-          icon="heart"
-          center
+        <Fab
+          variant="extended"
+          id='select-location-button'
+          aria-label="book"
           onClick={this.handleClickOpen}
-        />
+        >
+          BOOK
+        </Fab>
         <div className={this.state.open ? 'display overlay' : ''}>
           <div id='booking-form' className={this.state.open ? 'display' : ''}>
             <div id='booking-form-header'>
@@ -288,68 +291,6 @@ export default class BookingForm extends React.Component {
                     shrink: true,
                   }}
                 />
-                  {/* <DateTimePickerWrapper 
-                    label='Option 1 - top pick 🎉'
-                    value={this.state.option1}
-                    name='option1'
-                    onChange={this.handleDateChange}
-                  />
-                  <DateTimePickerWrapper 
-                    label='Option 2 - this is alright too 🙌'
-                    value={this.state.option2}
-                    name='option2'
-                    onChange={this.handleDateChange}
-                  />
-                  <DateTimePickerWrapper 
-                    label='Option 3 - I guess this will do 💕'
-                    value={this.state.option3}
-                    name='option3'
-                    onChange={this.handleDateChange}
-                  />
-                </MuiPickersUtilsProvider> */}
-                {/* <div className='check-box-wrapper'>
-                  <p>Please select your availability here: </p>
-                  <div className='check-box-line-heading'>
-                    <h5> </h5>
-                    <h4>Mon</h4>   
-                    <h4>Tues</h4> 
-                    <h4>Wed</h4> 
-                    <h4>Thurs</h4> 
-                    <h4>Fri</h4> 
-                    <h4>Sat</h4> 
-                    <h4>Sun</h4>                
-                  </div>
-                  <div className='check-box-line-one'>
-                    <h5>Morning: </h5>
-                    <CheckBox value='mon.morning' checked={this.state.mon.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='tues.morning' checked={this.state.tues.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='wed.morning' checked={this.state.wed.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='thurs.morning' checked={this.state.thurs.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='fri.morning' checked={this.state.fri.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sat.morning' checked={this.state.sat.morning} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sun.morning' checked={this.state.sun.morning} onCheck={this.handleCheckBox} />
-                  </div>
-                  <div className='check-box-line-two'>
-                    <h5>Afternoon: </h5>
-                    <CheckBox value='mon.afternoon' checked={this.state.mon.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='tues.afternoon' checked={this.state.tues.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='wed.afternoon' checked={this.state.wed.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='thurs.afternoon' checked={this.state.thurs.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='fri.afternoon' checked={this.state.fri.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sat.afternoon' checked={this.state.sat.afternoon} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sun.afternoon' checked={this.state.sun.afternoon} onCheck={this.handleCheckBox} />
-                  </div>
-                  <div className='check-box-line-three'>
-                    <h5>Night: </h5>
-                    <CheckBox value='mon.night' checked={this.state.mon.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='tues.night' checked={this.state.tues.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='wed.night' checked={this.state.wed.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='thurs.night' checked={this.state.thurs.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='fri.night' checked={this.state.fri.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sat.night' checked={this.state.sat.night} onCheck={this.handleCheckBox} />
-                    <CheckBox value='sun.night' checked={this.state.sun.night} onCheck={this.handleCheckBox} />
-                  </div>
-                </div> */}
                 <div className='contact-form-input'>
                   <TextField
                     name='message'
@@ -364,13 +305,7 @@ export default class BookingForm extends React.Component {
                     variant="outlined"
                   />
                 </div>
-                <div id='subscribe-form-button'>
-                  <Button 
-                    content='SEND!'
-                    icon='mail'
-                    center
-                  />
-                </div>
+                <button className='subscribe-button button-outline'>REQUEST BOOKING</button>
               </form>
             </div>
           </div>

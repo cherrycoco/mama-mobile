@@ -1,6 +1,6 @@
 /* Blog Card */
 #blog-wrapper {
-  background-color: #f8f8f8;
+  background-color: var(--color-background);
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -16,38 +16,16 @@
 
 #blog-select {
   display: flex;
-  justify-content: space-between;
-  max-width: 330px;
+  align-items: center;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
-#blog-select button {
-  position: relative;
-  padding-bottom: 5px;
-  border: none;
-  background-color: white;
-  color: #c68bbdb3;
+#blog-select a {
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
-}
-
-#blog-select button::after {
-  content: '';
-  position: absolute;
-  border: 2px solid transparent;
-  width: 0;
-  bottom: 0;
-  left: 20%;
-  transition: width .3s;
-}
-
-#blog-select button:hover::after {
-  width: 60%;
-  border-bottom-color: #c68bbdb3;
-}
-
-#blog-select button:hover {
-  color: rgb(198, 139, 189);
 }
 
 #blog-cards {
@@ -112,7 +90,7 @@
 }
 
 .blog-card-tag.onHover {
-  background-color: rgb(215, 174, 209);
+  background-color: var(--color-pink);
 }
 
 .blog-card-tag.onHover h3,
