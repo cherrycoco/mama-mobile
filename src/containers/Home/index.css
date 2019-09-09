@@ -27,9 +27,9 @@
 }
 
 .location {
-  width: 500px;
   margin: 40px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -79,19 +79,13 @@
   #home-first-image-content {
     width: 90%;
   }
-
-  .location {
-    width: 420px;
-  }
 }
 
 @media only screen and (max-width: 460px) {
-  .location {
-    width: 340px;
-  }
-
-  #location-select {
-    width: 240px;
+  #select-location-button {
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 15px;
   }
 
   #home-first-image {

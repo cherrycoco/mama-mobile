@@ -17,11 +17,6 @@ button.subscribe-button.button-outline {
   margin: auto;
   margin-top: 15px;
   display: block;
-  padding: 12px 70px;
-}
-
-button.book-button.button-outline {
-  padding: 12px 150px;
 }
 
 #booking-form {

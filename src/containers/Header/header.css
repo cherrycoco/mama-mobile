@@ -20,11 +20,11 @@
 }
 
 #logo a {
-  color: var(--color-accent);
+  color: var(--color-darkGray);
 }
 
 #logo a:hover {
-  color: var(--color-darkGray);
+  color: var(--color-accent);
 }
 
 /* #logo img {
@@ -55,23 +55,17 @@
 }
 
 #mobile-nav button {
-  float: right;
-  border-radius: 50%;
   width: 70px;
   height: 70px;
-  margin-right: 20px;
 }
 
 #nav-side-list {
-  width: 280px;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-transform: uppercase;
+  padding: 10%;
   text-align: center;
 }
 
 #nav-side-list-logo {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #social-media {
@@ -91,12 +85,7 @@
   color: var(--color-accent);
 }
 
-#mobile-nav-social {
-  display: inline-block;
-  margin-top: 20px;
-  float: left;
-}
-
-#mobile-nav-social a {
-  display: inline-block;
+.MuiDrawer-paper {
+  width: 100% !important;
+  background-color: var(--color-background) !important;
 }

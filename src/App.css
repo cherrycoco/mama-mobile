@@ -179,6 +179,8 @@ button.button-outline,
   text-decoration: none;
   outline: none;
   min-width: 9rem;
+  max-width: 80vw;
+  width: 75%;
   font-family: 'galano-bold', sans-serif;
 }
 

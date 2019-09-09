@@ -6,23 +6,15 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/mama-mobile-logo.png';
-import { Button, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 const styles = {
   divider: {
     width: '100%',
     margin: '0 auto',
   },
-  bookButton: {
-    width: '100%',
-    height: '40px',
-    marginTop: '15px',
-    backgroundColor: '#CC98C5',
-    color: 'white',
-    borderRadius: 0,
-  },
   icon: {
-    color: '#CC98C5',
+    color: '#f50057',
   },
   phone: {
     margin: '30px auto',
@@ -49,14 +41,13 @@ class MobileNav extends React.Component {
     const sideList = (
       <div id='nav-side-list'>
         <div id='nav-side-list-logo'>
-          <NavLink to='/'><img width="200" src={logo} /></NavLink>
+          <NavLink to='/'>
+            <div className='logo-top'>mama</div>
+            <div className='logo-bottom'>mobile massage</div>
+            {/* <img width="200" src={logo} /> */}
+          </NavLink>
         </div>
         <Divider style={styles.divider} />
-        <form type='get' action='https://mamamobilemassage.janeapp.com/'>
-          <Button style={styles.bookButton}>
-            Book a Massage
-          </Button>
-        </form>
         <List>
           {['about', 'gift-card', 'blog', 'contact', 'careers'].map((text, index) => {
             let endPoint = text.split('-').join(' ');
@@ -73,14 +64,17 @@ class MobileNav extends React.Component {
           <a style={styles.phoneNumber} href='tel:866-266-3779'>1 (866) 266 - 3779</a>
         </div>
         <Divider style={styles.divider}/>
-        <div id='mobile-nav-social'>
+        <form type='get' action='https://mamamobilemassage.janeapp.com/'>
+          <button className='subscribe-button button-outline'>BOOK</button>
+        </form>
+        {/* <div id='mobile-nav-social'>
           <a href='https://www.instagram.com/mamamobilemassage/' target='_blank'>
             <Icon name='instagram' size='big' style={{color: '#D7AED1'}} />
           </a>
           <a href='https://www.facebook.com/mamamobilemassagetherapy/' target='_blank'>
             <Icon name='facebook' size='big' style={{color: '#D7AED1'}} />
           </a>
-        </div>
+        </div> */}
       </div>
     );
 
