@@ -79,12 +79,13 @@ export default class Subscribe extends React.Component {
   render() {
     return (
       <div>
-        <Button
-          content="SUBSCRIBE"
-          icon="heart"
-          center
+        <button
+          className='button-outline'
+          id='select-location-button'
           onClick={this.handleClickOpen}
-        />
+        >
+          BOOK
+        </button>
         <div className={this.state.open ? 'display overlay' : ''}>
           <div id='subscribe-dialog' className={this.state.open ? 'display' : ''}>
             <div id='subscribe-dialog-header'>
