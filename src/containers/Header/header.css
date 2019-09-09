@@ -20,7 +20,7 @@
 }
 
 #logo a {
-  color: var(--color-darkGray);
+  color: var(--color-pink1);
 }
 
 #logo a:hover {
@@ -66,6 +66,14 @@
 
 #nav-side-list-logo {
   margin-bottom: 20px;
+}
+
+#nav-side-list-logo a {
+  color: var(--color-pink1);
+}
+
+#nav-side-list-logo a:hover {
+  color: var(--color-accent);
 }
 
 #social-media {

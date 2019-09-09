@@ -5,7 +5,6 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/mama-mobile-logo.png';
 import { Icon } from 'semantic-ui-react';
 
 const styles = {
@@ -14,7 +13,7 @@ const styles = {
     margin: '0 auto',
   },
   icon: {
-    color: '#f50057',
+    color: '#F087A0',
   },
   phone: {
     margin: '30px auto',
@@ -44,7 +43,6 @@ class MobileNav extends React.Component {
           <NavLink to='/'>
             <div className='logo-top'>mama</div>
             <div className='logo-bottom'>mobile massage</div>
-            {/* <img width="200" src={logo} /> */}
           </NavLink>
         </div>
         <Divider style={styles.divider} />
