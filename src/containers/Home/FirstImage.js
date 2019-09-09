@@ -4,14 +4,13 @@ import changeLocationBooking from '../../actions/changeLocationBooking';
 import LocationSelect from '../../components/LocationSelect/index';
 import Subscribe from '../../components/Subscribe/index';
 import BookingForm from '../../components/Subscribe/bookingForm';
-import Fab from '@material-ui/core/Fab';
 
 const locationsJane = {
   Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
   Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke/book',
   Brampton: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
   Caledon: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
-  Toronto: 'https://mamamobilemassage.janeapp.com/locations/downtown-toronto-midtown/book',
+  Toronto: 'https://mamamobilemassage.janeapp.com/locations/downtown-toronto-midtown-toronto/book',
   Scarborough: 'https://mamamobilemassage.janeapp.com/locations/scarborough/book',
   Leslieville: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
   Danforth: 'https://mamamobilemassage.janeapp.com/locations/leslieville-danforth/book',
@@ -23,13 +22,12 @@ const renderBookButton = (location, changeLocation) => {
   } else if (locationsJane[location] || location === '') {
     return (
       <form method='get' action={locationsJane[location]}>
-        <Fab
+        <button
+          className='button-outline'
           id='select-location-button'
-          variant="extended"
-          aria-label="book"
         >
           BOOK
-        </Fab>
+        </button>
       </form> 
     )
   } else {

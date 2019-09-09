@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/ButtonAnimated';
 import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import './subscribe.css';
@@ -8,8 +7,6 @@ import PhoneNumberMask from './PhoneNumberMask';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
-import Fab from '@material-ui/core/Fab';
-// import CheckBox from './CheckBox';
 
 const styles = {
   root: {
@@ -142,14 +139,13 @@ export default class BookingForm extends React.Component {
   render() {
     return (
       <div>
-        <Fab
-          variant="extended"
+        <button
+          className='button-outline'
           id='select-location-button'
-          aria-label="book"
           onClick={this.handleClickOpen}
         >
           BOOK
-        </Fab>
+        </button>
         <div className={this.state.open ? 'display overlay' : ''}>
           <div id='booking-form' className={this.state.open ? 'display' : ''}>
             <div id='booking-form-header'>

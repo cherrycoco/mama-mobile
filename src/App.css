@@ -159,8 +159,7 @@ a.underline:hover {
 
 /* button border */
 
-button.button-outline,
-.button-outline {
+button.button-outline {
   display: inline-block;
   cursor: pointer;
   background: transparent;
@@ -185,9 +184,7 @@ button.button-outline,
 }
 
 button.button-outline:hover,
-button.button-outline:hover::before,
-.button-outline:hover,
-.button-outline:hover::before {
+button.button-outline:hover::before {
   color: black;
   transform: translateZ(0);
 }
@@ -229,8 +226,7 @@ button.button-outline:hover::before,
   z-index: -2;
 } */
 
-button.button-outline:before,
-.button-outline:before {
+button.button-outline:before {
   position: absolute;
   top: 0;
   left: 0;

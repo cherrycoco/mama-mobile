@@ -53,16 +53,16 @@
 
 #select-location-button {
   margin-left: 10px;
-  background-color: var(--color-pink);
-  color: white;
-  font-family: 'galano-bold', sans-serif;
-  font-size: 14px;
-  letter-spacing: .12em;
-  padding: 0 40px;
+  height: 40px;
 }
 
-#select-location-button:hover {
-  background-color: var(--color-accent);
+
+button#select-location-button:before {
+  border-radius: 25px;
+}
+
+button#select-location-button:after {
+  border-radius: 25px;
 }
 
 @media only screen and (max-width: 750px) {
