@@ -69,7 +69,9 @@ export default class BookingForm extends React.Component {
 
   componentDidMount = () => {
     this.setState({
-      option1: this.generateSampleDate()
+      option1: this.generateSampleDate(),
+      option2: this.generateSampleDate(),
+      option3: this.generateSampleDate()
     });
   }
 
