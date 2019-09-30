@@ -6,7 +6,7 @@ import Subscribe from '../../components/Subscribe/index';
 import BookingForm from '../../components/Subscribe/bookingForm';
 
 const locationsJane = {
-  Ottawa: 'https://mamamobilemassage.janeapp.com/locations/ottawa/book',
+  Ottawa: 'https://www.booking.mamamobilemassage.com/',
   Etobicoke: 'https://mamamobilemassage.janeapp.com/locations/etobicoke/book',
   Brampton: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
   Caledon: 'https://mamamobilemassage.janeapp.com//locations/brampton-caledon/book',
