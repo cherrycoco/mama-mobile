@@ -17,11 +17,11 @@ const locationsJane = {
 }
 
 const renderBookButton = (location, changeLocation) => {
-  if (location === "Don't see your city?") {
-    return <Subscribe changeLocation={changeLocation} />;
-  } else if (locationsJane[location] || location === '') {
+  // if (location === "Don't see your city?") {
+  //   return <Subscribe changeLocation={changeLocation} />;
+  // } else if (locationsJane[location] || location === '') {
     return (
-      <form method='get' action={locationsJane[location]}>
+      <form method='get' action='https://www.booking.mamamobilemassage.com'>
         <button
           className='button-outline'
           id='select-location-button'
@@ -30,9 +30,9 @@ const renderBookButton = (location, changeLocation) => {
         </button>
       </form> 
     )
-  } else {
-    return <BookingForm />
-  }
+  // } else {
+  //   return <BookingForm />
+  // }
 }
 
 const FirstImage = (props) => (
@@ -49,8 +49,11 @@ const FirstImage = (props) => (
     <div id='home-first-image-content'>
       <h1>{props.title}</h1>
       <div className='location'>
-        <LocationSelect />
-        {renderBookButton(props.location, props.changeLocationBooking)}
+        {/* <LocationSelect /> */}
+        {/* {renderBookButton(props.location, props.changeLocationBooking)} */}
+        <form type='get' action='https://www.booking.mamamobilemassage.com'>
+          <button className='location-button button-outline'>BOOK NOW</button>
+        </form>
       </div>
     </div>
   </div>

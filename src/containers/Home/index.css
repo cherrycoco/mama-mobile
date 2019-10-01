@@ -27,23 +27,27 @@
 }
 
 .location {
-  margin: 40px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
-#location-select {
+button.button-outline.location-button {
+  width: 250px;
+  height: 50px;
+}
+
+/* #location-select {
   background-color: white;
   border-radius: 15px;
   width: 300px;
   position: relative;
   height: 50px;
   padding: 3px;
-}
+} */
 
-#location-select .ui.selection.active.dropdown {
+/* #location-select .ui.selection.active.dropdown {
   box-shadow: none;
 }
 
@@ -63,7 +67,7 @@ button#select-location-button:before {
 
 button#select-location-button:after {
   border-radius: 25px;
-}
+} */
 
 @media only screen and (max-width: 750px) {
   #home-first-image-content h1 {

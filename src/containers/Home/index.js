@@ -45,13 +45,13 @@ const Home = () => (
     >
       <Testimonial />
     </ScrollAnimation>
-    <ScrollAnimation
+    {/* <ScrollAnimation
       animatePreScroll
       animateIn="slideInUp"
       animateOnce
     >
       <UpcomingEvents />
-    </ScrollAnimation>
+    </ScrollAnimation> */}
     <ScrollAnimation
       animatePreScroll
       animateIn="slideInUp"
