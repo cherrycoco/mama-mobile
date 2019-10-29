@@ -29,7 +29,7 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
   }
 
   renderBio = () => (
-    <div className={!this.state.click ? 'team-card-bio' : 'team-card-bio bio-show'} style={{backgroundColor: this.props.color}}>
+    <div className={!this.state.click ? 'team-card-bio' : 'team-card-bio bio-show'}>
       {this.props.description.map((des, idx) => <p key={idx}>{des}</p>)}
       <p><b>Did you know?</b></p>
       <p>{this.props.funFact}</p>
@@ -69,7 +69,7 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
           onClick={this.handleClick}
         >
           <img src={this.props.img} alt={this.props.name} />
-          {this.renderTag()}
+          {/* {this.renderTag()} */}
           {this.renderBio()}
         </div>
       </ScrollAnimation>

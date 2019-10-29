@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import TeamCard from './TeamCard';
 
 
-const colors= ['#59CAC0', '#F2A1B5', '#3D8CDE', '#663382', '#ED462F', '#87C717', '#ED4961'];
+// const colors= ['#59CAC0', '#F2A1B5', '#3D8CDE', '#663382', '#ED462F', '#87C717', '#ED4961'];
 // const colors=['#ffb3ba', '#ffdfba', '#baffc9', '#bae1ff'];
 
 const Team = ({ team }) => (
@@ -18,8 +18,6 @@ const Team = ({ team }) => (
           title={member.title}
           name={member.name}
           img={member.img} 
-          location={member.area}
-          color={colors[idx%colors.length]}
         />
       )
     })}

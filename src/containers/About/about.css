@@ -93,16 +93,16 @@
 }
 
 .team-card-wrapper {
-  width: 400px;
-  height: 360px;
+  width: 350px;
+  height: 350px;
   position: relative;
-  margin: 40px 20px;
+  margin: 20px;
   cursor: pointer;
   overflow: hidden;
 }
 
 .team-card-wrapper img {
-  height: 70%;
+  height: 100%;
   width: 100%;
   display: block;
   margin-left: auto;
@@ -149,6 +149,7 @@
 .team-card-bio {
   width: 100%;
   height: 100%;
+  background-color: var(--color-pink);
   position: absolute;
   top: 360px;
   left: 0;

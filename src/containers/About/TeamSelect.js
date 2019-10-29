@@ -33,8 +33,8 @@ const locationOptions = locations.map(location => ({
 
 const TeamSelect = ({ location, changeLocation, filterTeam }) => (
   <div>
-    <div id='team-select'>
-      <h5>Select your location:</h5>
+    {/* <div id='team-select'> */}
+      {/* <h5>Select your location:</h5>
       <Dropdown 
         style={{
           width: '100%',
@@ -54,7 +54,7 @@ const TeamSelect = ({ location, changeLocation, filterTeam }) => (
           }
         } 
       />
-    </div>
+    </div> */}
     <Team />
   </div>
 )
