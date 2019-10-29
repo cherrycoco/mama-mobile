@@ -16,12 +16,12 @@ const About = () => (
     <h1 className='title'>OUR MISSION</h1>
     <OurMission />
     {/* <h1 className='title'>WHY CHOOSE US</h1> */}
-    <h1 className='title'>OUR MAMA'S MAMA</h1>
-    <Founder />
     <div id='team-wrapper'>
       <h1 className='title'>MAMA'S LITTLE HELPERS</h1>
       <TeamSelect />
     </div>
+    <h1 className='title'>OUR MAMA'S MAMA</h1>
+    <Founder />
   </div>
 )
 
