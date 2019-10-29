@@ -20,8 +20,8 @@ const Members = [
   },
   {
     name: 'Amanda Marshall',
-    description: ['coming soon...'],
-    funFact: 'coming soon...',
+    description: ['I knew from the beginning of my career I was highly interested in working with mamas and babies. During pregnancy the body goes through many changes and it is important for me to provide treatments to reduce pain and discomfort, as well as improve relaxation. As an RMT I believe in the physical and mental wellness of all moms.'],
+    funFact: 'On the weekend I can be found providing therapeutic babies massages at a baby spa.',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379523/Faces_OM-_14_eo0blh.jpg',
   },
   {
@@ -44,8 +44,8 @@ const Members = [
   },
   {
     name: 'Zoe Luc',
-    description: ['coming soon...'],
-    funFact: 'coming soon...',
+    description: ['I treat pregnancies every week as a part of my practice and treating mamas is the best part of my day! Through my additional training in treating perinatal patients, I have treated both healthy and high risk pregnancies. In my practice, have seen great success with the therapeutic effects of massage therapy in helping mamas cope with stress, and aches and pains.  My approach to treatment is dynamic and aims to balance relaxation and mechanical effectiveness to optimize your mental and physical health.'],
+    funFact: 'Outside of massage, Zoe enjoys keeping herself busy and healthy by doing yoga, taking walks, and exploring new places (near and far!). As healthy as she strives to be, she is a big foodie and enjoys talking about food as much as eating it!',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379523/Faces_OM-_11_k6j5zi.jpg',
   },
   {
@@ -72,10 +72,12 @@ const Members = [
     funFact: 'coming soon...',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379523/Faces_OM-_13_gpedf9.jpg',
   },
-  // {
+  {
   //   name: 'Anjulee McIntosh',
-  //   description: ['coming soon...'],
-  //   funFact: 'coming soon...',
+  //   description: [
+  //     "Having advanced training in lymph drainage and a passion for fascial-work, pre and postnatal massage quickly became my favourite specialty! I feel blessed every day to be able to help people reconnect with themselves while healing, strengthening and rejuvenating their bodies!",
+  //   ],
+  //   funFact: 'I grew up in Halifax, Nova Scotia. I spent 10 years traveling before becoming an RMT; I lived and worked in England and Australia.',
   //   img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379524/Faces_OM-_24_1_rqrnln.jpg',
   // },
   // {
