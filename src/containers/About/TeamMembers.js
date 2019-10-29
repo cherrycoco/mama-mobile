@@ -73,13 +73,13 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379523/Faces_OM-_13_gpedf9.jpg',
   },
   {
-  //   name: 'Anjulee McIntosh',
-  //   description: [
-  //     "Having advanced training in lymph drainage and a passion for fascial-work, pre and postnatal massage quickly became my favourite specialty! I feel blessed every day to be able to help people reconnect with themselves while healing, strengthening and rejuvenating their bodies!",
-  //   ],
-  //   funFact: 'I grew up in Halifax, Nova Scotia. I spent 10 years traveling before becoming an RMT; I lived and worked in England and Australia.',
-  //   img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379524/Faces_OM-_24_1_rqrnln.jpg',
-  // },
+    name: 'Anjulee McIntosh',
+    description: [
+      "Having advanced training in lymph drainage and a passion for fascial-work, pre and postnatal massage quickly became my favourite specialty! I feel blessed every day to be able to help people reconnect with themselves while healing, strengthening and rejuvenating their bodies!",
+    ],
+    funFact: 'I grew up in Halifax, Nova Scotia. I spent 10 years traveling before becoming an RMT; I lived and worked in England and Australia.',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379524/Faces_OM-_24_1_rqrnln.jpg',
+  },
   // {
   //   name: 'Michelle Caron',
   //   description: [
