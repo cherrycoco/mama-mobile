@@ -24,7 +24,7 @@ const Home = () => (
     <ScrollToTop />
     <FirstImage 
       img={imageOne}
-      title='delivering massage to mamas who need it most.'
+      title='in-home massage for moms and moms-to-be'
     />
     <SeenOn />
     <HowItWorks />

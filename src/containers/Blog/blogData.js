@@ -19,7 +19,7 @@ const blogData = [
   {
     id: 16,
     date_created: new Date('AUGUST 30, 2019'), 
-    img: `https://res.cloudinary.com/dhze7gimq/image/upload/q_40/v1567180122/blog/blog_16.png`,
+    img: `https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,h_254,w_400/v1567181573/blog/Screen_Shot_2019-08-30_at_9.07.07_AM_hnqmli.png`,
     title: 'Why I CHOSE a C-Section',
     author: 'Amanda Thomson',
     type: 'Mama Story',

@@ -10,7 +10,7 @@
 #home-first-image-content {
   width: 80%;
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -18,7 +18,7 @@
 }
 
 #home-first-image-content h1 {
-  color: white;
+  color: #444;
   font-family: 'galano-semibold', sans-serif;
   text-align: center;
   line-height: 1.1em;
@@ -455,6 +455,14 @@ h5.pricing-footer {
   vertical-align: middle;
   margin-left: calc((100% - 450px) / 10);
   margin-right: calc((100% - 450px) / 10);
+}
+
+#seen-on-text {
+  background: #f6f6f6;
+  margin-bottom: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: #444;
 }
 
 @media only screen and (max-width: 450px) {

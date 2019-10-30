@@ -34,7 +34,7 @@ export default class SubscribeInit extends React.Component {
   };
 
   componentDidMount = () => {
-    this.interval = setInterval(this.handleClickOpen, 40000);
+    this.interval = setInterval(this.handleClickOpen, 70000);
   }
 
   componentWillUnmount = () => {

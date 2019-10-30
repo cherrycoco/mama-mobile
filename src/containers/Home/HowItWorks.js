@@ -17,21 +17,21 @@ const HowItWorks = () => (
     <div className='card-wrapper' id='how-it-works-wrapper'>
       <HowItWorksCard 
         img={step1} 
-        title='Planning' 
+        title='book online' 
         subtitle='Woot Woot:' 
-        description='Pick a date/time online (post bedtime or bedtime perhaps?)'
+        description='select a date/time'
       />
       <HowItWorksCard 
         img={step2} 
-        title='Our first date' 
+        title='we come to you' 
         subtitle='Zoom' 
-        description='We come to you - no muss no fuss! Home? Mama date? Hospital on bedrest?'
+        description='home, hotel, baby shower - mama we got you covered'
       />
       <HowItWorksCard 
         img={step3} 
-        title='Mama, we are home' 
+        title='relax and unwind' 
         subtitle='Ahhh...' 
-        description='One of our expert Massage Therapists come with fresh sheets, massage table, and music.'
+        description='our expert Massage Therapist (RMT) brings the spa to you'
       />
     </div>
   </div>
