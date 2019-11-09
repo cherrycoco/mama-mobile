@@ -14,7 +14,7 @@ const VisitBlog = ({ selectBlogPost }) => (
       animateIn="slideInUp"
       animateOnce
     >
-    <h1 className='title'>On Our Blog</h1>
+    <h2 className='title'>On Our Blog</h2>
     </ScrollAnimation>
     <div id='blog-cards' className='blog-cards-home'>
       {blogData.slice(0, 4).map((blog, idx) => {

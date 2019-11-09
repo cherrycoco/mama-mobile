@@ -12,7 +12,7 @@ const HowItWorks = () => (
       animateIn="slideInUp"
       animateOnce
     >
-      <h1 className='title'>HOW IT WORKS</h1>
+      <h2 className='title'>HOW IT WORKS</h2>
     </ScrollAnimation>
     <div className='card-wrapper' id='how-it-works-wrapper'>
       <HowItWorksCard 
@@ -20,18 +20,21 @@ const HowItWorks = () => (
         title='book online' 
         subtitle='Woot Woot:' 
         description='select a date/time'
+        alt='calendar for booking a massage'
       />
       <HowItWorksCard 
         img={step2} 
         title='we come to you' 
         subtitle='Zoom' 
         description='home, hotel, baby shower - mama we got you covered'
+        alt='car for driving to a mom’s home'
       />
       <HowItWorksCard 
         img={step3} 
         title='relax and unwind' 
         subtitle='Ahhh...' 
         description='our expert Massage Therapist (RMT) brings the spa to you'
+        alt='person on massage bed in their home'
       />
     </div>
   </div>

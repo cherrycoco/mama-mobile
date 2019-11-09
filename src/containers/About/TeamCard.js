@@ -68,7 +68,7 @@ export default class TeamCard extends React.Component { // eslint-disable-line r
           onMouseLeave={this.handleMouseLeave}
           onClick={this.handleClick}
         >
-          <img src={this.props.img} alt={this.props.name} />
+          <img src={this.props.img} alt={`${this.props.name}, Registered Massage Therapist (RMT)`} />
           {/* {this.renderTag()} */}
           {this.renderBio()}
         </div>

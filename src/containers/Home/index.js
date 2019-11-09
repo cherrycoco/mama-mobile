@@ -19,12 +19,12 @@ const Home = () => (
   <div>
     <Helmet>
         <title>Mama Mobile Massage | In-home Prenatal & Postnatal Massage | RMT</title>
-        <meta name="description" content="Mama Mobile Massage delivers highest qualified Registered Massage Therapists to your home or office for your prenatal, postnatal, or busy mama massage." />
+        <meta name="description" content="Mama Mobile Massage delivers Registered Massage Therapists to your home for your prenatal, postnatal, or busy mama massage." />
     </Helmet>
     <ScrollToTop />
     <FirstImage 
       img={imageOne}
-      title='in-home massage for moms and moms-to-be'
+      title='in-home massage for moms at every stage'
     />
     <SeenOn />
     <HowItWorks />
@@ -36,7 +36,7 @@ const Home = () => (
       animateIn="slideInUp"
       animateOnce
     >
-      <h1 className='title testimonial-title'>What Our Mama Tribe Says!</h1>
+      <h2 className='title testimonial-title'>What Our Mama Tribe Says!</h2>
     </ScrollAnimation>
     <ScrollAnimation
       animatePreScroll

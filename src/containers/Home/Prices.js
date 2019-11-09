@@ -9,7 +9,7 @@ const Prices = () => (
         animateIn="slideInUp"
         animateOnce
       >
-        <h1 className='title'>PRICING</h1>
+        <h2 className='title'>PRICING</h2>
       </ScrollAnimation>
       <ScrollAnimation
         animatePreScroll

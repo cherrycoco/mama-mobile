@@ -73,6 +73,14 @@ const Members = [
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379523/Faces_OM-_13_gpedf9.jpg',
   },
   {
+    name: 'Lindsay Finnie',
+    description: [
+      "Hi! I'm Lindsay (she/her). I found massage therapy when I was lost in an eating disorder. It was an unexpected experience but massage allowed me to slow down and learn to connect with my body and it quickly became integral to my recovery. Through my journey to becoming an RMT, I discovered a deep love working with the perinatal population and I've dedicated most of my professional career to learning all I can about pregnancy and childbirth. It brings me great happiness to work with people during such a transformational time and to offer them support through therapeutic touch is a fulfillment like no other. This love has also led me to becoming a birth doula and soon-to-be childbirth educator. It's my goal to help create safer and braver spaces for my clients to have the best pregnancy, birth and postpartum experiences possible. When I am not massaging or doula-ing, I can be found paddling out on a lake, snuggling at home with my cat Seamus, knitting, or cooking in my far-too-small kitchen."
+    ],
+    funFact: 'Coming Soon...',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1573280570/Faces_OM-_28_hsaw2j.jpg',
+  },
+  {
     name: 'Anjulee McIntosh',
     description: [
       "Having advanced training in lymph drainage and a passion for fascial-work, pre and postnatal massage quickly became my favourite specialty! I feel blessed every day to be able to help people reconnect with themselves while healing, strengthening and rejuvenating their bodies!",
@@ -80,14 +88,6 @@ const Members = [
     funFact: 'I grew up in Halifax, Nova Scotia. I spent 10 years traveling before becoming an RMT; I lived and worked in England and Australia.',
     img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1572379524/Faces_OM-_24_1_rqrnln.jpg',
   },
-  // {
-  //   name: 'Michelle Caron',
-  //   description: [
-  //     "Early on in my journey as a Registered Massage Therapist I developed a passion for working with prenatal and postnatal mama's. I have aquired techniques that have incredible effects on releasing pain associated with pregnancy.",  
-  //   ],
-  //   funFact: 'Coming Soon...',
-  //   img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065367/team/Michelle.jpg',
-  // },
   // {
   //   name: 'Danuta Debowski',
   //   description: [
@@ -105,14 +105,14 @@ const Members = [
   //   funFact: 'Coming Soon...',
   //   img: comingSoon,
   // },
-  // {
-  //   name: 'Patricia MacNeil',
-  //   description: [
-  //     'I’ve been an RMT since 1986! I designed and supervised pre and perinatal and newborn massage therapy training programs for 5 massage therapy colleges in the Ottawa area. These internships were held at the Civic and General campuses of the Ottawa Hospital system for 15 years.',
-  //   ],
-  //   funFact: 'Patricia has the cutest standard poodle names Sophie!',
-  //   img: 'https://res.cloudinary.com/dhze7gimq/image/upload/c_pad,h_252,w_400/v1556065743/team/Patricia.jpg',
-  // },
+  {
+    name: 'Patricia MacNeil',
+    description: [
+      'I’ve been an RMT since 1986! I designed and supervised pre and perinatal and newborn massage therapy training programs for 5 massage therapy colleges in the Ottawa area. These internships were held at the Civic and General campuses of the Ottawa Hospital system for 15 years.',
+    ],
+    funFact: 'Patricia has the cutest standard poodle names Sophie!',
+    img: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1573280770/Faces_OM-_27_szjgku.jpg',
+  },
   // {
   //   name: 'Amey McGurk',
   //   description: [

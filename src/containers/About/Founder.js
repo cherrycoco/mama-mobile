@@ -9,7 +9,7 @@ const Founder = () => (
     animateOnce
   >
     <div id='founder'>
-        <img src={sarah} alt='sarah, founder of mama mobile' />
+        <img src={sarah} alt='Sarah Rennick, Registered Massage Therapist (RMT) and founder of Mama Mobile Massage' />
         <div id='founder-content'>
           <h3>SARAH RENNICK</h3>
           <p>

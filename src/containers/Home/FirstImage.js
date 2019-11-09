@@ -45,6 +45,7 @@ const FirstImage = (props) => (
         rgba(255, 255, 255, 0)),
         url(${props.img})`
       }} 
+    aria-label='Postnatal mom with her baby on a bed'
   >
     <div id='home-first-image-content'>
       <h1>{props.title}</h1>

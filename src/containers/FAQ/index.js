@@ -174,7 +174,7 @@ class FAQ extends React.Component {
           animateIn="slideInUp"
           animateOnce
         >
-          <h1 className='title'>Frequently Asked Questions</h1>
+          <h2 className='title'>Frequently Asked Questions</h2>
         </ScrollAnimation>
         <ScrollAnimation
           animatePreScroll
