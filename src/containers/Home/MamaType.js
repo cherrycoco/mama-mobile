@@ -20,15 +20,13 @@ const MamaType = () => (
         img={prenatal}
         alt='prenatal or postnatal massage'
         title='pre/postnatal massage'
-        description1='Wanna lay on your bump? Want an expert RMT?'
-        description2='One of our specially trained RMT’s will help ease swelling and muscle/joint pain and prepare your bod for a more comfortable delivery!'
+        description1='One of our specially trained RMT’s will help ease swelling and muscle/joint pain and prepare your bod for a more comfortable delivery!'
       />
       <TypeCard
         img={postnatal}
         alt='moms of all stages, busy mom massage'
         title='busy mama massage'
         description1='Achy? We know ALL the techniques and areas to focus on to make you feel like super mom. Enjoy our special pillows that keep your sore breasts from getting squished.'
-        description2='PS… Enjoy extra time above what you booked to check on baby, etc. etc. (We get it.. #stuffhappens)'
       />
       <TypeCard
         img={couples}
