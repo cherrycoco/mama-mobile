@@ -98,7 +98,10 @@ class FAQ extends React.Component {
   renderA10 = () => (
     <div className='FAQ-card-answers'> 
       <p>
-        Did you know… we created our services around the idea of allowing mamas who are alone during the day with baby to be able to receive Massage Therapy too? We actually schedule an extra 30 minutes with EVERY postnatal mama appointment. This way you don’t have to worry about the expected, unexpected.. you know diaper changes, last minute feedings- the works. You can rest easy knowing that we are here to make sure you will receive a massage for the amount of time you booked, no matter what!  
+        Many of our mamas try to schedule on babies nap time, in the evening or weekend! All of our RMTs “speak baby” and are happy to offer suggestions on what to do if it’s an especially fussy day!!
+      </p>
+      <p>
+        We have had many mamas nurse during the massage, place baby in her carrier within close view- you would be surprised at how creative, accommodating and worry free the whole experience really is! There is a reason they call our RMTs the mama support squad.
       </p>
     </div>
   )

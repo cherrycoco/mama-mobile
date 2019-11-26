@@ -9,7 +9,7 @@ const OurMission = () => (
   >
     <div id='our-mission'>
       <p>
-        We like to bend the rules. We believe that you should cease every moment of YOU time as you navigate the busy, complicated, weird days of mama-hood. We call BS on mommy guilt and believe you must first care for yourself before you can properly care for those you love.
+        We like to bend the rules. We believe that you should seize every moment of YOU time as you navigate the busy, complicated, weird days of mama-hood. We call BS on mommy guilt and believe you must first care for yourself before you can properly care for those you love.
       </p>
       
       <p>
