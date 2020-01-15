@@ -13,6 +13,7 @@ import BookingRequestPage from './components/Subscribe/BookingRequestPage';
 import Footer from './containers/Footer/MobileFooter';
 import './App.css';
 import Career from './containers/Career';
+import Banner from './containers/Header/Banner';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <Router>
           <div>
             <Header />
+            <Banner />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
