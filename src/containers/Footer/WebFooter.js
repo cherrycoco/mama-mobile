@@ -11,7 +11,7 @@ const WebFooter = () => (
         <h2>CONTACT</h2>
         <div>
           <Icon name='mail' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-          <a href='mailto:info@mamamobilemassage.com'>info@mamamobilemassage.com</a>
+          <a href='mailto:hello@mamamobile.com'>hello@mamamobile.com</a>
         </div>
       </div>
       <div id='footer-content-logo'>
@@ -29,6 +29,7 @@ const WebFooter = () => (
         <h2>COMPANY</h2>
         <Link to='/about'>About</Link>
         <Link to='/gift-card'>Gift Card</Link>
+        <Link to='/group-booking'>Group Booking</Link>
         <Link to='/career'>Careers</Link>
         <Link to='/contact'>Contact</Link>
       </div>

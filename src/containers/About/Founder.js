@@ -24,7 +24,7 @@ const Founder = () => (
           <p>
             Sarah can be contacted for live events: 
           </p>
-          <a className='underline' href='mailto:info@mamamobilemassage.com'>info@mamamobilemassage.com</a>
+          <a className='underline' href='mailto:sarah@mamamobile.com'>sarah@mamamobile.com</a>
         </div>
     </div>
   </ScrollAnimation>

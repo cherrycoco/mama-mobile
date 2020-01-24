@@ -14,6 +14,7 @@ import Footer from './containers/Footer/MobileFooter';
 import './App.css';
 import Career from './containers/Career';
 import Banner from './containers/Header/Banner';
+import MassageParty from './containers/MassageParty/MassageParty';
 
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/group-booking" component={MassageParty} />
               <Route exact path="/blog" component={Blog} />
               <Route path='/blog/:title' component={BlogPost} />
               <Route path="/gift-card" component={GiftCard} />

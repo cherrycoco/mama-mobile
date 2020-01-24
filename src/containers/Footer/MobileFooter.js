@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
-import logo from '../../assets/mama-mobile-logo.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './footer.css';
 
@@ -14,13 +13,12 @@ const MobileFooter = () => (
     <div id='mobile-footer'>
       <Link className='underline' to='/about'>About</Link>
       <Link className='underline' to='/gift-card'>Gift Card</Link>
+      <Link className='underline' to='/group-booking'>Group Booking</Link>
       <Link className='underline' to='/careers'>Careers</Link>
       <Link className='underline' to='/blog'>Blog</Link>
       <Link className='underline' to='/contact'>Contact</Link>
-      {/* <img src={logo} alt='mama mobile logo' /> */}
       <Link to='/'>
-        <div className='logo-top'>mama</div>
-        <div className='logo-bottom'>mobile massage</div>
+        <div id="footer-logo">mama mobile</div>
       </Link>
       <div className='footer-contact-info'>
         <Icon name='phone' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
@@ -28,9 +26,9 @@ const MobileFooter = () => (
       </div>
       <div className='footer-contact-info'>
         <Icon name='mail' style={{color: 'rgb(168, 168, 168)', paddingRight: '20px'}} />
-        <a className='underline' href='mailto:hello@mamamobilemassage.com'>hello@mamamobilemassage.com</a>
+        <a className='underline' href='mailto:hello@mamamobile.com'>hello@mamamobile.com</a>
       </div>
-      <p>© Mama Mobile Massage</p>
+      <p>© Mama Mobile</p>
     </div>
   </ScrollAnimation>
 )

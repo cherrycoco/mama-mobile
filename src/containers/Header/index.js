@@ -14,8 +14,7 @@ const Header = ({ isFirstLoad, changeFirstLoad }) => (
     <div id='header'>
       <div id="logo"> 
         <Link to='/'>
-          <div className='logo-top'>mama</div>
-          <div className='logo-bottom'>mobile massage</div>
+          mama mobile
         </Link>
       </div>
       {Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > 700 ? <Nav />: <MobileNav />}

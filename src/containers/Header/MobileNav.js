@@ -41,13 +41,12 @@ class MobileNav extends React.Component {
       <div id='nav-side-list'>
         <div id='nav-side-list-logo'>
           <NavLink to='/'>
-            <div className='logo-top'>mama</div>
-            <div className='logo-bottom'>mobile massage</div>
+            mama mobile
           </NavLink>
         </div>
         <Divider style={styles.divider} />
         <List>
-          {['about', 'gift-card', 'blog', 'contact', 'careers'].map((text, index) => {
+          {['about', 'gift-card', 'group-booking', 'blog', 'contact', 'careers'].map((text, index) => {
             let endPoint = text.split('-').join(' ');
             return (
               <NavLink key={text} to={`/${text}`}>
@@ -62,7 +61,7 @@ class MobileNav extends React.Component {
           <a style={styles.phoneNumber} href='tel:866-266-3779'>1 (866) 266 - 3779</a>
         </div>
         <Divider style={styles.divider}/>
-        <form type='get' action='https://www.booking.mamamobilemassage.com'>
+        <form type='get' action='https://www.booking.mamamobile.com'>
           <button className='subscribe-button button-outline'>BOOK</button>
         </form>
         {/* <div id='mobile-nav-social'>

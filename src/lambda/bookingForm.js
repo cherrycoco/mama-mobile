@@ -36,7 +36,7 @@ export function handler(event, context, callback) {
 
   let data = {
     from: `${fullName} <${email}>`,
-    to: 'Mama Mobile <hello@mamamobilemassage.com>',
+    to: 'Mama Mobile <hello@mamamobile.com>',
     subject: 'Booking Request',
     html: messageBody
   };

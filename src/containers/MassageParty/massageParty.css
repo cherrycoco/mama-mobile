@@ -1,0 +1,88 @@
+.party-card {
+  display: flex;
+  margin: 100px 20px;
+  align-items: center;
+}
+
+.party-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.party-card-img {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.party-card-content {
+  width: 50%;
+  margin: 0 20px;
+}
+
+.party-card-content h2 {
+  font-size: 1.8rem;
+}
+
+.party-card-content h4 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.party-card-content p {
+  font-size: .9rem;
+}
+
+.party-card button.button-outline {
+  margin-top: 30px;
+  width: 150px;
+}
+
+#party-form-wrapper {
+  background: var(--color-background);
+  padding: 60px 0 100px 0;
+}
+
+#party-form-wrapper h2 {
+  text-align: center;
+}
+
+#party-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.party-form-content {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#party-form button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  .party-card {
+    flex-wrap: wrap;
+  }
+
+  .party-card-img {
+    width: 95%;
+  }
+
+  .party-card {
+    justify-content: center;
+  }
+
+  .party-card-content {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .party-card button.button-outline {
+    width: 100%;
+  }
+
+}

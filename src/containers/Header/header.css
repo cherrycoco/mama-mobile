@@ -21,26 +21,11 @@
 
 #logo a {
   color: var(--color-pink1);
+  font-size: 1.5em;
 }
 
 #logo a:hover {
   color: var(--color-accent);
-}
-
-/* #logo img {
-  max-width: 100%;
-  height: auto;
-} */
-
-.logo-top {
-  font-size: 2.55em;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-}
-
-.logo-bottom {
-  font-size: 1em;
-  letter-spacing: 0;
 }
 
 #nav {
@@ -70,6 +55,7 @@
 
 #nav-side-list-logo a {
   color: var(--color-pink1);
+  font-size: 1.5em;
 }
 
 #nav-side-list-logo a:hover {

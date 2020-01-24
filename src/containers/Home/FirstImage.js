@@ -52,7 +52,7 @@ const FirstImage = (props) => (
       <div className='location'>
         {/* <LocationSelect /> */}
         {/* {renderBookButton(props.location, props.changeLocationBooking)} */}
-        <form type='get' action='https://www.booking.mamamobilemassage.com'>
+        <form type='get' action='https://www.booking.mamamobile.com'>
           <button className='location-button button-outline'>BOOK NOW</button>
         </form>
       </div>
