@@ -33,7 +33,7 @@ const BlogPost = ({blog}) => (
           case 'quote':
             return <h5 className='blog-post-quote'>{component.content}</h5>
             case 'a':
-            return <a href={component.content} target='_blank' className='blog-post-link'>{component.text}</a>        
+            return <a className='underline' href={component.content} target='_blank'>{component.text}</a>        
           case 'img-fullSize':
             return <img className='blog-post-imgFull' src={component.content} alt={component.alt} />   
           default:

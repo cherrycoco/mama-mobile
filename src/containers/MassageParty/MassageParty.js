@@ -4,8 +4,8 @@ import './massageParty.css';
 import PartyForm from './PartyForm';
 import ScrollToTop from '../../components/ScrollTop';
 
-const corporateImg = "https://res.cloudinary.com/dhze7gimq/image/upload/v1579727597/corporateParty_xfagxw.webp";
-const bridalImg = "https://res.cloudinary.com/dhze7gimq/image/upload/v1579727597/bridalShower_sfdnrf.webp";
+const corporateImg = "https://res.cloudinary.com/dhze7gimq/image/upload/v1581488704/corporate-events.png";
+const bridalImg = "https://res.cloudinary.com/dhze7gimq/image/upload/v1581488687/mama-group.png";
 const showerImg = "https://res.cloudinary.com/dhze7gimq/image/upload/v1579727597/babyshower_zux9vs.jpg";
 
 const MassageParty = () => {
@@ -28,7 +28,7 @@ const MassageParty = () => {
             `linear-gradient(
             rgba(255, 255, 255, 0.5), 
             rgba(255, 255, 255, 0.5)),
-            url(https://res.cloudinary.com/dhze7gimq/image/upload/v1579726891/party.webp)`
+            url(https://res.cloudinary.com/dhze7gimq/image/upload/v1581488712/baby-shower-party.png)`
           }} 
         aria-label='a group of moms celebrating a baby shower'
       >

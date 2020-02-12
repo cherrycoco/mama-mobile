@@ -14,8 +14,123 @@ import blog3 from '../../assets/blog3.jpg';
 import blog2 from '../../assets/blog2.png';
 import blog1 from '../../assets/blog1.jpg';
 import blog0 from '../../assets/blog0.png';
+const blog17 = `https://res.cloudinary.com/dhze7gimq/image/upload/v1581485923/blog/cori_stern.png`;
 
 const blogData = [
+  {
+    id: 17,
+    date_created: new Date('February 12, 2020'), 
+    img: blog17,
+    title: 'STOP the whining',
+    author: 'Cori Stern',
+    type: 'Educate',
+    blogPost: [
+      {
+        type: 'p',
+        content:`Today's your day. I'm throwing you a bone. I'm giving you a few of my strategies on how to curb whining. In my opinion, there's nothing more painful than listening to your child whine.`
+      },
+      {
+        type: 'li', 
+        content: [
+          'The first time it happens.... ok fine.',
+          `The second time it happens..... I'm a bit annoyed but can deal`,
+        ]
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `The third, fourth, & fifth time..... I'm about to lose my shit (and that's not good for no one) 🙅`,
+          `Whining is one thing in my house that I don't tolerate. My threshold for it is extremely low. After a few times of hearing it, my body starts to tense, my jaw clenches and automatically my hair starts to frizz 😤That's my fight or flight response to whining, ha!`,
+          `Children use whining as a form of expression. It's an emotional outlet for them. It's a way for them to indirectly unload their feelings in a very annoying way (for lack of a better term).`,
+          `There is some good news to this. Whining is a cue for us! It's a sign letting us know that our child needs our help to work through whatever feelings and emotions they are experiencing.`,
+          `Some children whine when they're tired, some when they're hungry, and some when they're overstimulated. Some children whine when they feel challenged, defeated, and/or annoyed.`,
+          `Now if you think your toddler or preschooler is going to very calmly and politely come up to you and say...`
+        ]
+      },
+      {
+        type: 'quote',
+        content: `"mom I"m feeling completely overstimulated because the tv is on, you and dad are talking loud, and my sister is running back and forth through the hallway with her toys, and I'm tired because I was at daycare all day today"`
+      },
+      {
+        type: 'p',
+        content: `...then we need to chat.`
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `It's more like... (read in whiny voice) "mummy, I can't hear the tv. mummyyyy, mummyyyy, ahhhhh, waaaa, muuuummy, I want to hear the tv, I can't hear the tv."`,
+          `What you MUST know about whining, is the second you respond to your child by turning the tv up and lowering your voice at the same time, you have just reinforced the whining so you better believe it's going to happen again and again and again! Your child just struck gold! He got exactly what he wanted! 💥`,
+          `We have to support our children in expressing their emotions. We have to support their emotional needs, and we have to teach them that whining is not an effective way of getting shit done.`,
+          `Here are 3 ways to you can do that... It's time to say buh-bye to that whining noise!`,
+        ]
+      },
+      {
+        type: 'p_bold',
+        content: `1. Make your child aware`,
+      },
+      {
+        type: 'p',
+        content: `Children need to be made aware of their behavior. Whenever my son or daughter whines I will immediately say "that's whining, mummy doesn't like whining". You have to give it a name, label it for them. Building awareness is the first part of curbing this behavior. Labeling it once, won't do anything. You want to keep labeling the whining behavior until you start to see some change happen.`,
+      },
+      {
+        type: 'p_bold',
+        content: `2. Give your child an alternative action`,
+      },
+      {
+        type: 'p',
+        content: `Once you've started labeling the whining behavior you need to give your child an alternative response to the whining. So if my child starts to whine, I will say "that's whining, mummy doesn't like whining, you can use your big kid voice instead and ask nicely". Since this is an emotional response- we wouldn't want to send our child the message that they shouldn't express themselves so you can also say something like "that's whining, mummy doesn't like whining, if you're hungry please tell mummy your tummy feels hungry and we'll get you a yummy snack". Modeling the appropriate response is really important here. Show them exactly what it’s supposed to look like. They need that model.`,
+      },
+      {
+        type: 'p_bold',
+        content: `3. Give another chance`
+      },
+      {
+        type: 'p',
+        content: `Again, since whining behavior is a form of communication, we don't want to hinder it. We don't want our children to feel blamed or shamed for trying to express themselves. We want them to feel empowered to express their emotional needs. So when you're child starts to whine, you always want to give them another chance to practice the alternative behavior you provided them with. Don't just shut them out and tell them to stop whining. That will just escalate things further and you'll end up in power struggle or meltdown territory. I love the phrase "try again or do you want to try again". For example, I'll say "that's whining, mummy doesn't like whining, you can use your big kid voice instead and ask nicely, do you want to try again".`,
+      },
+      {
+        type: 'p',
+        content: `Try these out and stick to the script. After practicing these strategies consistently, you will see the whining behavior start to decrease. We've used these strategies so much in my house that now all I have to say is "that's whining" and my kids redirect their response to a way more functional one! No more frizzy hair for me! (at least from the whining!)`,
+      },
+      {
+        type: 'p',
+        content: `I've got more strategies around this and any other behavior that comes your way. If your feeling exhausted, stressed or defeated in any way then I want you to book in a FREE 30-minute strategy call with me. I've got solutions for you.`,
+      },
+      {
+        type: 'li',
+        content: [
+          `You've got this!`,
+        ]
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `Cori`,
+          `By trade, Cori has merged her backgrounds in Pedagogy, Child Study & Education, and Applied Behaviour Analysis to bring to mamas a very unique perspective on child growth & development.`,
+          `She offers behavioral support and academic support services.`
+        ]
+      },
+      {
+        type: 'a',
+        content: 'https://www.instagram.com/cori_stern/',
+        text: `Follow Cori: @cori_stern`,
+      },
+      {
+        type: 'p',
+        content: ` `,
+      },
+      {
+        type: 'a',
+        content: 'http://coristern.com/',
+        text: `Visit Cori: coristern.com`,
+      },
+      {
+        type: 'img',
+        content: blog17,
+      },
+      
+    ],
+  },
   {
     id: 16,
     date_created: new Date('AUGUST 30, 2019'), 
@@ -276,26 +391,26 @@ const blogData = [
       },
     ]
   },
-  {
-    id: 10,
-    date_created: new Date('AUGUST 6, 2018'),
-    img: blog10,
-    title: 'Toronto Massage: booking, payment and insurance receipt',
-    type: 'Booking',
-    author: 'Sarah',
-    blogPost: [
-      {
+  // {
+  //   id: 10,
+  //   date_created: new Date('AUGUST 6, 2018'),
+  //   img: blog10,
+  //   title: 'Toronto Massage: booking, payment and insurance receipt',
+  //   type: 'Booking',
+  //   author: 'Sarah',
+  //   blogPost: [
+  //     {
 
-      }
-    ],
-  },
-  {
-    id: 9,
-    date_created: new Date('AUGUST 6, 2018'),
-    img: blog9,
-    title: 'Ottawa Massage: booking, payment and insurance receipt',
-    type: 'Booking',
-  },
+  //     }
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   date_created: new Date('AUGUST 6, 2018'),
+  //   img: blog9,
+  //   title: 'Ottawa Massage: booking, payment and insurance receipt',
+  //   type: 'Booking',
+  // },
   {
     id: 9,
     date_created: new Date('AUGUST 5, 2018'),
