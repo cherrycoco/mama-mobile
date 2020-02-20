@@ -24,7 +24,7 @@ class App extends Component {
         <Router>
           <div>
             <Header />
-            <Banner />
+            {/* <Banner /> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
