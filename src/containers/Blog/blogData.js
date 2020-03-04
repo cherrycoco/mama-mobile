@@ -15,7 +15,7 @@ import blog2 from '../../assets/blog2.png';
 import blog1 from '../../assets/blog1.jpg';
 import blog0 from '../../assets/blog0.png';
 const blog17 = `https://res.cloudinary.com/dhze7gimq/image/upload/v1581485923/blog/cori_stern.png`;
-const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/v1583300531/blog/Tracy_Dalgleish.jpg`;
+const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/v1583355364/blog/tracy.jpg`;
 
 const blogData = [
   {
