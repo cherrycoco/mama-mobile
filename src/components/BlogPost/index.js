@@ -14,10 +14,25 @@ const BlogPost = ({blog}) => (
         switch(component.type) {
           case 'h3':
             return <h3 className='blog-post-h3'>{component.content}</h3>;
+          case 'br':
+            return <br/>;
+          case 'p_with_link':
+            return component.content.map((text, idx) => {
+              if (typeof(text) === 'string') {
+                return <span className='blog-post-p'>{text}</span>
+              } if (text.type === 'br') {
+                return <br/>
+              }
+              return <a target='_blank' href={text.link}>{text.content}</a>
+            });
           case 'p':
             return <p className='blog-post-p'>{component.content}</p>;
           case 'p_bold':
             return <p className='blog-post-p'><b>{component.content}</b></p>;
+          case 'p_bold_noMargin':
+          return <p className='blog-post-p noMargins'><b>{component.content}</b></p>;
+          case 'p_noMargin':
+          return <p className='blog-post-p noMargins'>{component.content}</p>;
           case 'p_arr':
             return component.content.map(paragraph => <p className='blog-post-p'>{paragraph}</p>);
           case 'video':

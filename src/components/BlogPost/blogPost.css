@@ -59,7 +59,7 @@
 
 .blog-post-body a {
   color: var(--color-pink1);
-  /* display: inline-block; */
+  font-family: 'galano-bold', sans-serif;
 }
 
 .blog-post-img {
@@ -78,11 +78,14 @@
 }
 
 .blog-post-p {
-  font-size: 16px;
+  font-size: 15.5px;
   font-weight: 400;
   line-height: 1.9rem;
   letter-spacing: .03em;
   margin-bottom: 30px;
+  font-family: 'galano-reg', sans-serif;
+  color: var(--color-darkGray);
+  /* display: inline-block; */
 }
 
 .blog-post-imgFull {
@@ -98,6 +101,10 @@
 .blog-post-video {
   position: relative;
   padding-top: 56.25%;
+}
+
+.noMargins {
+  margin: 0;
 }
 
 @media only screen and (max-width: 700px) {

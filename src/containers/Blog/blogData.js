@@ -15,8 +15,305 @@ import blog2 from '../../assets/blog2.png';
 import blog1 from '../../assets/blog1.jpg';
 import blog0 from '../../assets/blog0.png';
 const blog17 = `https://res.cloudinary.com/dhze7gimq/image/upload/v1581485923/blog/cori_stern.png`;
+const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/v1583300531/blog/Tracy_Dalgleish.jpg`;
 
 const blogData = [
+  {
+    id: 18,
+    date_created: new Date('March 3, 2020'),
+    img: blog18,
+    title: 'Improve Your Intimacy Postpartum',
+    author: 'Dr. Tracy Dalgleish',
+    type: 'Educate',
+    blogPost: [
+      {
+        type: 'p',
+        content: `Our relationship with our partner changes after welcoming a baby to your family. Notably, the intimacy between two partners often becomes the last thing on the “to-do” list. For some, they may feel they want to be intimate with their partner, but they don’t know where to start.`,
+      },
+      {
+        type: 'h3',
+        content: 'Here are 10 common challenges that impact intimacy postpartum.',
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '1. The demands placed on you as a couple has increased.'
+      },
+      {
+        type: 'p_noMargin',
+        content: `This can have a positive or negative impact on your intimacy. For example, one study found that this new focus on your baby can result in a form of intimacy that is more sensual than sexual1. However, for others, it may feel like you are not being cared for, nurtured, or you only talk about baby. It can feel like a to-do list, and many couples report feeling decreased satisfaction and connection.`,
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '2. Lack of sleep and exhaustion.'
+      },
+      {
+        type: 'p_noMargin',
+        content: `Many mothers also report feeling “touched out” and physically exhausted. When you have nothing left to give, it can be hard to then turn to your partner and give them emotional, physical or sexual energy.`,
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '3. Hormonal changes and breastfeeding.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Some women will report experiencing lower desire and arousal, which can be part of the hormonal changes postpartum. Women who are breastfeeding may also experience a decrease in their desire levels and their ability to have adequate lubrication for intercourse.`,
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '4. Narrowly defining intimacy with a pressure to “get back to your old sex life.”',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Sex is often defined as penis-in-vagina. This is a narrow definition of sex and creates pressure for sex to be a certain way. It creates the belief that if you are not having intercourse then you are not being intimate with your partner. Many women also feel pressure to return to their previous ways of having sex; however, this may not be what they want.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '5. Pain during intercourse. ',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Experiencing pain and discomfort leads to decreased arousal and desire.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '6. Difficult and toxic emotions. ',
+      },
+      {
+        type: 'p_noMargin',
+        content: `The experience of “mom-guilt” or resentment towards your partner may contribute to difficulties with intimacy. `
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '7. Changes how you feel about yourself. ',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Your body has undergone a huge change. Many women put unrealistic demands on their bodies to return to their previous shape, a pressure that often comes from media and societal messages. How you feel about your body impacts intimacy.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '8. Mental health difficulties',
+      },
+      {
+        type: 'p_noMargin',
+        content: `including postpartum depression or postpartum anxiety. `
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '9. Birth trauma or difficult birth experience.',
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '10. Nothing really “wrong,”',
+      },
+      {
+        type: 'p_noMargin',
+        content: `but for some, they report feeling unable to have sex and feel blocked.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'quote',
+        content: `It’s important to highlight that most couples are not having a lot of sex in this season of your relationship. Unfortunately, this isn’t something that is often talked about. So just how do you begin to improve your intimacy?`,
+      },
+      {
+        type: 'h3',
+        content: 'Here are 6 tips for addressing intimacy in the postpartum period:',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '1. Work on building trust and security in your relationship.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Do you spend time listening to each other and letting the other person know that they are important? Have conversations that allow each other to talk about hard emotions and experiences while providing a supportive and open space. Provide emotional and physical support during difficult moments.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '2. Redefine sex and start communicating about it with your partner.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `What are other ways that you and your partner can define intimacy? Could it be through emotional, physical, spiritual, intellectual or experiential ways? What do you get out of sex? Make a list for your partner to understand what feels good for you right now in this stage.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '3. Heal toxic emotions.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `If you are struggling with anxiety or depression, or guilt as a mother, these are emotions that you need to deal with. Healthy coping strategies could be through journaling, talking to your support system, or through seeking therapy.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '4. Learn how to touch just for the sake of touching.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Physical intimacy is key for our relationship. It provides positive physiological effects, like releasing oxytocin (the cuddle hormone that bonds us together, the same hormone released while breastfeeding) and helps to build closeness and security between partners. Try finding ten minutes each week to sit on the couch and gently stroke the other’s arm or give a 30 second hug each day.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '5. Learn how it feels to have an orgasm for yourself2. You are responsible for your sexuality.',
+      },
+      {
+        type: 'p_noMargin',
+        content: `Return to masturbation, or if you have never self-stimulated, this is a great time to do that. Learn to feel comfortable with being touched, with your own control.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: '6. Seek professional help.',
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `If you are experiencing pain on intercourse, I highly recommend finding a pelvic floor physiotherapist to help address this. You may also listen to `,
+          {
+            content: 'this podcast episode',
+            link: 'https://drtracyd.com/podcast/episode7/',
+          },
+          ` addressing your pelvic floor. If you are having difficulties addressing intimacy in your relationship, it is never too early (or too late) to see a trained mental health professional that specializes in sex therapy.`,
+        ]
+      },
+      {
+        type: 'p',
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `Looking for more help with improving your intimacy? I created a guide for you and your partner to work through, called `,
+          {
+            content: 'Five Ways to Improve Your Intimacy.',
+            link: 'https://sendfox.com/lp/m8elqm',
+          },
+        ]
+      },
+      {
+        type: 'p',
+      },
+      {
+        type: 'p',
+        content: `Please note that all information is provided for educational purposes and does not substitute for the care of a healthcare professional.`,
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: `References`,
+      },
+      {
+        type: 'p_noMargin',
+        content: `1. Stavdal, M. N., Skjaevestad, M. L. L., & Dahl, B. (2019). First-time parents’ experiences of proximity and intimacy after childbirth: A qualitative study. Sex Reprod Healthc, 20: 66-71.`,
+      },
+      {
+        type: 'p_noMargin',
+        content: `2. See Appendix in Nagoski, E. (2015). Come As You Are.`
+      },
+      {
+        type: 'br',
+      },
+      {
+        type: 'h3',
+        content: `About Tracy Dalgleish`,
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `Dr. Tracy Dalgleish helps individuals and couples navigate the challenges we all face in our relationships and within ourselves to create a more meaningful life through therapy, wellness seminars, and her work outside of the therapy room.`,
+          `For over 15 years, Dr. Dalgleish has provided direct clinical services as well as researching, writing, and speaking about relationships. She provides psychological assessments, diagnosis, and individual and couple therapy for a variety of difficulties, including depression, anxiety, postpartum difficulties, stress and burnout, and relationship difficulties.`,
+          `A mother of two young children and owner of Integrated Wellness, a mental health clinic in Ottawa Ontario, she understands what it means to juggle the full load of being a mother and professional.`,
+        ],
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `To learn more about what she does every day with clients in her therapy office, join her online community. Visit her website, https://drtracyd.com, or check out her Instagram page. If you prefer to learn on the go, Dr. Dalgleish offers a variety of ways to learn, including an e-course for busy women, a `,
+          {
+            content: 'membership site for women',
+            link: 'https://beconnected.drtracyd.com/',
+          },
+          ` who want to master their relationship, or tune into her podcast, `,
+          {
+            content: `‘I’m Not Your Shrink’`,
+            link: 'https://drtracyd.com/podcast/',
+          },
+          ` where she dives deeper into clinical knowledge and research, in a relatable and informal way.`
+        ]
+      }, 
+      {
+        type: 'p'
+      },
+      {
+        type: 'img',
+        content: blog18,
+      },
+      {
+        type: 'p_noMargin',
+        content: 'Dr. Tracy Dalgleish'
+      },
+      {
+        type: 'p_noMargin',
+        content: 'Clinical Psychologist, Couples Therapist'
+      },
+      {
+        type: 'p_noMargin',
+        content: 'IG: @Dr.TracyD'
+      },
+      {
+        type: 'p_noMargin',
+        content: 'Facebook: @Dr.TracyDalgleish'
+      },
+      {
+        type: 'p_noMargin',
+        content: 'Website: https://www.drtracyd.com'
+      },
+
+    ]
+  },
   {
     id: 17,
     date_created: new Date('February 12, 2020'), 
