@@ -7,10 +7,10 @@ import ScrollToTop from '../ScrollTop';
 import { useParams } from 'react-router-dom';
 import BlogData from '../../containers/Blog/blogData';
 
-const BlogPost = () => {
+const BlogPost = ({ blog }) => {
   let { title } = useParams();
   title = title.split('-').join(' ');
-  const blog = BlogData.filter(blog => blog.title === title)[0];
+  blog = BlogData.filter(blog => blog.title === title)[0];
 
   return (
     <div>
