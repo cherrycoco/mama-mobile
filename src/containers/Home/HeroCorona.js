@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const HeroCorona = () => (
@@ -16,9 +17,10 @@ const HeroCorona = () => (
     <div className='hero-body'>
       <h2>bookings paused</h2>
       <p>with heavy hearts we have decided this temporary closure is in the best interest of our communities. If you require an emergency booking please email us. </p>
-      <button className='button-outline short center'>READ MORE</button>
+      <NavLink to='/blog/Bookings-Temporarily-Closed-Until-Further-Notice'>
+        <button className='button-outline short center'>READ MORE</button>
+      </NavLink>
     </div>
-    {/* <img className='hero-img' src='https://res.cloudinary.com/dhze7gimq/image/upload/v1584381060/hero_corona.jpg' /> */}
   </div>
 )
 
