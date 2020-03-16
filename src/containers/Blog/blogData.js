@@ -16,8 +16,47 @@ import blog1 from '../../assets/blog1.jpg';
 import blog0 from '../../assets/blog0.png';
 const blog17 = `https://res.cloudinary.com/dhze7gimq/image/upload/v1581485923/blog/cori_stern.png`;
 const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/v1583355364/blog/tracy.jpg`;
+const blog19 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1580415670/welcome/IMG_2896_2_p3uegb.jpg';
 
 const blogData = [
+  {
+    id: 19,
+    date_created: new Date('March 16, 2020'),
+    img: blog19,
+    title: 'Bookings Temporarily Closed Until Further Notice',
+    author: 'Mama Mobile Team',
+    type: 'Booking',
+    blogPost: [
+      {
+        type: 'h3',
+        content: 'A message from the Mama Mobile family.'
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `⁣⁣We have made the extremely difficult decision to close our home visits until further notice in order to protect the health of the community. To date, there are NO confirmed cases of a Massage Therapist or mama in our roster with COVID-19, but in these challenging times we want to support the collective whole.`,
+          `While this commitment will affect our business on a surface level, we are more worried about the livelihood of our Massage Therapists and staff which absolutely breaks our hearts. Our thoughts and well wishes are with all of the other small businesses who are having to make this strenuous decision.`,
+          `All bookings will be held until the date we reopen. We will take care of this for you, there is nothing you need to do. 💛`,
+          `If you require an emergency booking please email us.`,
+          `Please refer to Instagram and check your email for updates.⁣`,
+          `Please take care of yourself and those around you. We look forward to seeing you when this passes.`,
+          `If you wish to support us during this time please consider purchasing a gift card to use for your next visit or to gift to someone you love click here. We strongly urge you to consider doing this for other small businesses in your community too.`,
+        ]
+      },
+      {
+        type: 'p_noMargin',
+        content: `Sending you all so much love,⁣`,
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: `Sarah, Cherry and the Mama Mobile Team`
+      },
+      {
+        type: 'img',
+        content: blog19,
+      },
+    ]
+  },
   {
     id: 18,
     date_created: new Date('March 3, 2020'),

@@ -19,7 +19,7 @@ const VisitBlog = ({ selectBlogPost }) => (
     <div id='blog-cards' className='blog-cards-home'>
       {blogData.slice(0, 4).map((blog, idx) => {
         return (
-          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title.split(' ').join('_')}`}>
+          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title.split(' ').join('-')}`}>
             <BlogCard blog={blog} />
           </Link>
         )

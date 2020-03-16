@@ -18,9 +18,9 @@ class Nav extends React.Component {
         <NavLink className='underline' activeStyle={activeStyle} to='/group-booking'>GROUP BOOKING</NavLink>
         <NavLink className='underline' activeStyle={activeStyle} to='/blog'>BLOG</NavLink>
         <NavLink className='underline' activeStyle={activeStyle} to='/contact'>CONTACT</NavLink>
-        <form type='get' action='https://www.booking.mamamobile.com'>
+        {/* <form type='get' action='https://www.booking.mamamobile.com'>
           <button className='button-outline'>BOOK</button>
-        </form>
+        </form> */}
       </div>
   )}
 }

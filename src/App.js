@@ -31,7 +31,9 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/group-booking" component={MassageParty} />
               <Route exact path="/blog" component={Blog} />
-              <Route path='/blog/:title' component={BlogPost} />
+              <Route path="/blog/:title" children={<BlogPost />} />
+
+              {/* <Route path='/blog/:title' render={() => <BlogPost blog={true} />} /> */}
               <Route path="/gift-card" component={GiftCard} />
               <Route path="/careers" component={Career} />
               <Route path="/booking-request" component={BookingRequestPage} />

@@ -5,6 +5,7 @@ import './index.css';
 import imageOne from '../../assets/main-img.jpg';
 import MamaType from './MamaType';
 import SeenOn from './SeenOn';
+import HeroCorona from './HeroCorona';
 import VisitBlog from './VisitBlog';
 import GiftCertificate from './GiftCertificate';
 import { Helmet } from "react-helmet";
@@ -22,10 +23,11 @@ const Home = () => (
         <meta name="description" content="Mama Mobile Massage delivers Registered Massage Therapists to your home for your prenatal, postnatal, or busy mama massage." />
     </Helmet>
     <ScrollToTop />
-    <FirstImage 
+    {/* <FirstImage 
       img={imageOne}
       title='in-home massage for moms at every stage'
-    />
+    /> */}
+    <HeroCorona />
     <SeenOn />
     <HowItWorks />
     <MamaType />

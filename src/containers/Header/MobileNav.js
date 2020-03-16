@@ -61,9 +61,9 @@ class MobileNav extends React.Component {
           <a style={styles.phoneNumber} href='tel:866-266-3779'>1 (866) 266 - 3779</a>
         </div>
         <Divider style={styles.divider}/>
-        <form type='get' action='https://www.booking.mamamobile.com'>
+        {/* <form type='get' action='https://www.booking.mamamobile.com'>
           <button className='subscribe-button button-outline'>BOOK</button>
-        </form>
+        </form> */}
         {/* <div id='mobile-nav-social'>
           <a href='https://www.instagram.com/mamamobilemassage/' target='_blank'>
             <Icon name='instagram' size='big' style={{color: '#D7AED1'}} />

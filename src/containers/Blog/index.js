@@ -26,7 +26,7 @@ const Blog = ({ blogs, filterBlog, selectBlogPost}) => (
     <div id='blog-cards'>
       {blogs.map((blog, idx) => {
         return (
-          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title.split(' ').join('_')}`}>
+          <Link onClick={()=>selectBlogPost(blog)} key={idx} to={`/blog/${blog.title.split(' ').join('-')}`}>
             <BlogCard blog={blog} />
           </Link>
         )
