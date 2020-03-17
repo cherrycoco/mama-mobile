@@ -40,7 +40,17 @@ const blogData = [
           `If you require an emergency booking please email us.`,
           `Please refer to Instagram and check your email for updates.⁣`,
           `Please take care of yourself and those around you. We look forward to seeing you when this passes.`,
-          `If you wish to support us during this time please consider purchasing a gift card to use for your next visit or to gift to someone you love click here. We strongly urge you to consider doing this for other small businesses in your community too.`,
+        ]
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `If you wish to support us during this time please consider purchasing a gift card to use for your next visit or to gift to someone you love `,
+          {
+            content: 'click here.',
+            link: '/gift-card',
+          },
+          ` We strongly urge you to consider doing this for other small businesses in your community too.`,
         ]
       },
       {
