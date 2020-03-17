@@ -4,11 +4,12 @@ import BlogPostHeader from './BlogPostHeader';
 import selectBlogPost from '../../actions/selectBlogPost';
 import './blogPost.css';
 import ScrollToTop from '../ScrollTop';
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import BlogData from '../../containers/Blog/blogData';
+import { withRouter } from "react-router";
 
-const BlogPost = ({ blog }) => {
-  let { title } = useParams();
+const BlogPost = ({ blog, match }) => {
+  let title = match.params.title;
   blog = BlogData.filter(blog => blog.title.split(' ').join('-') === title)[0];
 
   return (
@@ -76,4 +77,5 @@ const mapDispatchToProps = dispatch => ({
   )
 });
 
-export default connect (mapStateToProps, mapDispatchToProps)(BlogPost);
+const BlogPostWithRouter = withRouter(BlogPost);
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPostWithRouter);
