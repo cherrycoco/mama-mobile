@@ -4,13 +4,12 @@ import BlogPostHeader from './BlogPostHeader';
 import selectBlogPost from '../../actions/selectBlogPost';
 import './blogPost.css';
 import ScrollToTop from '../ScrollTop';
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router";
 import BlogData from '../../containers/Blog/blogData';
 
 const BlogPost = ({ blog }) => {
   let { title } = useParams();
-  title = title.split('-').join(' ');
-  blog = BlogData.filter(blog => blog.title === title)[0];
+  blog = BlogData.filter(blog => blog.title.split(' ').join('-') === title)[0];
 
   return (
     <div>

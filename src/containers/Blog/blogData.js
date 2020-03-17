@@ -528,7 +528,7 @@ const blogData = [
     id: 15,
     date_created: new Date('FEBRUARY 26, 2019'), 
     img: blog15,
-    title: 'Is prenatal chiropractic safe? (with Dr. Salerno!)',
+    title: 'Is prenatal chiropractic safe',
     author: 'Dr. Salerno',
     type: 'Educate',
     blogPost: [
