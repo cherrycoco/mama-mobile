@@ -15,14 +15,90 @@ import blog2 from '../../assets/blog2.png';
 import blog1 from '../../assets/blog1.jpg';
 import blog0 from '../../assets/blog0.png';
 const blog17 = `https://res.cloudinary.com/dhze7gimq/image/upload/v1581485923/blog/cori_stern.png`;
-const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/v1583355364/blog/tracy.jpg`;
-const blog19 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1580415670/welcome/IMG_2896_2_p3uegb.jpg';
+const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,g_east,h_252,w_400,x_0/v1583355364/blog/tracy.jpg`;
+const blog20 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1580415670/welcome/IMG_2896_2_p3uegb.jpg';
+const blog19 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1584684555/blog/blog_19.png';
+const blog21 = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,h_252,w_400/v1584685254/blog/blog_21.jpg';
 
 const blogData = [
   {
-    id: 19,
+    id: 21,
+    date_created: new Date('March 19, 2020'),
+    img: blog21,
+    title: 'Keeping My Toddler Busy During Social Distancing',
+    author: 'Alexis Coronado',
+    type: 'Mama Story',
+    blogPost: [
+      {
+        type: 'p_arr',
+        content: [
+          'Being on maternity leave, it wasn’t much of a change to our daily routine when we were urged to stay home and practice social distancing. My husband was thankfully also given the green light to work from home.',
+          'But living in a 2-bedroom condo, it became a challenge to give my husband the space to work. My toddler knows he’s home, but she doesn’t understand why he can’t play with her.',
+          'So in the first day of self-isolation, I searched for ideas to keep my toddler busy, instead of resorting to screen time (I’m not against screen time, but I do try to limit it).',
+        ]
+      },
+      {
+        type: 'h3',
+        content: 'Sensory Bins',
+      },
+      {
+        type: 'p',
+        content: 'Grab 3 bowls in small, medium and large sizes, measuring cups and spoons, a funnel, and roughly three cups of uncooked rice (pasta or lentils could work too). Place them all within a large tray as a catchall. Celine loves to scoop and transfer the rice from bowl to bowl and her independent play buys me at least half an hour!'
+      },
+      {
+        type: 'h3',
+        content: 'Memory Lane'
+      },
+      {
+        type: 'p',
+        content: 'Celine recently discovered our album of photo booth strips from our wedding and she likes to name the people she recognizes in the photos. It’s such a nice way to go down memory lane and also an opportunity for me to tell her stories from before she was born. Looking through her baby photos/videos is another fun pastime, she loves to watch videos we’ve taken of her when she was a baby.',
+      },
+      {
+        type: 'h3',
+        content: 'Box Road',
+      },
+      {
+        type: 'p',
+        content: 'I love this idea from @busytoddler on Instagram. If you have building blocks at home, all you need is to lay a box flat, draw a road with a marker, and the kids can build a city on top of it!'
+      },
+      {
+        type: 'h3',
+        content: 'Build a Fort/Hiding Spot',
+      },
+      {
+        type: 'p',
+        content: 'Celine’s at that age (2.5 years old) where any crevice she finds at home becomes a hiding spot. So I like to let her hang out there (after it passes a safety test) and offer her some books or colouring materials (and snacks) to occupy herself with.'
+      },
+      {
+        type: 'h3',
+        content: 'Dance Party',
+      },
+      {
+        type: 'p',
+        content: 'I like to execute this one when Celine starts asking me if she can watch TV. I’ll ask Google Home to play some music and she usually starts dancing with me. It counts as staying active, right? Obviously this would only work if my husband is not on a call (lol).'
+      },
+      {
+        type: 'h3',
+        content: 'Good Ol’ Screen Time'
+      },
+      {
+        type: 'p_arr',
+        content: [
+          'When all else fails or if it’s been a particularly taxing day, I let her choose her favourite movie (currently rotating between Trolls and Cloudy with a Chance of Meatballs) and just join her on the sofa. At the least it will be some bonding time.',
+          'I’m ending this post with a note to remind ourselves to give ourselves grace, especially at this time. Let’s be kind to ourselves and take it one day at a time (I know I have to remind myself of this daily). Stay safe, everyone.',
+          '- Alexis Coronado'
+        ]
+      },
+      {
+        type: 'img',
+        content: blog21,
+      }
+    ]
+  },
+  {
+    id: 20,
     date_created: new Date('March 16, 2020'),
-    img: blog19,
+    img: blog20,
     title: 'Bookings Temporarily Closed Until Further Notice',
     author: 'Mama Mobile Team',
     type: 'Booking',
@@ -54,6 +130,10 @@ const blogData = [
         ]
       },
       {
+        type: 'p',
+        content: '',
+      },
+      {
         type: 'p_noMargin',
         content: `Sending you all so much love,⁣`,
       },
@@ -63,7 +143,42 @@ const blogData = [
       },
       {
         type: 'img',
-        content: blog19,
+        content: blog20,
+      },
+    ]
+  },
+  {
+    id: 19,
+    date_created: new Date('March 10, 2020'),
+    img: blog19,
+    title: 'Getting Over Grief',
+    author: 'Tracey Fraser',
+    type: 'Mama Story',
+    blogPost: [
+      {
+        type: 'img',
+        content: blog19
+      },
+      {
+        type: 'p_arr',
+        content: [
+          'I have to admit, the title of this blog is something I have searched a million times on google when trying to figure out how to get over the loss of my son Roo last year. How do you go back to normal? How do you tell people this is what you are going through without having to say it out loud? Is there a normal grieving timeline I should be following? How do I get over it? As it fast approaches his 1 year anniversary, I felt compelled to write down my experience and my lessons learned in a bid to help others on their own journey through grief.',
+          `Sadly, as we get older, grief seems to play a bigger and bigger role as the years pass. It’s more profound now because we understand the consequences of death and how valuable life really is. My best friend recently described death as ‘final’ and she was right. It is final. However, I can’t help but feel that it also lingers and can overwhelm us if we don’t come to terms and deal with it in the best way we individually can.`,
+          `My first point I want to emphasize is that grief is experienced differently by all. Therefore, there is no right or wrong way to deal with it. You might cry all the time, you might not want to speak about it, you might only want to speak about it, or you might be angry. These are just a few ways I’ve seen people deal with grief. The important thing is that you need to find the most appropriate way for you to get by. Initially, however, just coping and getting through each day as it arrives was the challenge. Longer term though, I found that using a repertoire of coping skills was the key to not letting grief overcome all.`,
+          `When chatting about grief, it is important to remember that although you are experiencing it, who you are talking to has their own take on how to deal with it. Let’s be honest, most people often avoid the subject completely but there could be a number of reasons why; it brings up too many sad memories for them, it makes them uncomfortable, they are worried that they will say the wrong thing so they hardly say anything to avoid upsetting you, etc. This really struck me as true after Roo died. Some people were afraid to ask me about him while others opened up. I learned very quickly not to take it personally and, out of respect, didn’t judge others when they avoided conversations about him or death in general. I don’t know what they have been through, so I can’t judge. All I can do is not get caught up in someone else’s reactions.`,
+          `By not taking other people's attitude to heart, this helped me deal with medical staff after our loss and the language they used. I will leave this for another post but, again, choosing not to take it personally was my first insight on how to cope in these situations.`,
+          `Learning to be accepting of myself and my feelings was another major lightbulb for me. Society expects you to react in certain ways. This can put pressure on you to hurry up and get over it all - you’ve heard the phrase, “life goes on”. The only issue is that this mindset hinders your progress when you are experiencing a bad day (and I can guarantee you, they are going to happen). So instead, I actively acknowledge to be gentle with myself on the days I have felt down and upset. I gave myself permission to have those feelings and to really live them while they were happening. I didn’t - and still don’t - judge myself for my bad days, I simply recall that they are real and what I am experiencing is natural. Beating myself up for feeling bad helps no one. Often, after a bad day where I cry and reminisce, I feel so much better and happy I could express my feelings that way. So be kind while you cry and reflect.`,
+          `I am a huge advocate of seeking professional help. Your mind is dealing with trauma and needs guidance. Finding someone you can open up to, to help unpack all your fears and emotions surrounding death is vital in helping you regain control of your situation. There is nothing to be ashamed or embarrassed about. If you have a counsellor and it isn’t working, try someone else - it makes a huge difference if you can connect and trust this person, so do not settle for anyone you do not trust.`,
+          `Find your support group. I don’t mean this literally, although support groups are great for some. I mean, surround yourself with people who you know you can communicate with and let them know when things are tough. Partners, family, friends, professional help, or online support are just some ways in which to build up your coping community. I personally found speaking to other mums who had lost their baby rather comforting. I felt they understood my situation immediately and vice versa. It felt beneficial when another mum could reach out to me and feel brave enough to share their experience with me. I wasn’t alone and neither were they.`,
+          `Time is an obvious but slow healer. When death hits you, time seems to take longer to pass. But looking back over my last year, I am amazed that despite some really low points, I have come so far in my healing journey. I am much more comfortable talking about what happened. I can even now support other people going through a similar situation without it taking me down the rabbit hole. The only problem with time, is that it takes time. You just need to trust me that in 6 months, your perspective will have changed and the rawness of it all will have faded.`,
+          `When Roo died, he was cremated. Since we don’t own a house in Toronto, nor do we find any particular place ‘special’, we decided to have his ashes stored inside a teddy bear that we could take with us, no matter where we went. It is such a lovely reminder as we can give it a cuddle and instantly feel closer to our son. Memories and mementos are important in remembering what we were lucky to have. I also find that by celebrating his little life, I am honouring his time here with us. Some people might not like having reminders which I completely understand but for me, they are so vital as it reminds me of how quickly life can be over - so go live it.`,
+          `Sadly, getting over grief isn’t something anyone I have ever met has been able to do. Instead, by learning to cope, people like myself have been able to move beyond its debilitating grasp that many get caught in. For whatever reason you are reading this post, just know that this is an experience we all share, to different degrees. You are not alone and I wish you all the best in your journey.`,
+          `- Tracey Fraser`
+        ]
+      },
+      {
+        type: 'img',
+        content: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1584684890/blog/tracey_mundie.jpg'
       },
     ]
   },
