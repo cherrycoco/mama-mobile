@@ -713,50 +713,6 @@ const blogData = [
     ]
   },
   {
-    id: 13,
-    date_created: new Date('NOVEMBER 29, 2018'),
-    img: blog13,
-    title: 'HELP My Partner Wants a Massage Too!',
-    type: 'Educate',
-    author: 'Sarah',
-    blogPost: [
-      {
-        type: 'p_arr',
-        content: [
-          'Okay, we all LOVE the relaxing couples massage every spa/getaway offers… you know the one: Soft music, low lights, maybe a few candles and of course ocean sounds, maybe a hot towel at the end too! This is time together for romance, relaxation and pure bliss.',
-          'We often get asked if we ONLY work with mamas. The short answer, no! We work with papas and partners of every orientation. We do our “couples” massage a little bit different. Mama Mobile Massage was created for functionality, for REAL life.',
-          "As nice as it would be to sneak off to Ste. Anne’s for the evening we know you have two little twin toddlers in bed upstairs or a newborn who won’t stop breastfeeding. This spa experience, this leave it all behind day isn't impossible but it is hard to become a regular occurrence. First you need to find a sitter, pump enough milk and get the time off work etc. etc. are you exhausted already thinking of the logistics?",
-          'Mama Mobile Massage is all about relaxation but we are also about functionality. We are all about making things work for your busy life. We are all about making it easy to get a regular massage- zero planning required. Here’s the thing, if you wait for that amazing getaway weekend or trip to the spa you may be waiting a LONG TIME!',
-          'We believe that TLC shouldn’t require a special occasion, it should be taken advantage of on a monthly basis. You both work so hard doing this parenting thing, don’t let your own self care fall to the wayside.',
-        ]
-      },
-      {
-        type: 'h3',
-        content: 'Here is how our couples massage works:'
-      },
-      {
-        type: 'p_arr',
-        content: [
-          'Step 1) Book online (Heck yes, you don’t even need to talk to another human to do this)',
-          'Step 2) On the day/time of your appointment and expert RMT will arrive at your door with all of the essentials for a spa-like experience in your living room, basement, wherever you please',
-          'Step 3) Partner 1 takes baby duty while partner 2 gets a massage! SWITCH',
-        ]
-      },
-      {
-        type: 'h3',
-        content: 'Why we do our couples massage this way'
-      },
-      {
-        type: 'p_arr',
-        content: [
-          '1) Lower cost- Since our RMT is only travelling once you can save $5 on each massage=more massages/year',
-          '2) You can tag team the kids to bed- Most of our duo massages are booked at 8 & 9pm. When your RMT leaves you are both super relaxed and have a little bit of alone time before bed!',
-          '3) Your partner gets TLC too. We are a company focused on mamas, we do this so that we can always be experts in whichever stage of mama-hood that you are currently in. This doesn’t mean that we don’t care about your partner and this is why we want to give them an opportunity to enjoy our services too!',
-        ]
-      },
-    ]
-  },
-  {
     id: 12,
     date_created: new Date('NOVEMBER 26, 2018'),
     img: blog12,
@@ -778,7 +734,7 @@ const blogData = [
     id: 11,
     date_created: new Date('NOVEMBER 16, 2018'),
     img: blog11,
-    title: 'Is it possible to save money during maternity leave? Guest Blog: Assured Kids Boutique',
+    title: 'Is it possible to save money during maternity leave',
     type: 'Educate',
     author: 'Melanie',
     blogPost: [
@@ -794,10 +750,6 @@ const blogData = [
         type: 'p',
         content: 'Ask and you shall receive! So… ask for necessities like diapers, clothes, and especially GIFT cards… You don’t know what kind of baby you will have so you can buy stuff as you go and not spend money on things you won’t use. You can also do a 50/50 draw by asking people to pick the baby’s birthday, fun way to make a little extra money which people are happy to do as they may have 50% of the money!!…everyone wins',
       }, 
-      {
-        type: 'img',
-        content: 'https://res.cloudinary.com/dhze7gimq/image/upload/v1555730724/blog_11_1.jpg'
-      },
       {
         type: 'h3',
         content: '#2 Ontario Child Benefit',
@@ -852,31 +804,11 @@ const blogData = [
       },
     ]
   },
-  // {
-  //   id: 10,
-  //   date_created: new Date('AUGUST 6, 2018'),
-  //   img: blog10,
-  //   title: 'Toronto Massage: booking, payment and insurance receipt',
-  //   type: 'Booking',
-  //   author: 'Sarah',
-  //   blogPost: [
-  //     {
-
-  //     }
-  //   ],
-  // },
-  // {
-  //   id: 9,
-  //   date_created: new Date('AUGUST 6, 2018'),
-  //   img: blog9,
-  //   title: 'Ottawa Massage: booking, payment and insurance receipt',
-  //   type: 'Booking',
-  // },
   {
     id: 9,
     date_created: new Date('AUGUST 5, 2018'),
     img: blog8,
-    title: 'Making the most of nap time - how does nap time massage work?',
+    title: 'Making the most of nap time - how does nap time massage work',
     type: 'Booking',
     author: 'Sarah',
     blogPost: [
@@ -1105,7 +1037,7 @@ const blogData = [
     id: 4,
     date_created: new Date('MAY 22, 2018'),
     img: blog4,
-    title: 'Is Prenatal Massage Safe?',
+    title: 'Is Prenatal Massage Safe',
     type: 'Educate',
     author: 'Sarah',
     blogPost: [
@@ -1253,13 +1185,6 @@ const blogData = [
         ]
       }
     ]
-  },
-  {
-    id: 2,
-    date_created: new Date('APRIL 3, 2018'),
-    img: blog2,
-    title: 'Self Love For The Busy Mama',
-    type: 'Educate',
   },
   {
     id: 1,
