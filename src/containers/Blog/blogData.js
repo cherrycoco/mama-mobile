@@ -19,8 +19,140 @@ const blog18 =`https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,g_east,h
 const blog20 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1580415670/welcome/IMG_2896_2_p3uegb.jpg';
 const blog19 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1584684555/blog/blog_19.png';
 const blog21 = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,h_252,w_400/v1584685254/blog/blog_21.jpg';
+const blog22 = 'https://res.cloudinary.com/dhze7gimq/image/upload/v1585155482/blog/PostpartumBlog__Vanessa_lefesc.png';
+const blog22H = 'https://res.cloudinary.com/dhze7gimq/image/upload/c_fill,h_252,w_400/v1585155482/blog/PostpartumBlog__Vanessa_lefesc.png';
 
 const blogData = [
+  {
+    id: 22,
+    date_created: new Date('March 25, 2020'),
+    img: blog22H,
+    title: `Surviving Postpartum Depression: How I Found My Worth As a New Mom`,
+    author: 'Vanessa',
+    type: 'Mama Story',
+    blogPost: [
+      {
+        type: 'p_arr',
+        content: [
+          `I still remember the day I found out I was pregnant with my first. I was excited, I was scared and I was VERY uncertain of my future.`,
+          `You see my first pregnancy was NOT planned. I was NOT married. I was one year out of University and thankful to have been employed by a great company, with great pay (I mean any pay after graduating is great) and benefits.`,
+          `OK so pregnant me… my partner and I at the time had only been dating for a little over a year and decided to live separately until the new year (2015) which was super close to when the baby was born (early February).`,
+          `SIDE NOTE: looking back now and after having our now SECOND baby together I had missed being 8 months pregnant and ALONE in bed with it all to myself! I digress…`,
+          `Anyway, fast track to the birth of my first born and there I was SHOOK at how amazing, crazy scary and wonderful everything felt that day.`,
+        ]
+      },
+      {
+        type: 'h3',
+        content: 'I WAS A FREAKING MOM!',
+      },
+      {
+        type: 'p_arr',
+        content: [
+          `NOW, let's couple the above experience with the horrible feelings and thoughts associated with Postpartum Depression (PPD). Not only did I start living with my partner (now fiance), and take on a BUNCH of new roles that I thought were EXPECTED of me (dishes, laundry, cooking, cleaning, groceries and MORE) because there wasn’t much time to determine roles and expectations and nuances of the day to day or week to week prior to the birth of our first born and being 8-9 months pregnant (like what days I should do laundry or groceries etc.) BUT, I also suffered from Postpartum Depression. I can admit this now but I struggled for months, maybe even a full year or so by way of horrible thoughts, constant crying, and uncontrollable or explainable RAGE. It took a toll on me, my partner and definitely didn’t make me feel like a great mother. Did I get help, NOPE I was in such denial, I was so upset for feeling these ways that I really tried my best to just BE NORMAL but my nervousness when someone else held my baby would get to me, when someone would tell me how to be would get to me, when others only handed her to me when she was hungry it would get to me, when I washed dishes I would cry, when basically anything that sparked any sense of feeling it would be intensified times 783874874 billion and come out or stay in in very unhealthy ways.
+          So what happened, how did I “get better”.`,
+          `Well, I think my partner helped push me to try things like yoga, exercise, starting a small business (which initially was selling children’s clothes) and I started to meet people. I started to get more comfortable talking about my experience, hearing from others and their experiences.`,
+          `I returned to work following my mat leave. It felt good being around adults BUT part of me didn’t feel good enough to be there or perhaps it was that I felt destined to be home with my little one because it was so much more fun. Whatever it was I chose to find a new job to see if that would fill the void I was feeling and so I did for a year or so and then BOOM.`,
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Positive pregnancy test. This one was planned.'
+      }, 
+      {
+        type: 'h3',
+        content: 'Why I ate my placenta!'
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `It’s been 20 months since that happened and my little one is now 11 months old. I have to say this time around is so different. Yes there is the second child syndrome at play here so I am less anxious. One thing I firmly believe helped me was `,
+          {
+            content: 'eating my placenta for postpartum depression.',
+            link: 'https://www.mommonality.com/post/i-ate-what-placenta-encapsulation-postpartum-depression',
+          }
+        ]
+      },
+      {
+        type: 'p',
+        content: '',
+      },
+      {
+        type: 'p',
+        content: 'It isn’t for everyone and some don’t believe in it but I truly believe that if I had done this with my first I would have never experienced the horror of Postpartum Depression.'
+      }, 
+      {
+        type: 'h3',
+        content: 'How I became a mom boss'
+      },
+      {
+        type: 'p',
+        content: 'So here I am today, on maternity leave (this time 18 months) with another baby girl and I feel so blessed to have two! Two girls who have each other as besties forever.',
+      },
+      {
+        type: 'p_with_link',
+        content: [
+          `This time around I got that itch again, to do something for me, something creative and I went for it. I decided to start my own podcast called The `,
+          {
+            content: 'Mommonality Podcast',
+            link: 'https://www.mommonality.com/podcast',
+          },
+          `, taking my `,
+          {
+            content: 'Mommonality BLOG to a new platform',
+            link: 'https://www.mommonality.com/blog',
+          },
+          ` and speaking to people about motherhood entrepreneurship and so much more. `,
+          {
+            content: 'I also started a monthly mom based (family really) market in the peel region',
+            link: 'https://www.mommonality.com/themrkt',
+          },
+          ` which I am taking a hit these days given the current situation of COVID-19. Prior to this pandemic we had done 2 markets that were VERY successful so I am super excited to get back to having them once everything going on subsides. Also, I recently took on the Moms Mississauga chapter powered by `,
+          {
+            content: 'Moms Toronto',
+            link: 'http://momsto.com/',
+          },
+          ` and I am super excited to grow the community there with awesome events and experiences for parents.`
+        ]
+      },
+      {
+        type: 'p_arr',
+        content: [
+          '',
+          `Anyway, all of this is to say that I changed, I grew and that there is always light at the end of the dark tunnel. I could have gotten here sooner if I had got professional help BUT I cannot beat myself up about that. The journey I went on that landed me where I am right now. These days I find myself transitioning all the (what would have been) FEAR into EXCITEMENT whenever it comes to doing things that once would have been a huge NO WAY or that would scare me given my insecurity and sense of self. Today I am thankful for my fiancé, for my children, my family, my friends but most of all I am thankful for the gift of me. The person I love the most… the person able to love others and be in love with all the things I choose to do from this point on in my life.`,
+        ]
+      },
+      {
+        type: 'p_bold_noMargin',
+        content: `- Vanessa`
+      },
+      {
+        type: 'a',
+        content: 'www.mommonality.com',
+        text: `www.mommonality.com`,
+      },
+      {
+        type: 'p_noMargin',
+        content: '@mommonality',
+      }, 
+      {
+        type: 'p_noMargin',
+        content: '@momsmississauga',
+      },
+      {
+        type: 'p_noMargin',
+        content: '@themommonalitymrkt',
+      },
+      {
+        type: 'p_noMargin',
+        content: '@themommonalitypodcast',
+      },
+      {
+        type: 'img',
+        content: blog22,
+        alt: 'Vanessa'
+      }
+    ]
+  },
   {
     id: 21,
     date_created: new Date('March 19, 2020'),
@@ -92,6 +224,7 @@ const blogData = [
       {
         type: 'img',
         content: blog21,
+        alt: 'Alexis Coronado'
       }
     ]
   },
